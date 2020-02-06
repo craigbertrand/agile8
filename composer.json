@@ -23,7 +23,22 @@
         "rvtraveller/qs-composer-installer": "^1.1",
         "drupal/core-recommended": "^8.8",
         "pantheon-systems/drupal-integrations": "^8",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "drupal/address": "1.7.0",
+        "drupal/admin_toolbar": "2.0.0",
+        "drupal/adminimal_theme": "^1.5",
+        "drupal/ctools": "3.2.0",
+        "drupal/interval": "1.4.0",
+        "drupal/page_manager": "4.0-beta4",
+        "drupal/panels": "4.4.0",
+        "drupal/prepopulate": "2.2.0",
+        "drupal/rules": "3.x-dev",
+        "drupal/structure_sync": "1.16.0",
+        "drupal/token": "1.6.0",
+        "drupal/toolbar_menu": "2.1.0",
+        "drupal/tr_rulez": "1.x-dev",
+        "drupal/typed_data": "1.x-dev"
+        
     },
     "require-dev": {
         "behat/behat": "3.*",
