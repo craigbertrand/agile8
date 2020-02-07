@@ -1,0 +1,29 @@
+uuid: efd9c416-6cdf-407e-bd3d-5c4bc732193e
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.personnel_certifications
+  module:
+    - panels
+id: personnel_certifications-panels_variant-0
+label: 'Personnel Certifications'
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: 84665114-1bca-4e94-80f0-fad42acb5de5
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: 'Personnel Certifications'
+  page_title: 'Personnel Certifications'
+  storage_type: page_manager
+  storage_id: personnel_certifications-panels_variant-0
+  builder: standard
+page: personnel_certifications
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

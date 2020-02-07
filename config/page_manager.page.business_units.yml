@@ -1,0 +1,12 @@
+uuid: b7e3c7c3-6294-44fa-a968-46c8a27c0653
+langcode: en
+status: true
+dependencies: {  }
+id: business_units
+label: 'Business Units'
+description: ''
+use_admin_theme: false
+path: /management/governance/business-units
+access_logic: and
+access_conditions: {  }
+parameters: {  }

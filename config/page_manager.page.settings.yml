@@ -1,0 +1,12 @@
+uuid: 5acf8852-2b1f-4268-9ab1-6d06f4151852
+langcode: en
+status: true
+dependencies: {  }
+id: settings
+label: Settings
+description: ''
+use_admin_theme: false
+path: /settings
+access_logic: and
+access_conditions: {  }
+parameters: {  }

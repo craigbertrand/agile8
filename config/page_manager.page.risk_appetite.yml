@@ -1,0 +1,12 @@
+uuid: 4724e171-da2a-4891-a396-03042bd7ca8a
+langcode: en
+status: true
+dependencies: {  }
+id: risk_appetite
+label: 'Risk Appetite'
+description: ''
+use_admin_theme: false
+path: /management/risk/risk-appetite
+access_logic: and
+access_conditions: {  }
+parameters: {  }

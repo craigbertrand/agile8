@@ -1,0 +1,12 @@
+uuid: 73019470-93a1-4afd-be72-578f7496995d
+langcode: en
+status: true
+dependencies: {  }
+id: personnel_certifications
+label: 'Personnel Certifications'
+description: ''
+use_admin_theme: false
+path: /support/hr/personnel-certifications
+access_logic: and
+access_conditions: {  }
+parameters: {  }

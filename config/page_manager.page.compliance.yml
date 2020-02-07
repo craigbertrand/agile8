@@ -1,0 +1,12 @@
+uuid: 8a5171d0-3013-452d-abbb-5fcf733c8329
+langcode: en
+status: true
+dependencies: {  }
+id: compliance
+label: Compliance
+description: ''
+use_admin_theme: false
+path: /management/compliance
+access_logic: and
+access_conditions: {  }
+parameters: {  }

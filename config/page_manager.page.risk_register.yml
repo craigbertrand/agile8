@@ -1,0 +1,12 @@
+uuid: 43628bcf-5680-4b22-8676-b78de9d911e3
+langcode: en
+status: true
+dependencies: {  }
+id: risk_register
+label: 'Risk Register'
+description: ''
+use_admin_theme: false
+path: /management/risk/risk-register
+access_logic: and
+access_conditions: {  }
+parameters: {  }

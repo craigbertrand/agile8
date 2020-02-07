@@ -1,0 +1,12 @@
+uuid: a4e710ee-b90b-4a42-af4b-3b1d01bac8d7
+langcode: en
+status: true
+dependencies: {  }
+id: improvements
+label: Improvements
+description: ''
+use_admin_theme: false
+path: /management/compliance/improvements
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,12 @@
+uuid: f17464f7-69ad-490a-92b7-590984f10288
+langcode: en
+status: true
+dependencies: {  }
+id: management_review
+label: 'Management Review'
+description: ''
+use_admin_theme: false
+path: /management/governance/management-review
+access_logic: and
+access_conditions: {  }
+parameters: {  }

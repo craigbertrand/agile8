@@ -1,0 +1,12 @@
+uuid: 79bd4936-b6a2-4882-a3e3-926e6ea98efe
+langcode: en
+status: true
+dependencies: {  }
+id: personnel_roles
+label: 'Personnel Roles'
+description: ''
+use_admin_theme: false
+path: /support/hr/personnel-roles
+access_logic: and
+access_conditions: {  }
+parameters: {  }

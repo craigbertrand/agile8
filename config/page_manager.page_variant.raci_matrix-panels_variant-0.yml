@@ -1,0 +1,29 @@
+uuid: 90888295-8c34-4be5-8d75-2c571e179a7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.raci_matrix
+  module:
+    - panels
+id: raci_matrix-panels_variant-0
+label: 'RACI Matrix'
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: b01953d7-0467-49c4-9167-8065fc9be16b
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: 'RACI Matrix'
+  page_title: 'RACI Matrix'
+  storage_type: page_manager
+  storage_id: raci_matrix-panels_variant-0
+  builder: standard
+page: raci_matrix
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

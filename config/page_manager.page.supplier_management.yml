@@ -1,0 +1,12 @@
+uuid: 60aad3cb-6150-40b2-8cc5-358a57025abe
+langcode: en
+status: true
+dependencies: {  }
+id: supplier_management
+label: 'Supplier Management'
+description: ''
+use_admin_theme: false
+path: /support/suppliers
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,12 @@
+uuid: 4821b7ef-d4de-40d6-ac17-2d7ed68e7772
+langcode: en
+status: true
+dependencies: {  }
+id: equipment_management
+label: 'Equipment Management'
+description: ''
+use_admin_theme: false
+path: /support/equipment
+access_logic: and
+access_conditions: {  }
+parameters: {  }

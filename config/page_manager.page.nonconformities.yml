@@ -1,0 +1,12 @@
+uuid: 1a37c56a-a3e4-4fe6-8bc3-7ac58f1550ff
+langcode: en
+status: true
+dependencies: {  }
+id: nonconformities
+label: Nonconformities
+description: ''
+use_admin_theme: false
+path: /management/compliance/nonconformities
+access_logic: and
+access_conditions: {  }
+parameters: {  }

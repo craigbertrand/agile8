@@ -1,0 +1,29 @@
+uuid: 6035d5aa-fa91-4c8d-92b9-fe614a67a811
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.dashboard
+  module:
+    - panels
+id: dashboard-panels_variant-0
+label: Dashboard
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: 261cf67a-1a79-4933-8ef7-1bed4f089f0a
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Dashboard
+  page_title: Dashboard
+  storage_type: page_manager
+  storage_id: dashboard-panels_variant-0
+  builder: standard
+page: dashboard
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

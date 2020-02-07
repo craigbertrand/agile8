@@ -1,0 +1,29 @@
+uuid: ef913a15-b359-4f8a-90ba-b08545608b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.compliance
+  module:
+    - panels
+id: compliance-panels_variant-0
+label: Compliance
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: d0b3bbdf-39bd-451c-ad9a-d2d682bc7ffd
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Compliance
+  page_title: Compliance
+  storage_type: page_manager
+  storage_id: compliance-panels_variant-0
+  builder: standard
+page: compliance
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,12 @@
+uuid: f40d0ef5-2a57-4dd0-b3b5-302578c69e0d
+langcode: en
+status: true
+dependencies: {  }
+id: personnel
+label: Personnel
+description: ''
+use_admin_theme: false
+path: /support/hr/personnel
+access_logic: and
+access_conditions: {  }
+parameters: {  }

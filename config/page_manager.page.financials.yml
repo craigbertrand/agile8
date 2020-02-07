@@ -1,0 +1,12 @@
+uuid: 28424ca1-b12d-4177-8c70-7b1fc008ad0c
+langcode: en
+status: true
+dependencies: {  }
+id: financials
+label: Financials
+description: ''
+use_admin_theme: false
+path: /support/financials
+access_logic: and
+access_conditions: {  }
+parameters: {  }

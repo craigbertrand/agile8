@@ -1,0 +1,29 @@
+uuid: 4160b933-c5af-4549-9df5-e4f1bc722f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.vision_mission_and_values
+  module:
+    - panels
+id: vision_mission_and_values-panels_variant-0
+label: 'Vision, Mission, Values'
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: 9880ea59-de8b-4eae-8ff8-122c01d020ca
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: 'Vision, Mission, and Values'
+  page_title: 'Vision, Mission, and Values'
+  storage_type: page_manager
+  storage_id: vision_mission_and_values-panels_variant-0
+  builder: standard
+page: vision_mission_and_values
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

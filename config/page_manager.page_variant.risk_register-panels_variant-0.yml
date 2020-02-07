@@ -1,0 +1,29 @@
+uuid: 6fc6108c-74ec-47c4-938b-83a910bfb514
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.risk_register
+  module:
+    - panels
+id: risk_register-panels_variant-0
+label: 'Risk Register'
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: c9b088b6-8980-4375-83de-6263b0b25dc1
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: 'Risk Register'
+  page_title: 'Risk Register'
+  storage_type: page_manager
+  storage_id: risk_register-panels_variant-0
+  builder: standard
+page: risk_register
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

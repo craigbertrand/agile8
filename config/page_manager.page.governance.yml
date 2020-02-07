@@ -1,0 +1,12 @@
+uuid: 2549a903-97b1-4953-b4bf-0217e9892c5b
+langcode: en
+status: true
+dependencies: {  }
+id: governance
+label: Governance
+description: ''
+use_admin_theme: false
+path: /management/governance
+access_logic: and
+access_conditions: {  }
+parameters: {  }

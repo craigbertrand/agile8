@@ -1,0 +1,29 @@
+uuid: a9b7d45a-83cd-4ccc-8f52-79b218ff60dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.personnel
+  module:
+    - panels
+id: personnel-panels_variant-0
+label: Personnel
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: d8c9f9cf-03fc-4119-b27e-c2e0482c6608
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Personnel
+  page_title: Personnel
+  storage_type: page_manager
+  storage_id: personnel-panels_variant-0
+  builder: standard
+page: personnel
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,12 @@
+uuid: 3b28e6aa-e32d-4a05-bf44-cfba0c44936a
+langcode: en
+status: true
+dependencies: {  }
+id: human_resources
+label: 'Human Resources'
+description: ''
+use_admin_theme: false
+path: /support/hr
+access_logic: and
+access_conditions: {  }
+parameters: {  }
