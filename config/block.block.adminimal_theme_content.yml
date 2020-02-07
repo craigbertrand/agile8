@@ -1,15 +1,15 @@
-uuid: 73e61cd5-6acf-43d4-a5d2-ff020a03b5bf
+uuid: a8212bfb-44bf-4f2f-8279-60fa375d4b92
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - adminimal_theme
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+  default_config_hash: 80N66GdzEvwqi1m-_GZ-ulkk8AJG9beoXcZ4-pMVKjI
+id: adminimal_theme_content
+theme: adminimal_theme
 region: content
 weight: 0
 provider: null
