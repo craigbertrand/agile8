@@ -1,0 +1,436 @@
+taxonomies:
+  tags: {  }
+blocks: {  }
+menus:
+  -
+    menu_name: main
+    title: Compliance
+    parent: 'menu_link_content:c03cc924-05cb-4420-a462-baafc91457e6'
+    uri: 'internal:/management/compliance'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: en
+    uuid: bffba3cd-f4b4-4c7f-b0d4-c0d3048e50f3
+  -
+    menu_name: main
+    title: Governance
+    parent: 'menu_link_content:c03cc924-05cb-4420-a462-baafc91457e6'
+    uri: 'internal:/management/governance'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: en
+    uuid: 896a14d9-0385-410f-9121-39cfe3456321
+  -
+    menu_name: main
+    title: Risk
+    parent: 'menu_link_content:c03cc924-05cb-4420-a462-baafc91457e6'
+    uri: 'internal:/management/risk'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: en
+    uuid: 6791786e-24fc-43c7-b4fb-1e8a9ca7c313
+  -
+    menu_name: main
+    title: Dashboard
+    parent: null
+    uri: 'internal:/dashboard'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: en
+    uuid: 16d8e64e-a04e-49d1-bacc-3c7ff3774693
+  -
+    menu_name: main
+    title: 'Vision, Mission, and Values'
+    parent: 'menu_link_content:896a14d9-0385-410f-9121-39cfe3456321'
+    uri: 'internal:/management/governance/vmv'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 06f0a73e-f097-480e-84e1-6de4460735e6
+  -
+    menu_name: main
+    title: 'Management Systems'
+    parent: null
+    uri: 'internal:/management'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: en
+    uuid: c03cc924-05cb-4420-a462-baafc91457e6
+  -
+    menu_name: main
+    title: 'Operational Systems'
+    parent: null
+    uri: 'internal:/operations'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-46'
+    langcode: en
+    uuid: 231fdde2-f2fe-4258-81b3-29740ca5bf71
+  -
+    menu_name: main
+    title: 'Support Systems'
+    parent: null
+    uri: 'internal:/support'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: en
+    uuid: 2f91f6d3-07ef-4794-8842-c0462a21b871
+  -
+    menu_name: main
+    title: Policy
+    parent: 'menu_link_content:896a14d9-0385-410f-9121-39cfe3456321'
+    uri: 'internal:/management/governance/policy'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '1'
+    langcode: en
+    uuid: 4329d799-3968-4b59-8981-341a038087d6
+  -
+    menu_name: main
+    title: Objectives
+    parent: 'menu_link_content:896a14d9-0385-410f-9121-39cfe3456321'
+    uri: 'internal:/management/governance/objectives'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: en
+    uuid: e69baf06-088e-4e25-aa02-fd003dac7e5f
+  -
+    menu_name: main
+    title: 'RACI Matrix'
+    parent: 'menu_link_content:896a14d9-0385-410f-9121-39cfe3456321'
+    uri: 'internal:/management/governance/raci'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '3'
+    langcode: en
+    uuid: 10d01e67-18c4-4159-946a-20c7300fcae0
+  -
+    menu_name: main
+    title: 'Interested Parties'
+    parent: 'menu_link_content:896a14d9-0385-410f-9121-39cfe3456321'
+    uri: 'internal:/management/governance/interested-parties'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '4'
+    langcode: en
+    uuid: 1e71b128-d68b-47a9-a95a-70b36be3ea20
+  -
+    menu_name: main
+    title: 'Business Units'
+    parent: 'menu_link_content:896a14d9-0385-410f-9121-39cfe3456321'
+    uri: 'internal:/management/governance/business-units'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 2936e536-3516-4942-b379-392dc7d34d66
+  -
+    menu_name: main
+    title: 'Risk Appetite'
+    parent: 'menu_link_content:6791786e-24fc-43c7-b4fb-1e8a9ca7c313'
+    uri: 'internal:/management/risk/risk-appetite'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 8277f48f-1220-4a51-8d2c-9ada823b92c6
+  -
+    menu_name: main
+    title: 'Risk Register'
+    parent: 'menu_link_content:6791786e-24fc-43c7-b4fb-1e8a9ca7c313'
+    uri: 'internal:/management/risk/risk-register'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: en
+    uuid: 32d77ef4-abff-49fa-a61a-3b8c897b8c05
+  -
+    menu_name: main
+    title: Processes
+    parent: 'menu_link_content:bffba3cd-f4b4-4c7f-b0d4-c0d3048e50f3'
+    uri: 'internal:/management/compliance/processes'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 99cd67b5-3c52-4b42-ba13-9bff380a99aa
+  -
+    menu_name: main
+    title: Standards
+    parent: 'menu_link_content:bffba3cd-f4b4-4c7f-b0d4-c0d3048e50f3'
+    uri: 'internal:/management/compliance/standards'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: en
+    uuid: ec59f3bb-cf30-4c97-904d-d6ef281aab3b
+  -
+    menu_name: main
+    title: Audits
+    parent: 'menu_link_content:bffba3cd-f4b4-4c7f-b0d4-c0d3048e50f3'
+    uri: 'internal:/management/compliance/audits'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '3'
+    langcode: en
+    uuid: aa5b1ea0-688f-41db-ba72-6201d93ad5e9
+  -
+    menu_name: main
+    title: Nonconformities
+    parent: 'menu_link_content:bffba3cd-f4b4-4c7f-b0d4-c0d3048e50f3'
+    uri: 'internal:/management/compliance/nonconformities'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '5'
+    langcode: en
+    uuid: 04053b70-cfb3-4d1b-a90d-a58ba7c98c9a
+  -
+    menu_name: main
+    title: Improvements
+    parent: 'menu_link_content:bffba3cd-f4b4-4c7f-b0d4-c0d3048e50f3'
+    uri: 'internal:/management/compliance/improvements'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '6'
+    langcode: en
+    uuid: d6784f86-a822-499b-be38-6de722072af4
+  -
+    menu_name: main
+    title: 'Management Review'
+    parent: 'menu_link_content:896a14d9-0385-410f-9121-39cfe3456321'
+    uri: 'internal:/management/governance/management-review'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '10'
+    langcode: en
+    uuid: 83034be4-f47b-4930-8415-dfa4a83f4c9d
+  -
+    menu_name: main
+    title: 'Equipment Management'
+    parent: 'menu_link_content:2f91f6d3-07ef-4794-8842-c0462a21b871'
+    uri: 'internal:/support/equipment'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: b2f18a2d-1652-49a7-84e4-c081a341f49b
+  -
+    menu_name: main
+    title: Equipment
+    parent: 'menu_link_content:b2f18a2d-1652-49a7-84e4-c081a341f49b'
+    uri: 'internal:/support/equipment/equipment'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: b88bf123-a752-488c-b10b-bac7a9c38fc5
+  -
+    menu_name: main
+    title: 'Equipment Brands'
+    parent: 'menu_link_content:b2f18a2d-1652-49a7-84e4-c081a341f49b'
+    uri: 'internal:/support/equipment/brands'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: en
+    uuid: 66300134-2bb1-479c-ad3b-171133d73af7
+  -
+    menu_name: main
+    title: 'Equipment Models'
+    parent: 'menu_link_content:b2f18a2d-1652-49a7-84e4-c081a341f49b'
+    uri: 'internal:/support/equipment/models'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '4'
+    langcode: en
+    uuid: 81e200c8-1678-4797-ac77-e680e4a0a038
+  -
+    menu_name: main
+    title: 'Supplier Management'
+    parent: 'menu_link_content:2f91f6d3-07ef-4794-8842-c0462a21b871'
+    uri: 'internal:/support/suppliers'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: en
+    uuid: 4849de04-3ba3-4932-afd0-6725ed1d9155
+  -
+    menu_name: main
+    title: Suppliers
+    parent: 'menu_link_content:4849de04-3ba3-4932-afd0-6725ed1d9155'
+    uri: 'internal:/support/suppliers/suppliers'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 89e33579-33f1-45ea-9514-fcbd3a2b2877
+  -
+    menu_name: main
+    title: 'Customer Management'
+    parent: 'menu_link_content:2f91f6d3-07ef-4794-8842-c0462a21b871'
+    uri: 'internal:/support/customers'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '3'
+    langcode: en
+    uuid: b1a05d80-0768-4788-971c-72e95011d3a0
+  -
+    menu_name: main
+    title: Customers
+    parent: 'menu_link_content:b1a05d80-0768-4788-971c-72e95011d3a0'
+    uri: 'internal:/support/customers/customers'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 9705c9ea-7b43-4bd5-9704-3e41205b7820
+  -
+    menu_name: main
+    title: Financials
+    parent: 'menu_link_content:2f91f6d3-07ef-4794-8842-c0462a21b871'
+    uri: 'internal:/support/financials'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '4'
+    langcode: en
+    uuid: a4284f09-da1c-4d3b-985f-1c89d553ad42
+  -
+    menu_name: main
+    title: 'Human Resources'
+    parent: 'menu_link_content:2f91f6d3-07ef-4794-8842-c0462a21b871'
+    uri: 'internal:/support/hr'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '5'
+    langcode: en
+    uuid: b7b2a37e-1e3a-422f-9e58-67bc2cb797d2
+  -
+    menu_name: main
+    title: Personnel
+    parent: 'menu_link_content:b7b2a37e-1e3a-422f-9e58-67bc2cb797d2'
+    uri: 'internal:/support/hr/personnel'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 7aad744a-be9d-472c-ad8e-9bf68cd7ca24
+  -
+    menu_name: main
+    title: 'Personnel Roles'
+    parent: 'menu_link_content:b7b2a37e-1e3a-422f-9e58-67bc2cb797d2'
+    uri: 'internal:/support/hr/personnel-roles'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: en
+    uuid: 3b3f4c62-af8b-4ff4-a15e-62c07009e2c2
+  -
+    menu_name: main
+    title: 'Personnel Certifications'
+    parent: 'menu_link_content:b7b2a37e-1e3a-422f-9e58-67bc2cb797d2'
+    uri: 'internal:/support/hr/personnel-certifications'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '3'
+    langcode: en
+    uuid: f8ace9ad-0cce-4027-8618-910e448feda6
+  -
+    menu_name: main
+    title: Projects
+    parent: 'menu_link_content:231fdde2-f2fe-4258-81b3-29740ca5bf71'
+    uri: 'internal:/operations/projects'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 12fdc6b1-48de-4008-92a5-82eeb2223d20
+  -
+    menu_name: main
+    title: Settings
+    parent: null
+    uri: 'internal:/settings'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '7'
+    langcode: en
+    uuid: 255e21ee-7c5b-4566-9713-04ffa9bd2fea
