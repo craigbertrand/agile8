@@ -1,0 +1,12 @@
+uuid: f2718d63-2540-4cac-a85d-d06f7bcbd6fa
+langcode: en
+status: true
+dependencies: {  }
+id: processes
+label: Processes
+description: ''
+use_admin_theme: false
+path: /management/compliance/processes
+access_logic: and
+access_conditions: {  }
+parameters: {  }

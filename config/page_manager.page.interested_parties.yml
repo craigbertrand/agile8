@@ -1,0 +1,12 @@
+uuid: 73a2b5cf-fbdd-4453-88ca-42d1fdc04896
+langcode: en
+status: true
+dependencies: {  }
+id: interested_parties
+label: 'Interested Parties'
+description: ''
+use_admin_theme: false
+path: /management/governance/interested-parties
+access_logic: and
+access_conditions: {  }
+parameters: {  }

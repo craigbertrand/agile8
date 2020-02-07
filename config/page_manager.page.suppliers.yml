@@ -1,0 +1,12 @@
+uuid: 726c8270-7aa6-4ba7-a28f-3b97a4413004
+langcode: en
+status: true
+dependencies: {  }
+id: suppliers
+label: Suppliers
+description: ''
+use_admin_theme: false
+path: /support/suppliers/suppliers
+access_logic: and
+access_conditions: {  }
+parameters: {  }

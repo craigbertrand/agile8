@@ -1,0 +1,29 @@
+uuid: b3b47db5-cb4f-4970-8f90-f1509cc5cda7
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.suppliers
+  module:
+    - panels
+id: suppliers-panels_variant-0
+label: Suppliers
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: e214f1a7-4ac0-4bf6-929c-66c0aa5a681d
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Suppliers
+  page_title: Suppliers
+  storage_type: page_manager
+  storage_id: suppliers-panels_variant-0
+  builder: standard
+page: suppliers
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

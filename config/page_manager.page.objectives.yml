@@ -1,0 +1,12 @@
+uuid: b2693dd7-33a2-45da-af1c-53f84be23032
+langcode: en
+status: true
+dependencies: {  }
+id: objectives
+label: Objectives
+description: ''
+use_admin_theme: false
+path: /management/governance/objectives
+access_logic: and
+access_conditions: {  }
+parameters: {  }

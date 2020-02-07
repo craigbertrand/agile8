@@ -1,0 +1,29 @@
+uuid: 0b4266de-58e3-4ed0-8c2a-2936c6898d04
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.processes
+  module:
+    - panels
+id: processes-panels_variant-0
+label: Processes
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: 36117892-06ec-4331-bab3-facd34c1d59f
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Processes
+  page_title: Processes
+  storage_type: page_manager
+  storage_id: processes-panels_variant-0
+  builder: standard
+page: processes
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

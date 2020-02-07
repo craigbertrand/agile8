@@ -1,0 +1,12 @@
+uuid: bf3f7d27-eb4f-4ff3-934c-fc844961cae1
+langcode: en
+status: true
+dependencies: {  }
+id: equipment_models
+label: 'Equipment Models'
+description: ''
+use_admin_theme: false
+path: /support/equipment/models
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,12 @@
+uuid: 36ada7e7-c31b-461b-9ffb-6b8ccdfb2626
+langcode: en
+status: true
+dependencies: {  }
+id: equipment
+label: Equipment
+description: ''
+use_admin_theme: false
+path: /support/equipment/equipment
+access_logic: and
+access_conditions: {  }
+parameters: {  }

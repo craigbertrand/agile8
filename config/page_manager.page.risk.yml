@@ -1,0 +1,12 @@
+uuid: 54f1c77b-f840-4bd7-b60b-38ffa24514de
+langcode: en
+status: true
+dependencies: {  }
+id: risk
+label: Risk
+description: ''
+use_admin_theme: false
+path: /management/risk
+access_logic: and
+access_conditions: {  }
+parameters: {  }

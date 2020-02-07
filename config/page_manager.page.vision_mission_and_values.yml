@@ -1,0 +1,12 @@
+uuid: d1622c3b-79c7-4988-b3dd-1daf17dff8ba
+langcode: en
+status: true
+dependencies: {  }
+id: vision_mission_and_values
+label: 'Vision, Mission, and Values'
+description: ''
+use_admin_theme: false
+path: /management/governance/vmv
+access_logic: and
+access_conditions: {  }
+parameters: {  }

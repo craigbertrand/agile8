@@ -1,0 +1,29 @@
+uuid: ba44f7b6-0c61-4360-b8f9-1f987b0bb2b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.policy
+  module:
+    - panels
+id: policy-panels_variant-0
+label: Policy
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: 66829cb0-26e9-49cb-9d68-8dec77dd62ae
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Policy
+  page_title: Policy
+  storage_type: page_manager
+  storage_id: policy-panels_variant-0
+  builder: standard
+page: policy
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,29 @@
+uuid: cde96ba6-be24-4313-b63d-3bb18791d7f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.audits
+  module:
+    - panels
+id: audits-panels_variant-0
+label: Audits
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: d6fbdc4b-ce94-4be5-b2f5-18e35e0462d4
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Audits
+  page_title: Audits
+  storage_type: page_manager
+  storage_id: audits-panels_variant-0
+  builder: standard
+page: audits
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

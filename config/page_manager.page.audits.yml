@@ -1,0 +1,12 @@
+uuid: 54bb6a9b-3a97-4019-b5b2-f77355761b21
+langcode: en
+status: true
+dependencies: {  }
+id: audits
+label: Audits
+description: ''
+use_admin_theme: false
+path: /management/compliance/audits
+access_logic: and
+access_conditions: {  }
+parameters: {  }

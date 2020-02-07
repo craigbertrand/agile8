@@ -1,0 +1,29 @@
+uuid: 6d525b46-62df-4e5b-b869-2a9bdbab787b
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.governance
+  module:
+    - panels
+id: governance-panels_variant-0
+label: Governance
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: c9bef4b2-d95f-4cad-9fd3-0f8a75437436
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Governance
+  page_title: Governance
+  storage_type: page_manager
+  storage_id: governance-panels_variant-0
+  builder: standard
+page: governance
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,29 @@
+uuid: f8219cb8-051e-497f-a2c8-e1b7b533fd39
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.equipment_models
+  module:
+    - panels
+id: equipment_models-panels_variant-0
+label: 'Equipment Models'
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: ee5f3020-c665-4bf7-b0ac-ea8489c12852
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: 'Equipment Models'
+  page_title: 'Equipment Models'
+  storage_type: page_manager
+  storage_id: equipment_models-panels_variant-0
+  builder: standard
+page: equipment_models
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

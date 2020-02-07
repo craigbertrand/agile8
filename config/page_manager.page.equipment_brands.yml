@@ -1,0 +1,12 @@
+uuid: d8ab1308-7f0e-4e50-974d-bd9e06533871
+langcode: en
+status: true
+dependencies: {  }
+id: equipment_brands
+label: 'Equipment Brands'
+description: ''
+use_admin_theme: false
+path: /support/equipment/brands
+access_logic: and
+access_conditions: {  }
+parameters: {  }

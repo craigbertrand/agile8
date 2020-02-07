@@ -1,0 +1,29 @@
+uuid: f0c7427c-85c5-4c4d-82fe-ab16371316a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.objectives
+  module:
+    - panels
+id: objectives-panels_variant-0
+label: Objectives
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: 0a208e85-b0a9-4cd3-a68c-ab5eae4807fe
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: Objectives
+  page_title: Objectives
+  storage_type: page_manager
+  storage_id: objectives-panels_variant-0
+  builder: standard
+page: objectives
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

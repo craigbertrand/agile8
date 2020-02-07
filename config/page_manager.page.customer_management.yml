@@ -1,0 +1,12 @@
+uuid: 89d24441-13da-4f75-8dc2-b3877fd8c8a3
+langcode: en
+status: true
+dependencies: {  }
+id: customer_management
+label: 'Customer Management'
+description: ''
+use_admin_theme: false
+path: /support/customers
+access_logic: and
+access_conditions: {  }
+parameters: {  }

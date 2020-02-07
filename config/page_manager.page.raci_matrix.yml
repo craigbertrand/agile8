@@ -1,0 +1,12 @@
+uuid: db1bac8f-c347-4b64-b82d-f71f652164d0
+langcode: en
+status: true
+dependencies: {  }
+id: raci_matrix
+label: 'RACI Matrix'
+description: ''
+use_admin_theme: false
+path: /management/governance/raci
+access_logic: and
+access_conditions: {  }
+parameters: {  }

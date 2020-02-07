@@ -1,0 +1,12 @@
+uuid: d8e0f9e0-4595-4f10-9b44-c08890649930
+langcode: en
+status: true
+dependencies: {  }
+id: policy
+label: Policy
+description: ''
+use_admin_theme: false
+path: /management/governance/policy
+access_logic: and
+access_conditions: {  }
+parameters: {  }
