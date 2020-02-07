@@ -5,5 +5,11 @@ definitions:
     parent: ''
     weight: 0
     expanded: false
+  'admin_toolbar_tools__extra_links:user__logout':
+    enabled: true
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    expanded: false
+    weight: 10
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

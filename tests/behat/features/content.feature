@@ -35,6 +35,7 @@ Feature: Content
     | name      | status | mail             |
     | Test user |      1 | test@example.com |
     When I am logged in as "Test user"
+    When I click "user"
     Then I should see the link "Log out"
 
   @api
@@ -61,3 +62,4 @@ Feature: Content
     Then I should see the link "Article by Joe"
     When I follow "Article by Joe"
     Then I should see the text "Article by Joe"
+    
