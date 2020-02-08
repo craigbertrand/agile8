@@ -1,0 +1,43 @@
+uuid: 88107749-1db6-4c20-9642-33cd06798cbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.equipment_brand.field_equipbrand_links
+    - field.field.node.equipment_brand.field_equipbrand_logo
+    - node.type.equipment_brand
+  module:
+    - field_formatter_class
+    - image
+    - link
+    - user
+id: node.equipment_brand.default
+targetEntityType: node
+bundle: equipment_brand
+mode: default
+content:
+  field_equipbrand_links:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_equipbrand_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: float-right
+    type: image
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,28 @@
+uuid: 6d7e1a58-80a2-4f36-a9dc-5a5844421009
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipmod_ref_brand
+    - node.type.equipment_brand
+    - node.type.equipment_model
+id: node.equipment_model.field_equipmod_ref_brand
+field_name: field_equipmod_ref_brand
+entity_type: node
+bundle: equipment_model
+label: 'Equipment Model Brand'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      equipment_brand: equipment_brand
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

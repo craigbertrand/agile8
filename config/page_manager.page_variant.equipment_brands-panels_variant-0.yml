@@ -4,13 +4,26 @@ status: true
 dependencies:
   config:
     - page_manager.page.equipment_brands
+    - views.view.equipment_brands
   module:
     - panels
+    - views
 id: equipment_brands-panels_variant-0
 label: 'Equipment Brands'
 variant: panels_variant
 variant_settings:
-  blocks: {  }
+  blocks:
+    cb772087-9c1c-4ec2-861b-893d3654b640:
+      id: 'views_block:equipment_brands-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: cb772087-9c1c-4ec2-861b-893d3654b640
+      context_mapping: {  }
   id: panels_variant
   uuid: 89957e8e-a218-4238-a12a-e7182b4ecabf
   label: null

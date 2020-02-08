@@ -1,0 +1,19 @@
+uuid: 364950a3-3b9f-4366-ac3b-6f9c38f9625a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.equipment
+  module:
+    - user
+id: node.equipment.default
+targetEntityType: node
+bundle: equipment
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

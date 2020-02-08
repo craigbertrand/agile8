@@ -1,6 +1,5 @@
 taxonomies:
   tags: {  }
-blocks: {  }
 menus:
   -
     menu_name: main
@@ -434,3 +433,4 @@ menus:
     weight: '7'
     langcode: en
     uuid: 255e21ee-7c5b-4566-9713-04ffa9bd2fea
+blocks: {  }

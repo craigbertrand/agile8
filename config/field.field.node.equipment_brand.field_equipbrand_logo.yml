@@ -1,0 +1,38 @@
+uuid: a0038ae2-a862-4b40-ba87-510f40cdf8a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipbrand_logo
+    - node.type.equipment_brand
+  module:
+    - image
+id: node.equipment_brand.field_equipbrand_logo
+field_name: field_equipbrand_logo
+entity_type: node
+bundle: equipment_brand
+label: 'Equipment Brand Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/equipment-brand
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

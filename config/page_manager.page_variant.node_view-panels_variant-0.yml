@@ -1,0 +1,62 @@
+uuid: b0912736-6b83-4931-9314-4ad12b1ccdb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - views.view.equipment_models_on_brand
+  module:
+    - ctools
+    - node
+    - panels
+    - views
+id: node_view-panels_variant-0
+label: 'Equipment Brand'
+variant: panels_variant
+variant_settings:
+  blocks:
+    eabd81e0-b9ea-4bef-bc55-5495a1b92485:
+      id: 'views_block:equipment_models_on_brand-block_1'
+      label: Models
+      provider: views
+      label_display: visible
+      views_label: Models
+      items_per_page: none
+      region: middle
+      weight: 0
+      uuid: eabd81e0-b9ea-4bef-bc55-5495a1b92485
+      context_mapping: {  }
+    2aaec6c3-fcab-46f9-841a-22127dbaa823:
+      id: 'entity_view:node'
+      label: 'Brand Full Content'
+      provider: ctools
+      label_display: '0'
+      view_mode: full
+      region: top
+      weight: 0
+      uuid: 2aaec6c3-fcab-46f9-841a-22127dbaa823
+      context_mapping:
+        entity: node
+  id: panels_variant
+  uuid: 1dad2d7c-d331-4192-8888-769ce90357a4
+  label: null
+  weight: 0
+  layout: layout_twocol_bricks
+  layout_settings:
+    label: 'Equipment Brand'
+  page_title: '[node:title]'
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-0
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      equipment_brand: equipment_brand
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

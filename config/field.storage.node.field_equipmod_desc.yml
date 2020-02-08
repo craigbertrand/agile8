@@ -1,0 +1,19 @@
+uuid: 0e714e9c-763b-4af9-9cd5-b9f77030a6c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_equipmod_desc
+field_name: field_equipmod_desc
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

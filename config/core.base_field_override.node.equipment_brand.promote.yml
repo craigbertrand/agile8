@@ -1,0 +1,22 @@
+uuid: 1c5a8419-f40c-4421-ac1b-0e534be190a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.equipment_brand
+id: node.equipment_brand.promote
+field_name: promote
+entity_type: node
+bundle: equipment_brand
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: dcba6e43-ae19-4635-ba53-463e3e79a3b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.equipment_brand.field_equipbrand_links
+    - field.field.node.equipment_brand.field_equipbrand_logo
+    - node.type.equipment_brand
+  module:
+    - user
+id: node.equipment_brand.teaser
+targetEntityType: node
+bundle: equipment_brand
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_equipbrand_links: true
+  field_equipbrand_logo: true

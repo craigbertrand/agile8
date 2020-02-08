@@ -1,0 +1,30 @@
+uuid: e18db50d-9748-457a-8121-fff40510de6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.equipment_model.field_equipmod_checkpoints
+    - field.field.node.equipment_model.field_equipmod_desc
+    - field.field.node.equipment_model.field_equipmod_image
+    - field.field.node.equipment_model.field_equipmod_links
+    - field.field.node.equipment_model.field_equipmod_ref_brand
+    - node.type.equipment_model
+  module:
+    - user
+id: node.equipment_model.teaser
+targetEntityType: node
+bundle: equipment_model
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_equipmod_checkpoints: true
+  field_equipmod_desc: true
+  field_equipmod_image: true
+  field_equipmod_links: true
+  field_equipmod_ref_brand: true

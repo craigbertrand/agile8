@@ -1,0 +1,17 @@
+uuid: 63c843d3-3cc6-4e24-a2b6-26d805f3f10f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Equipment Brand'
+type: equipment_brand
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

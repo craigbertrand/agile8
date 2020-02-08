@@ -1,0 +1,18 @@
+uuid: 57a044ad-3735-47d8-a426-9d25838190b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.equipment_brand
+id: node.equipment_brand.title
+field_name: title
+entity_type: node
+bundle: equipment_brand
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
