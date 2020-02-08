@@ -30,6 +30,7 @@
         "drupal/page_manager": "4.0-beta4",
         "drupal/panels": "4.4.0",
         "drupal/prepopulate": "2.2.0",
+        "drupal/radix_layouts": "4.1.0",
         "drupal/rules": "3.x-dev",
         "drupal/structure_sync": "1.16.0",
         "drupal/token": "1.6.0",
