@@ -1,0 +1,12 @@
+uuid: b99eaf63-0075-4a44-ac65-3c1afdaa7d71
+langcode: en
+status: true
+dependencies: {  }
+id: equipment_inspections
+label: 'Equipment Inspections'
+description: ''
+use_admin_theme: false
+path: /support/equipment/inspections
+access_logic: and
+access_conditions: {  }
+parameters: {  }

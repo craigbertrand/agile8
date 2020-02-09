@@ -23,7 +23,7 @@ variant_settings:
   storage_id: dashboard-panels_variant-0
   builder: standard
 page: dashboard
-weight: 0
+weight: -9
 selection_criteria: {  }
 selection_logic: and
 static_context: {  }

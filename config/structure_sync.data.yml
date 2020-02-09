@@ -1,5 +1,6 @@
 taxonomies:
   equipment_model_tags: {  }
+blocks: {  }
 menus:
   -
     menu_name: main
@@ -421,4 +422,15 @@ menus:
     weight: '7'
     langcode: en
     uuid: 255e21ee-7c5b-4566-9713-04ffa9bd2fea
-blocks: {  }
+  -
+    menu_name: main
+    title: 'Equipment Inspections'
+    parent: 'menu_link_content:b2f18a2d-1652-49a7-84e4-c081a341f49b'
+    uri: 'internal:/support/equipment/inspections'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '1'
+    langcode: en
+    uuid: 392633d3-688e-435e-9139-e579c197a8b8

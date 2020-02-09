@@ -9,10 +9,10 @@ dependencies:
     - node
     - user
 id: equipment
-label: Equipment
+label: 'Equipment List'
 module: views
 description: ''
-tag: ''
+tag: equipment
 base_table: node_field_data
 base_field: nid
 display:
@@ -484,7 +484,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Equipment
+      title: 'Equipment List'
       header:
         area_text_custom:
           id: area_text_custom

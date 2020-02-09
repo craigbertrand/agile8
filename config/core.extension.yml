@@ -1,4 +1,5 @@
 module:
+  require_login: -1000
   address: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
@@ -6,6 +7,7 @@ module:
   adminimal_admin_toolbar: 0
   auto_entitylabel: 0
   automated_cron: 0
+  better_exposed_filters: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -14,10 +16,12 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_pages: 0
   contact: 0
   contextual: 0
   ctools: 0
   ctools_block: 0
+  ctools_views: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -34,7 +38,9 @@ module:
   layout_discovery: 0
   link: 0
   menu_ui: 0
+  name: 0
   node: 0
+  node_view_permissions: 0
   options: 0
   page_cache: 0
   page_manager: 0
@@ -42,12 +48,14 @@ module:
   panels: 0
   path: 0
   path_alias: 0
+  permissions_filter: 0
   prepopulate: 0
   quickedit: 0
   radix_layouts: 0
   rdf: 0
   rules: 0
   search: 0
+  serial: 0
   shortcut: 0
   structure_sync: 0
   system: 0
@@ -63,6 +71,7 @@ module:
   user: 0
   views_ui: 0
   menu_link_content: 1
+  pathauto: 1
   views: 10
   standard: 1000
 theme:

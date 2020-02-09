@@ -1,0 +1,22 @@
+uuid: 3c78bf25-ebb4-4c23-bf29-f7abd1d6c18e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: equipment_model
+label: 'Equipment Model'
+type: 'canonical_entities:node'
+pattern: 'support/equipment/models/[node:title]'
+selection_criteria:
+  9d36918e-2302-4f90-b43f-bcea693dd9a7:
+    id: node_type
+    bundles:
+      equipment_model: equipment_model
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9d36918e-2302-4f90-b43f-bcea693dd9a7
+selection_logic: and
+weight: -5
+relationships: {  }

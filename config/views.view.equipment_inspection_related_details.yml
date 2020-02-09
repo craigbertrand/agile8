@@ -14,10 +14,10 @@ dependencies:
     - text
     - user
 id: equipment_inspection_related_details
-label: 'Equipment Inspection Related Details'
+label: 'Equipment Inspection Related Details on Inspection'
 module: views
 description: ''
-tag: ''
+tag: equipment
 base_table: node_field_data
 base_field: nid
 display:
@@ -279,7 +279,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts: {  }
-      title: 'Equipment Inspection Related Details'
+      title: 'Equipment Inspection Related Details on Inspection'
       header: {  }
       footer: {  }
       empty: {  }
@@ -349,6 +349,7 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

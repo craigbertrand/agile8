@@ -1,19 +1,22 @@
-uuid: c9038335-41da-4b8a-bfeb-a7ff88d54d35
+uuid: 8ef12274-b2f0-41c3-a164-d8466da1aaa3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_equipmod_desc
-    - field.storage.node.field_equipmod_image
-    - image.style.medium
-    - node.type.equipment_model
+    - field.storage.node.field_equip_inspection_condition
+    - field.storage.node.field_equip_inspection_date
+    - field.storage.node.field_equip_inspection_fit
+    - field.storage.node.field_equip_inspection_notes
+    - field.storage.node.field_equip_inspection_xdate
+    - node.type.equipment_inspection
   module:
-    - image
+    - datetime
     - node
+    - options
     - text
     - user
-id: equipment_models_on_brand
-label: 'Equipment Models on Brand'
+id: equipment_inspections_on_equipment
+label: 'Equipment Inspections on Equipment'
 module: views
 description: ''
 tag: equipment
@@ -65,7 +68,7 @@ display:
           id: nid
           table: node_field_data
           field: nid
-          relationship: field_equipmod_ref_brand
+          relationship: field_equip_inspection_ref_equip
           group_type: group
           admin_label: ''
           label: ID
@@ -127,14 +130,14 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: field
-        field_equipmod_image:
-          id: field_equipmod_image
-          table: node__field_equipmod_image
-          field: field_equipmod_image
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          label: Image
+          label: Inspection
           exclude: false
           alter:
             alter_text: false
@@ -156,70 +159,6 @@ display:
             max_length: 0
             word_boundary: true
             ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: medium
-            image_link: content
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Model Number'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -256,14 +195,14 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_equipmod_desc:
-          id: field_equipmod_desc
-          table: node__field_equipmod_desc
-          field: field_equipmod_desc
+        field_equip_inspection_date:
+          id: field_equip_inspection_date
+          table: node__field_equip_inspection_date
+          field: field_equip_inspection_date
           relationship: none
           group_type: group
           admin_label: ''
-          label: Description
+          label: 'Inspection Date'
           exclude: false
           alter:
             alter_text: false
@@ -305,9 +244,263 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_trimmed
+          type: datetime_default
           settings:
-            trim_length: 300
+            timezone_override: ''
+            format_type: html_date
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_equip_inspection_condition:
+          id: field_equip_inspection_condition
+          table: node__field_equip_inspection_condition
+          field: field_equip_inspection_condition
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Condition
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_equip_inspection_fit:
+          id: field_equip_inspection_fit
+          table: node__field_equip_inspection_fit
+          field: field_equip_inspection_fit
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Fit for Service'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: yes-no
+            format_custom_true: ''
+            format_custom_false: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_equip_inspection_xdate:
+          id: field_equip_inspection_xdate
+          table: node__field_equip_inspection_xdate
+          field: field_equip_inspection_xdate
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Expiration Date'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: html_date
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_equip_inspection_notes:
+          id: field_equip_inspection_notes
+          table: node__field_equip_inspection_notes
+          field: field_equip_inspection_notes
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Notes
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -393,7 +586,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            equipment_model: equipment_model
+            equipment_inspection: equipment_inspection
           group: 1
           exposed: false
           expose:
@@ -426,65 +619,8 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: contains
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: title_op
-            label: 'Model Number'
-            description: ''
-            use_operator: false
-            operator: title_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: title
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
-      sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          order: ASC
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-      title: 'Equipment Models on Brand'
+      sorts: {  }
+      title: 'Equipment Inspections on Equipment'
       header:
         area_text_custom:
           id: area_text_custom
@@ -495,7 +631,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: true
-          content: '<a href="/node/add/equipment_model?edit[field_equipmod_ref_brand][widget][0][target_id]={{ raw_arguments.nid }}&destination=node/{{ raw_arguments.nid }}" class="button button--primary float-right">Add Model</a>'
+          content: '<a href="/node/add/equipment?edit[field_equip_inspection_ref_equip][widget][0][target_id]={{ raw_arguments.nid }}&destination=node/{{ raw_arguments.nid }}" class="button button--primary float-right">Add Inspection</a>'
           plugin_id: text_custom
       footer:
         area_text_custom:
@@ -507,7 +643,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: '<a href="/node/add/equipment_model?edit[field_equipmod_ref_brand][widget][0][target_id]={{ raw_arguments.nid }}&destination=node/{{ raw_arguments.nid }}" class="button button--primary float-right">Add Model</a>'
+          content: '<a href="/node/add/equipment?edit[field_equip_inspection_ref_equip][widget][0][target_id]={{ raw_arguments.nid }}&destination=node/{{ raw_arguments.nid }}" class="button button--primary float-right">Add Inspection</a>'
           plugin_id: text_custom
       empty:
         area:
@@ -524,13 +660,13 @@ display:
             format: basic_html
           plugin_id: text
       relationships:
-        field_equipmod_ref_brand:
-          id: field_equipmod_ref_brand
-          table: node__field_equipmod_ref_brand
-          field: field_equipmod_ref_brand
+        field_equip_inspection_ref_equip:
+          id: field_equip_inspection_ref_equip
+          table: node__field_equip_inspection_ref_equip
+          field: field_equip_inspection_ref_equip
           relationship: none
           group_type: group
-          admin_label: brand
+          admin_label: equipment
           required: false
           plugin_id: standard
       arguments:
@@ -538,7 +674,7 @@ display:
           id: nid
           table: node_field_data
           field: nid
-          relationship: field_equipmod_ref_brand
+          relationship: field_equip_inspection_ref_equip
           group_type: group
           admin_label: ''
           default_action: default
@@ -581,8 +717,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_equipmod_desc'
-        - 'config:field.storage.node.field_equipmod_image'
+        - 'config:field.storage.node.field_equip_inspection_condition'
+        - 'config:field.storage.node.field_equip_inspection_date'
+        - 'config:field.storage.node.field_equip_inspection_fit'
+        - 'config:field.storage.node.field_equip_inspection_notes'
+        - 'config:field.storage.node.field_equip_inspection_xdate'
   block_1:
     display_plugin: block
     id: block_1
@@ -600,5 +739,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_equipmod_desc'
-        - 'config:field.storage.node.field_equipmod_image'
+        - 'config:field.storage.node.field_equip_inspection_condition'
+        - 'config:field.storage.node.field_equip_inspection_date'
+        - 'config:field.storage.node.field_equip_inspection_fit'
+        - 'config:field.storage.node.field_equip_inspection_notes'
+        - 'config:field.storage.node.field_equip_inspection_xdate'
