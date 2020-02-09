@@ -6,5 +6,5 @@ Feature: Visibility of the home page
 
   Scenario: Verify the homepage
     When I am on the homepage
-    Then I should be on the homepage
+    Then I should be on /user/login
     And the response status code should be 200
