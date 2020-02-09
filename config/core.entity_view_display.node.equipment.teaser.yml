@@ -1,0 +1,24 @@
+uuid: bc4269b0-f695-48c3-9f67-ea0eebb791c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.equipment.field_equip_ref_model
+    - field.field.node.equipment.field_equip_serial_number
+    - node.type.equipment
+  module:
+    - user
+id: node.equipment.teaser
+targetEntityType: node
+bundle: equipment
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_equip_ref_model: true
+  field_equip_serial_number: true

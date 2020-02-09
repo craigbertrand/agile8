@@ -1,0 +1,19 @@
+uuid: a9c01fcd-3bfa-4f79-b6c9-b9fa4dedbffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipmod_number
+    - node.type.equipment_model
+id: node.equipment_model.field_equipmod_number
+field_name: field_equipmod_number
+entity_type: node
+bundle: equipment_model
+label: 'Equipment Model Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

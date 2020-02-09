@@ -1,0 +1,18 @@
+uuid: 50f40088-8c88-47d5-baeb-2a1d31a9243b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.equipment_model
+id: node.equipment_model.title
+field_name: title
+entity_type: node
+bundle: equipment_model
+label: 'Model Number'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -4,6 +4,7 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
+  auto_entitylabel: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -16,11 +17,13 @@ module:
   contact: 0
   contextual: 0
   ctools: 0
+  ctools_block: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_formatter_class: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -41,6 +44,7 @@ module:
   path_alias: 0
   prepopulate: 0
   quickedit: 0
+  radix_layouts: 0
   rdf: 0
   rules: 0
   search: 0

@@ -1,0 +1,29 @@
+uuid: f89a778e-38df-446a-a364-3e0a57dadc8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.management_systems
+  module:
+    - panels
+id: management_systems-panels_variant-0
+label: 'Management Systems'
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: 6ebde38e-514e-4ed4-974c-ec8a77719ba2
+  label: null
+  weight: 0
+  layout: radix_moscone_flipped
+  layout_settings:
+    label: 'Management Systems'
+  page_title: 'Management Systems'
+  storage_type: page_manager
+  storage_id: management_systems-panels_variant-0
+  builder: standard
+page: management_systems
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

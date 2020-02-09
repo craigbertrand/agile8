@@ -1,0 +1,21 @@
+uuid: 51bc00d0-d516-44ea-a9d5-69d58ea33373
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipmod_checkpoints
+    - node.type.equipment_model
+  module:
+    - text
+id: node.equipment_model.field_equipmod_checkpoints
+field_name: field_equipmod_checkpoints
+entity_type: node
+bundle: equipment_model
+label: 'Equipment Model Check Points'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

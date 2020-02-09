@@ -1,6 +1,3 @@
-taxonomies:
-  tags: {  }
-blocks: {  }
 menus:
   -
     menu_name: main
@@ -338,18 +335,6 @@ menus:
     weight: '3'
     langcode: en
     uuid: b1a05d80-0768-4788-971c-72e95011d3a0
-  -
-    menu_name: main
-    title: Customers
-    parent: 'menu_link_content:b1a05d80-0768-4788-971c-72e95011d3a0'
-    uri: 'internal:/support/customers/customers'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: en
-    uuid: 9705c9ea-7b43-4bd5-9704-3e41205b7820
   -
     menu_name: main
     title: Financials

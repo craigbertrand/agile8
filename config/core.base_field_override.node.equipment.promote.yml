@@ -1,0 +1,22 @@
+uuid: e0a0d8b9-f380-4107-ac5c-9e6ab798871a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.equipment
+id: node.equipment.promote
+field_name: promote
+entity_type: node
+bundle: equipment
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,29 @@
+uuid: 44424a32-60b6-4140-b32f-e24197f867c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipmod_tags
+    - node.type.equipment_model
+    - taxonomy.vocabulary.equipment_model_tags
+id: node.equipment_model.field_equipmod_tags
+field_name: field_equipmod_tags
+entity_type: node
+bundle: equipment_model
+label: 'Equipment Model Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      equipment_model_tags: equipment_model_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
