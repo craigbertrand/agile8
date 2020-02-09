@@ -20,15 +20,4 @@ Feature: Content
     When I am logged in as "Test user"
     When I click "user"
     Then I should see the link "Log out"
-
-  @api
-  Scenario: Create many terms
-    Given "tags" terms:
-    | name    |
-    | Tag one |
-    | Tag two |
-    And I am logged in as a user with the "administrator" role
-    When I go to "admin/structure/taxonomy/manage/tags/overview"
-    Then I should see "Tag one"
-    And I should see "Tag two"
     
