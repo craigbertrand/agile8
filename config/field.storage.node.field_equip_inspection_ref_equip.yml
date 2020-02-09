@@ -1,0 +1,19 @@
+uuid: d459a77e-8981-44b0-b742-c3c866807774
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_equip_inspection_ref_equip
+field_name: field_equip_inspection_ref_equip
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

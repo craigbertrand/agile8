@@ -11,10 +11,10 @@ dependencies:
     - node
     - user
 id: equipment_brand_information_block
-label: 'Equipment Brand Information Block'
+label: 'Equipment Brand Information on Model'
 module: views
 description: ''
-tag: ''
+tag: equipment
 base_table: node_field_data
 base_field: nid
 display:
@@ -105,7 +105,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: float-right
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -174,7 +174,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Equipment Brand Information Block'
+      title: 'Equipment Brand Information on Model'
       header: {  }
       footer: {  }
       empty: {  }

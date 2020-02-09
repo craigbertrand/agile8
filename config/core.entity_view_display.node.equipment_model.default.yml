@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.equipment_model.field_equipmod_checkpoints
     - field.field.node.equipment_model.field_equipmod_desc
     - field.field.node.equipment_model.field_equipmod_image
+    - field.field.node.equipment_model.field_equipmod_inspect_interval
     - field.field.node.equipment_model.field_equipmod_links
     - field.field.node.equipment_model.field_equipmod_number
     - field.field.node.equipment_model.field_equipmod_ref_brand
@@ -15,6 +16,7 @@ dependencies:
   module:
     - field_formatter_class
     - image
+    - interval
     - link
     - text
     - user
@@ -49,6 +51,13 @@ content:
       field_formatter_class:
         class: ''
     type: image
+    region: content
+  field_equipmod_inspect_interval:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: interval_default
     region: content
   field_equipmod_links:
     weight: 2

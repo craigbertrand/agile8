@@ -13,10 +13,10 @@ dependencies:
     - node
     - user
 id: equipment_brands
-label: 'Equipment Brands'
+label: 'Equipment Brands List'
 module: views
 description: ''
-tag: ''
+tag: equipment
 base_table: node_field_data
 base_field: nid
 display:

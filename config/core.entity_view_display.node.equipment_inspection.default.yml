@@ -1,0 +1,78 @@
+uuid: b8b83b52-3abb-4a1d-a1d2-05e114f884ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.equipment_inspection.field_equip_inspection_condition
+    - field.field.node.equipment_inspection.field_equip_inspection_date
+    - field.field.node.equipment_inspection.field_equip_inspection_fit
+    - field.field.node.equipment_inspection.field_equip_inspection_notes
+    - field.field.node.equipment_inspection.field_equip_inspection_ref_equip
+    - field.field.node.equipment_inspection.field_equip_inspection_xdate
+    - node.type.equipment_inspection
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.equipment_inspection.default
+targetEntityType: node
+bundle: equipment_inspection
+mode: default
+content:
+  field_equip_inspection_condition:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_equip_inspection_date:
+    weight: 101
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_equip_inspection_fit:
+    weight: 102
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_equip_inspection_notes:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_equip_inspection_ref_equip:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_equip_inspection_xdate:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 71e53e6e-2ea7-4a1a-8ef5-b1a33aa2029a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equip_inspection_xdate
+    - node.type.equipment_inspection
+  module:
+    - datetime
+id: node.equipment_inspection.field_equip_inspection_xdate
+field_name: field_equip_inspection_xdate
+entity_type: node
+bundle: equipment_inspection
+label: 'Equipment Inspection Expiration Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+180 days'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

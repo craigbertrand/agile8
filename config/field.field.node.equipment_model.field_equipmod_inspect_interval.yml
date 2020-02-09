@@ -1,0 +1,24 @@
+uuid: 26f1ac62-c4ef-4e51-b2a8-1eebaba07e01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipmod_inspect_interval
+    - node.type.equipment_model
+  module:
+    - interval
+id: node.equipment_model.field_equipmod_inspect_interval
+field_name: field_equipmod_inspect_interval
+entity_type: node
+bundle: equipment_model
+label: 'Equipment Model Inspection Interval'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    interval: '6'
+    period: month
+default_value_callback: ''
+settings: {  }
+field_type: interval

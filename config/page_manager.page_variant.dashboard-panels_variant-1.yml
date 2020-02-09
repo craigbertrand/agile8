@@ -1,0 +1,46 @@
+uuid: c8a1a88b-d937-4030-9ff2-5abfec6af0af
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.dashboard
+  module:
+    - panels
+    - user
+id: dashboard-panels_variant-1
+label: 'Dashboard Unauthenticated'
+variant: panels_variant
+variant_settings:
+  blocks:
+    57fd59bd-d78c-4946-8a0d-bb3ac5e8eeb5:
+      id: user_login_block
+      label: 'User login'
+      provider: user
+      label_display: visible
+      region: sidebar
+      weight: 0
+      uuid: 57fd59bd-d78c-4946-8a0d-bb3ac5e8eeb5
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 006f81e2-41c3-405d-91ca-3ef311fdd822
+  label: null
+  weight: 0
+  layout: radix_moscone_flipped
+  layout_settings:
+    label: 'Dashboard Unauthenticated'
+  page_title: Dashboard
+  storage_type: page_manager
+  storage_id: dashboard-panels_variant-1
+  builder: standard
+page: dashboard
+weight: -10
+selection_criteria:
+  -
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: true
+    context_mapping:
+      user: current_user
+selection_logic: and
+static_context: {  }

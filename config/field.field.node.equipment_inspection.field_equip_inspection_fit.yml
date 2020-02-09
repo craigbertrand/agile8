@@ -1,0 +1,23 @@
+uuid: 064407cc-89f0-42fb-bbf3-471e080b6975
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equip_inspection_fit
+    - node.type.equipment_inspection
+id: node.equipment_inspection.field_equip_inspection_fit
+field_name: field_equip_inspection_fit
+entity_type: node
+bundle: equipment_inspection
+label: 'Equipment Inspection Fit for Service'
+description: 'Is the equipment fit for service?'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Fit
+  off_label: Unfit
+field_type: boolean

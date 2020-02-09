@@ -1,0 +1,42 @@
+uuid: cdb2fc8c-4bd3-46cb-b6c2-459408d2760e
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.equipment_inspections
+    - views.view.equipment_inspection_list
+  module:
+    - panels
+    - views
+id: equipment_inspections-panels_variant-0
+label: 'Equipment Inspections'
+variant: panels_variant
+variant_settings:
+  blocks:
+    eac30c7e-b6dd-4e9e-9ee5-8d3f64a9639d:
+      id: 'views_block:equipment_inspection_list-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: contentmain
+      weight: 0
+      uuid: eac30c7e-b6dd-4e9e-9ee5-8d3f64a9639d
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 9f5cb790-57af-4877-b939-cd8687e8e289
+  label: null
+  weight: 0
+  layout: radix_boxton
+  layout_settings:
+    label: 'Equipment Inspections'
+  page_title: 'Equipment Inspections'
+  storage_type: page_manager
+  storage_id: equipment_inspections-panels_variant-0
+  builder: standard
+page: equipment_inspections
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

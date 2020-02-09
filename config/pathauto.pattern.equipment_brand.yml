@@ -1,0 +1,22 @@
+uuid: 999bf9db-ed26-4ba9-9718-e6a2b7cbec01
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: equipment_brand
+label: 'Equipment Brand'
+type: 'canonical_entities:node'
+pattern: 'support/equipment/brands/[node:title]'
+selection_criteria:
+  98ef847c-12f2-4fac-9b5d-113482daef61:
+    id: node_type
+    bundles:
+      equipment_brand: equipment_brand
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 98ef847c-12f2-4fac-9b5d-113482daef61
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+uuid: a123f543-5be8-48d0-ba3a-a3fb3a4a27c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: equipment_inspection
+label: 'Equipment Inspection'
+type: 'canonical_entities:node'
+pattern: 'support/equipment/inspections/[node:title]'
+selection_criteria:
+  6f5e470c-1c93-4183-aa9d-84854dbb9451:
+    id: node_type
+    bundles:
+      equipment_inspection: equipment_inspection
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6f5e470c-1c93-4183-aa9d-84854dbb9451
+selection_logic: and
+weight: -5
+relationships: {  }

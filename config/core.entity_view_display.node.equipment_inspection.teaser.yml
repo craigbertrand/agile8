@@ -1,0 +1,32 @@
+uuid: ac919b40-4459-4cba-b6e7-13d4bb9db619
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.equipment_inspection.field_equip_inspection_condition
+    - field.field.node.equipment_inspection.field_equip_inspection_date
+    - field.field.node.equipment_inspection.field_equip_inspection_fit
+    - field.field.node.equipment_inspection.field_equip_inspection_notes
+    - field.field.node.equipment_inspection.field_equip_inspection_ref_equip
+    - field.field.node.equipment_inspection.field_equip_inspection_xdate
+    - node.type.equipment_inspection
+  module:
+    - user
+id: node.equipment_inspection.teaser
+targetEntityType: node
+bundle: equipment_inspection
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_equip_inspection_condition: true
+  field_equip_inspection_date: true
+  field_equip_inspection_fit: true
+  field_equip_inspection_notes: true
+  field_equip_inspection_ref_equip: true
+  field_equip_inspection_xdate: true

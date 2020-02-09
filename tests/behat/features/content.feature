@@ -11,13 +11,3 @@ Feature: Content
     And I am logged in as a user with the "administrator" role
     When I visit "admin/people"
     Then I should see the link "Joe User"
-
-  @api
-  Scenario: Login as a user created during this scenario
-    Given users:
-    | name      | status | mail             |
-    | Test user |      1 | test@example.com |
-    When I am logged in as "Test user"
-    When I click "user"
-    Then I should see the link "Log out"
-    

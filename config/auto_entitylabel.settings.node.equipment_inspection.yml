@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:nid]'
+escape: false
+dependencies:
+  config:
+    - node.type.equipment_inspection
