@@ -316,7 +316,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: true
-          content: '<a href="/node/add/equipment?edit[field_equip_ref_model][widget][0][target_id]={{ nid }}&destination=node/{{ nid }}" class="button button--primary float-right">Add Equipment</a>'
+          content: '<a href="/node/add/equipment?edit[field_equip_ref_model][widget][0][target_id]={{ arguments.field_equip_ref_model_target_id }}&destination=node/{{ arguments.field_equip_ref_model_target_id }}" class="button button--primary float-right">Add Equipment</a>'
           plugin_id: text_custom
       footer:
         area_text_custom:
@@ -328,7 +328,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: '<a href="/node/add/equipment?edit[field_equip_ref_model][widget][0][target_id]={{ nid }}&destination=node/{{ nid }}" class="button button--primary float-right">Add Equipment</a>'
+          content: '<a href="/node/add/equipment?edit[field_equip_ref_model][widget][0][target_id]={{ arguments.field_equip_ref_model_target_id }}&destination=node/{{ arguments.field_equip_ref_model_target_id }}" class="button button--primary float-right">Add Equipment</a>'
           plugin_id: text_custom
       empty:
         area:
