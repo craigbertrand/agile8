@@ -631,7 +631,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: true
-          content: '<a href="/node/add/equipment?edit[field_equip_inspection_ref_equip][widget][0][target_id]={{ raw_arguments.nid }}&destination=node/{{ raw_arguments.nid }}" class="button button--primary float-right">Add Inspection</a>'
+          content: '<a href="/node/add/equipment_inspection?edit[field_equip_inspection_ref_equip][widget][0][target_id]={{ raw_arguments.nid }}&destination=node/{{ raw_arguments.nid }}" class="button button--primary float-right">Add Inspection</a>'
           plugin_id: text_custom
       footer:
         area_text_custom:
@@ -643,7 +643,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: '<a href="/node/add/equipment?edit[field_equip_inspection_ref_equip][widget][0][target_id]={{ raw_arguments.nid }}&destination=node/{{ raw_arguments.nid }}" class="button button--primary float-right">Add Inspection</a>'
+          content: '<a href="/node/add/equipment_inspection?edit[field_equip_inspection_ref_equip][widget][0][target_id]={{ raw_arguments.nid }}&destination=node/{{ raw_arguments.nid }}" class="button button--primary float-right">Add Inspection</a>'
           plugin_id: text_custom
       empty:
         area:
