@@ -8,17 +8,26 @@ dependencies:
     - field.field.node.equipment_brand.field_equipbrand_logo
     - node.type.equipment_brand
   module:
+    - image
     - user
 id: node.equipment_brand.teaser
 targetEntityType: node
 bundle: equipment_brand
 mode: teaser
 content:
+  field_equipbrand_logo:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_equipbrand_links: true
-  field_equipbrand_logo: true

@@ -1,0 +1,130 @@
+uuid: 5954dc8b-eb5f-475e-8a58-8b6cf51f710c
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - views.view.equipment_brand_information_block
+    - views.view.equipment_on_model
+  module:
+    - ctools
+    - ctools_block
+    - panels
+    - views
+id: node_view-panels_variant-1
+label: 'Equipment Model'
+variant: panels_variant
+variant_settings:
+  blocks:
+    88729236-cb91-49fe-bdb7-2858fc258863:
+      id: 'entity_field:node:field_equipmod_checkpoints'
+      label: 'Check Points'
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: hidden
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: footer
+      weight: -1
+      uuid: 88729236-cb91-49fe-bdb7-2858fc258863
+      context_mapping:
+        entity: node
+    ca9a183a-bf46-4ad9-8b31-57cec79094d0:
+      id: 'entity_field:node:field_equipmod_image'
+      label: 'Equipment Model Image'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: image
+        settings:
+          image_style: medium
+          image_link: ''
+        third_party_settings: {  }
+        weight: 0
+      region: sidebar
+      weight: 0
+      uuid: ca9a183a-bf46-4ad9-8b31-57cec79094d0
+      context_mapping:
+        entity: node
+    de3b7e18-dcbc-443e-b8bd-703f092f7a23:
+      id: 'entity_field:node:field_equipmod_desc'
+      label: 'Equipment Model Description'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: contentmain
+      weight: -10
+      uuid: de3b7e18-dcbc-443e-b8bd-703f092f7a23
+      context_mapping:
+        entity: node
+    7705fad7-29f0-43ca-a4d0-6fbbd63e407c:
+      id: 'views_block:equipment_brand_information_block-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: sidebar
+      weight: 0
+      uuid: 7705fad7-29f0-43ca-a4d0-6fbbd63e407c
+      context_mapping: {  }
+    48a25c85-b78f-4b02-a4dd-b26d14ee8b7d:
+      id: 'entity_field:node:field_equipmod_number'
+      label: 'Model Number'
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: hidden
+        type: string
+        settings:
+          link_to_entity: false
+        third_party_settings: {  }
+        weight: 0
+      region: header
+      weight: 0
+      uuid: 48a25c85-b78f-4b02-a4dd-b26d14ee8b7d
+      context_mapping:
+        entity: node
+    0437c012-3ebc-4a57-9c98-5de171e3e8a7:
+      id: 'views_block:equipment_on_model-block_1'
+      label: Equipment
+      provider: views
+      label_display: visible
+      views_label: Equipment
+      items_per_page: none
+      region: footer
+      weight: -2
+      uuid: 0437c012-3ebc-4a57-9c98-5de171e3e8a7
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 8478ea75-8caf-4a61-bf26-e474be1e3815
+  label: null
+  weight: 0
+  layout: radix_moscone_flipped
+  layout_settings:
+    label: 'Equipment Model'
+  page_title: '[node:title]'
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-1
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      equipment_model: equipment_model
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

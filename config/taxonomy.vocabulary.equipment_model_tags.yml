@@ -1,0 +1,8 @@
+uuid: 227b3afc-0926-4d51-b0d6-40632db2a240
+langcode: en
+status: true
+dependencies: {  }
+name: 'Equipment Model Tags'
+vid: equipment_model_tags
+description: ''
+weight: 0

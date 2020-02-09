@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.equipment.field_equip_ref_model
+    - field.field.node.equipment.field_equip_serial_number
     - node.type.equipment
   module:
     - user
@@ -17,4 +19,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_equip_ref_model: true
+  field_equip_serial_number: true

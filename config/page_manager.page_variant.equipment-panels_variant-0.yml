@@ -4,13 +4,26 @@ status: true
 dependencies:
   config:
     - page_manager.page.equipment
+    - views.view.equipment
   module:
     - panels
+    - views
 id: equipment-panels_variant-0
 label: Equipment
 variant: panels_variant
 variant_settings:
-  blocks: {  }
+  blocks:
+    380ea84e-efe9-4e00-9fe8-b7e65a3f4584:
+      id: 'views_block:equipment-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 380ea84e-efe9-4e00-9fe8-b7e65a3f4584
+      context_mapping: {  }
   id: panels_variant
   uuid: 1e6d02fb-5c75-4477-869d-33aa82a0dde5
   label: null

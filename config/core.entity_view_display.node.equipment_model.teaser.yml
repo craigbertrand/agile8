@@ -8,7 +8,9 @@ dependencies:
     - field.field.node.equipment_model.field_equipmod_desc
     - field.field.node.equipment_model.field_equipmod_image
     - field.field.node.equipment_model.field_equipmod_links
+    - field.field.node.equipment_model.field_equipmod_number
     - field.field.node.equipment_model.field_equipmod_ref_brand
+    - field.field.node.equipment_model.field_equipmod_tags
     - node.type.equipment_model
   module:
     - user
@@ -27,4 +29,6 @@ hidden:
   field_equipmod_desc: true
   field_equipmod_image: true
   field_equipmod_links: true
+  field_equipmod_number: true
   field_equipmod_ref_brand: true
+  field_equipmod_tags: true

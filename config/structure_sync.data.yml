@@ -1,5 +1,3 @@
-taxonomies:
-  tags: {  }
 menus:
   -
     menu_name: main
@@ -339,18 +337,6 @@ menus:
     uuid: b1a05d80-0768-4788-971c-72e95011d3a0
   -
     menu_name: main
-    title: Customers
-    parent: 'menu_link_content:b1a05d80-0768-4788-971c-72e95011d3a0'
-    uri: 'internal:/support/customers/customers'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: en
-    uuid: 9705c9ea-7b43-4bd5-9704-3e41205b7820
-  -
-    menu_name: main
     title: Financials
     parent: 'menu_link_content:2f91f6d3-07ef-4794-8842-c0462a21b871'
     uri: 'internal:/support/financials'
@@ -433,4 +419,3 @@ menus:
     weight: '7'
     langcode: en
     uuid: 255e21ee-7c5b-4566-9713-04ffa9bd2fea
-blocks: {  }

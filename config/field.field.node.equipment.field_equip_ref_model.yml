@@ -1,0 +1,28 @@
+uuid: 518f48a6-7990-45e2-9a58-617e6e5b93ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equip_ref_model
+    - node.type.equipment
+    - node.type.equipment_model
+id: node.equipment.field_equip_ref_model
+field_name: field_equip_ref_model
+entity_type: node
+bundle: equipment
+label: 'Equipment Model'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      equipment_model: equipment_model
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

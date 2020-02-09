@@ -1,0 +1,12 @@
+uuid: f77f9619-6887-406c-9c90-042c85977df3
+langcode: en
+status: true
+dependencies: {  }
+id: operational_systems
+label: 'Operational Systems'
+description: ''
+use_admin_theme: false
+path: /operations
+access_logic: and
+access_conditions: {  }
+parameters: {  }

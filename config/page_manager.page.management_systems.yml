@@ -1,0 +1,12 @@
+uuid: 5b008ffc-641a-48f1-ab05-58a5c3739001
+langcode: en
+status: true
+dependencies: {  }
+id: management_systems
+label: 'Management Systems'
+description: ''
+use_admin_theme: false
+path: /management
+access_logic: and
+access_conditions: {  }
+parameters: {  }
