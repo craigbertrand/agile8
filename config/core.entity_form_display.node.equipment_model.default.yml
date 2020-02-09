@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.equipment_model.field_equipmod_checkpoints
     - field.field.node.equipment_model.field_equipmod_desc
     - field.field.node.equipment_model.field_equipmod_image
+    - field.field.node.equipment_model.field_equipmod_inspect_interval
     - field.field.node.equipment_model.field_equipmod_links
     - field.field.node.equipment_model.field_equipmod_number
     - field.field.node.equipment_model.field_equipmod_ref_brand
@@ -14,6 +15,7 @@ dependencies:
     - node.type.equipment_model
   module:
     - image
+    - interval
     - link
     - path
     - text
@@ -51,6 +53,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_equipmod_inspect_interval:
+    weight: 128
+    settings:
+      allowed_periods: {  }
+    third_party_settings: {  }
+    type: interval_default
     region: content
   field_equipmod_links:
     weight: 124

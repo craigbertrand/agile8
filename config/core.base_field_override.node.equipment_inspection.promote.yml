@@ -1,0 +1,22 @@
+uuid: a8e3cb82-71ac-4182-8a63-3875ab8d6cdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.equipment_inspection
+id: node.equipment_inspection.promote
+field_name: promote
+entity_type: node
+bundle: equipment_inspection
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

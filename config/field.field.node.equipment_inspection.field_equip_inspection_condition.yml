@@ -1,0 +1,21 @@
+uuid: cf9db44e-3174-4a86-91c3-833006865f5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equip_inspection_condition
+    - node.type.equipment_inspection
+  module:
+    - options
+id: node.equipment_inspection.field_equip_inspection_condition
+field_name: field_equip_inspection_condition
+entity_type: node
+bundle: equipment_inspection
+label: 'Equipment Inspection Condition'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

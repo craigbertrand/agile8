@@ -1,0 +1,36 @@
+uuid: 5c279810-9042-4a36-b580-bfc28f2803f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_equip_inspection_condition
+field_name: field_equip_inspection_condition
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'Good Condition'
+    -
+      value: 2
+      label: 'To Monitor'
+    -
+      value: 3
+      label: 'To Repair'
+    -
+      value: 4
+      label: 'Do not use (retire)'
+    -
+      value: 5
+      label: 'Item is lost'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

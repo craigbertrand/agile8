@@ -1,0 +1,115 @@
+uuid: 8e834f58-0813-4f8e-b31b-fda43b3a90cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.equipment_inspection.field_equip_inspection_condition
+    - field.field.node.equipment_inspection.field_equip_inspection_date
+    - field.field.node.equipment_inspection.field_equip_inspection_fit
+    - field.field.node.equipment_inspection.field_equip_inspection_notes
+    - field.field.node.equipment_inspection.field_equip_inspection_ref_equip
+    - field.field.node.equipment_inspection.field_equip_inspection_xdate
+    - node.type.equipment_inspection
+  module:
+    - datetime
+    - path
+    - text
+id: node.equipment_inspection.default
+targetEntityType: node
+bundle: equipment_inspection
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_equip_inspection_condition:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_equip_inspection_date:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_equip_inspection_fit:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_equip_inspection_notes:
+    weight: 124
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_equip_inspection_ref_equip:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_equip_inspection_xdate:
+    weight: 125
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }
