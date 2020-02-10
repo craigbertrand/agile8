@@ -1,0 +1,55 @@
+uuid: e942a57b-60cf-4537-a394-4b3b2ea9f60d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.personnel.field_personnel_employee_id
+    - field.field.node.personnel.field_personnel_job_title
+    - field.field.node.personnel.field_personnel_status
+    - field.field.node.personnel.field_personnel_user
+    - node.type.personnel
+  module:
+    - options
+    - user
+id: node.personnel.default
+targetEntityType: node
+bundle: personnel
+mode: default
+content:
+  field_personnel_employee_id:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_personnel_job_title:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_personnel_status:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_personnel_user:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

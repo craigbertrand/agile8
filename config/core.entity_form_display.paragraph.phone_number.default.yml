@@ -1,0 +1,31 @@
+uuid: 186429e9-fa09-49b8-81eb-e54fd2fcd01b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.phone_number.field_phone_number_number
+    - field.field.paragraph.phone_number.field_type
+    - paragraphs.paragraphs_type.phone_number
+  module:
+    - telephone
+id: paragraph.phone_number.default
+targetEntityType: paragraph
+bundle: phone_number
+mode: default
+content:
+  field_phone_number_number:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

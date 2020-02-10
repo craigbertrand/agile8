@@ -1,0 +1,29 @@
+uuid: e55c07ac-26eb-494f-9dfc-d7d2e7beca3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type
+    - paragraphs.paragraphs_type.phone_number
+    - taxonomy.vocabulary.contact_channel_types
+id: paragraph.phone_number.field_type
+field_name: field_type
+entity_type: paragraph
+bundle: phone_number
+label: Type
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      contact_channel_types: contact_channel_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

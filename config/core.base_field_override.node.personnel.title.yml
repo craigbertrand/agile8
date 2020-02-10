@@ -1,0 +1,18 @@
+uuid: c4db45d9-1d0c-4583-87fa-dcc0b9c06523
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.personnel
+id: node.personnel.title
+field_name: title
+entity_type: node
+bundle: personnel
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,83 @@
+uuid: 0de102c1-518f-4803-96df-877e0e8b4616
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.customer.field_customer_address
+    - field.field.node.customer.field_customer_email
+    - field.field.node.customer.field_customer_id
+    - field.field.node.customer.field_customer_link
+    - field.field.node.customer.field_customer_logo
+    - field.field.node.customer.field_customer_phone_number
+    - node.type.customer
+  module:
+    - address
+    - entity_reference_revisions
+    - image
+    - link
+    - user
+id: node.customer.default
+targetEntityType: node
+bundle: customer
+mode: default
+content:
+  field_customer_address:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_customer_email:
+    type: entity_reference_revisions_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_customer_id:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_customer_link:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_customer_logo:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_customer_phone_number:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,32 @@
+uuid: 0b9e78a7-7c74-41bc-ba48-bc2561f11d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.customer.field_customer_address
+    - field.field.node.customer.field_customer_email
+    - field.field.node.customer.field_customer_id
+    - field.field.node.customer.field_customer_link
+    - field.field.node.customer.field_customer_logo
+    - field.field.node.customer.field_customer_phone_number
+    - node.type.customer
+  module:
+    - user
+id: node.customer.teaser
+targetEntityType: node
+bundle: customer
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_customer_address: true
+  field_customer_email: true
+  field_customer_id: true
+  field_customer_link: true
+  field_customer_logo: true
+  field_customer_phone_number: true

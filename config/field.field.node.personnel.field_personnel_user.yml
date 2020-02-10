@@ -1,0 +1,28 @@
+uuid: 82b06cb4-5009-41c6-861c-b49630b1a683
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personnel_user
+    - node.type.personnel
+id: node.personnel.field_personnel_user
+field_name: field_personnel_user
+entity_type: node
+bundle: personnel
+label: 'Personnel User'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

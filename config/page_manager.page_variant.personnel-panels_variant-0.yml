@@ -4,20 +4,32 @@ status: true
 dependencies:
   config:
     - page_manager.page.personnel
+    - views.view.personnel_list
   module:
     - panels
+    - views
 id: personnel-panels_variant-0
 label: Personnel
 variant: panels_variant
 variant_settings:
-  blocks: {  }
+  blocks:
+    331543f2-e840-4431-b0bc-95d51134d2f0:
+      id: 'views_block:personnel_list-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: contentmain
+      weight: 0
+      uuid: 331543f2-e840-4431-b0bc-95d51134d2f0
+      context_mapping: {  }
   id: panels_variant
   uuid: d8c9f9cf-03fc-4119-b27e-c2e0482c6608
   label: null
   weight: 0
-  layout: layout_onecol
-  layout_settings:
-    label: Personnel
+  layout: radix_boxton
+  layout_settings: {  }
   page_title: Personnel
   storage_type: page_manager
   storage_id: personnel-panels_variant-0

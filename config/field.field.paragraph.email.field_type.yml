@@ -1,0 +1,29 @@
+uuid: bcc46dc3-9216-4afe-a4fb-f583cc54124a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type
+    - paragraphs.paragraphs_type.email
+    - taxonomy.vocabulary.contact_channel_types
+id: paragraph.email.field_type
+field_name: field_type
+entity_type: paragraph
+bundle: email
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      contact_channel_types: contact_channel_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: d2beec9a-28b0-4c1d-a951-aa3aa3f71dac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.personnel.field_personnel_employee_id
+    - field.field.node.personnel.field_personnel_job_title
+    - field.field.node.personnel.field_personnel_status
+    - field.field.node.personnel.field_personnel_user
+    - node.type.personnel
+  module:
+    - user
+id: node.personnel.teaser
+targetEntityType: node
+bundle: personnel
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_personnel_employee_id: true
+  field_personnel_job_title: true
+  field_personnel_status: true
+  field_personnel_user: true

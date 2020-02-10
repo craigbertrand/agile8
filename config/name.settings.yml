@@ -2,6 +2,6 @@ sep1: ' '
 sep2: ', '
 sep3: ''
 component_required_marker: '*'
-user_preferred: ''
+user_preferred: field_users_name
 _core:
   default_config_hash: Vqa_MG9wWtE-7yutPKlYBLfKyqjGOZQBRyEJxC3bmuk
