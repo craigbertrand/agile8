@@ -1,0 +1,10 @@
+uuid: 9c9c61c4-4ce6-4cf2-8f27-07c4bdd1cbd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.environmental_policy
+label: 'Environmental Policy'
+targetEntityType: config_pages
+cache: true

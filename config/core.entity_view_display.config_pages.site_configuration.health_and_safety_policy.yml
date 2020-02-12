@@ -1,0 +1,33 @@
+uuid: dd2e8be2-74b3-4b77-942f-c17ff1abf6a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.site_configuration
+    - core.entity_view_mode.config_pages.health_and_safety_policy
+    - field.field.config_pages.site_configuration.field_environmental_policy
+    - field.field.config_pages.site_configuration.field_health_and_safety_policy
+    - field.field.config_pages.site_configuration.field_mission_statement
+    - field.field.config_pages.site_configuration.field_quality_policy
+    - field.field.config_pages.site_configuration.field_values
+    - field.field.config_pages.site_configuration.field_vision
+  module:
+    - text
+id: config_pages.site_configuration.health_and_safety_policy
+targetEntityType: config_pages
+bundle: site_configuration
+mode: health_and_safety_policy
+content:
+  field_health_and_safety_policy:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_environmental_policy: true
+  field_mission_statement: true
+  field_quality_policy: true
+  field_values: true
+  field_vision: true

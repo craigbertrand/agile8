@@ -5,19 +5,52 @@ dependencies:
   config:
     - page_manager.page.vision_mission_and_values
   module:
+    - config_pages
     - panels
 id: vision_mission_and_values-panels_variant-0
 label: 'Vision, Mission, Values'
 variant: panels_variant
 variant_settings:
-  blocks: {  }
+  blocks:
+    db0a7929-1579-4bcb-8ca4-a763179aa89c:
+      id: config_pages_block
+      label: 'Mission Statement'
+      provider: config_pages
+      label_display: '0'
+      region: contentmain
+      weight: 0
+      uuid: db0a7929-1579-4bcb-8ca4-a763179aa89c
+      config_page_type: site_configuration
+      config_page_view_mode: full
+      context_mapping: {  }
+    d1fcafd4-84f2-47a8-bc75-10552f1dd738:
+      id: config_pages_block
+      label: Vision
+      provider: config_pages
+      label_display: visible
+      region: contentmain
+      weight: -1
+      uuid: d1fcafd4-84f2-47a8-bc75-10552f1dd738
+      config_page_type: site_configuration
+      config_page_view_mode: vision
+      context_mapping: {  }
+    7ecf8ec6-fc43-4bf0-aeb7-8c995c69c691:
+      id: config_pages_block
+      label: Values
+      provider: config_pages
+      label_display: visible
+      region: contentmain
+      weight: 1
+      uuid: 7ecf8ec6-fc43-4bf0-aeb7-8c995c69c691
+      config_page_type: site_configuration
+      config_page_view_mode: values
+      context_mapping: {  }
   id: panels_variant
   uuid: 9880ea59-de8b-4eae-8ff8-122c01d020ca
   label: null
   weight: 0
-  layout: layout_onecol
-  layout_settings:
-    label: 'Vision, Mission, and Values'
+  layout: radix_boxton
+  layout_settings: {  }
   page_title: 'Vision, Mission, and Values'
   storage_type: page_manager
   storage_id: vision_mission_and_values-panels_variant-0
@@ -26,4 +59,9 @@ page: vision_mission_and_values
 weight: 0
 selection_criteria: {  }
 selection_logic: and
-static_context: {  }
+static_context:
+  site_settings:
+    label: 'Site Settings'
+    type: 'entity_revision:config_pages_type'
+    description: ''
+    value: site_configuration

@@ -1,0 +1,10 @@
+uuid: 0569a1db-0554-4e3b-b367-8e7423d81f36
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.mission_statement
+label: 'Mission Statement'
+targetEntityType: config_pages
+cache: true

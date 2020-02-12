@@ -1,0 +1,10 @@
+uuid: 374020ea-c683-463e-98ce-e6b3d80b1a81
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.quality_policy
+label: 'Quality Policy'
+targetEntityType: config_pages
+cache: true

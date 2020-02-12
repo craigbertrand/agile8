@@ -1,0 +1,10 @@
+uuid: 0516e624-2709-4725-b4ab-bdf2f59327a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.values
+label: Values
+targetEntityType: config_pages
+cache: true
