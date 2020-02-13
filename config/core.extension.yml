@@ -52,7 +52,6 @@ module:
   permissions_filter: 0
   prepopulate: 0
   quickedit: 0
-  radix_layouts: 0
   rdf: 0
   rules: 0
   search: 0
