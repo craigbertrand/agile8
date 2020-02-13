@@ -9,7 +9,7 @@ id: node.equipment_inspection.field_equip_inspection_fit
 field_name: field_equip_inspection_fit
 entity_type: node
 bundle: equipment_inspection
-label: 'Equipment Inspection Fit for Service'
+label: 'Fit for Service'
 description: 'Is the equipment fit for service?'
 required: true
 translatable: false

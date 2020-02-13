@@ -6,8 +6,92 @@ dependencies:
     - field.field.node.equipment.field_equip_ref_model
     - field.field.node.equipment.field_equip_serial_number
     - node.type.equipment
+    - views.view.equipment_inspections_on_equipment
+    - views.view.equipment_model_information_on_equipment
   module:
+    - layout_builder
+    - layout_discovery
     - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          108272d8-e6b3-43a6-9be8-868a5165db85:
+            uuid: 108272d8-e6b3-43a6-9be8-868a5165db85
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:equipment:links'
+            additional: {  }
+            weight: 0
+          6516f420-e2be-4331-a6d9-ec8284e8368b:
+            uuid: 6516f420-e2be-4331-a6d9-ec8284e8368b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment:field_equip_serial_number'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
+          3f1cf744-c54b-4673-bd1e-a677396a18a4:
+            uuid: 3f1cf744-c54b-4673-bd1e-a677396a18a4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment:field_equip_ref_model'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 3
+          cfd43f77-03cf-47d6-a574-eff16967ea29:
+            uuid: cfd43f77-03cf-47d6-a574-eff16967ea29
+            region: content
+            configuration:
+              id: 'views_block:equipment_inspections_on_equipment-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 4
+          1a9ac55d-6a98-4276-a7a7-c096d587c461:
+            uuid: 1a9ac55d-6a98-4276-a7a7-c096d587c461
+            region: content
+            configuration:
+              id: 'views_block:equipment_model_information_on_equipment-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
 id: node.equipment.default
 targetEntityType: node
 bundle: equipment

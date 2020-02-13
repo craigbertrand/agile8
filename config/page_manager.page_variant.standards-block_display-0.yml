@@ -1,0 +1,21 @@
+uuid: 119e6e94-25ad-4234-b165-0312d6f64951
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.standards
+id: standards-block_display-0
+label: Standards
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 7e192571-c124-48c6-8e57-663b7240a69e
+  label: null
+  weight: 0
+  page_title: Standards
+page: standards
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

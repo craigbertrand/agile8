@@ -14,8 +14,137 @@ dependencies:
     - address
     - entity_reference_revisions
     - image
+    - layout_builder
+    - layout_discovery
     - link
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0b675082-2401-4e86-998b-5a482709f640:
+            uuid: 0b675082-2401-4e86-998b-5a482709f640
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:customer:links'
+            additional: {  }
+            weight: 0
+          09f153d3-6a61-452e-8ce4-b99e90e5523d:
+            uuid: 09f153d3-6a61-452e-8ce4-b99e90e5523d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:customer:field_customer_logo'
+              formatter:
+                label: above
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 1
+          694d2ea4-c768-4e57-90be-3ef98c1ce447:
+            uuid: 694d2ea4-c768-4e57-90be-3ef98c1ce447
+            region: content
+            configuration:
+              id: 'field_block:node:customer:field_customer_phone_number'
+              label: 'Customer Phone Number'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          b06781e2-0a34-4a31-933d-a1c716c3b1c7:
+            uuid: b06781e2-0a34-4a31-933d-a1c716c3b1c7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:customer:field_customer_address'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: address_default
+            additional: {  }
+            weight: 3
+          ae1f0625-3c62-4293-bbed-99fe7e97cca3:
+            uuid: ae1f0625-3c62-4293-bbed-99fe7e97cca3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:customer:field_customer_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 4
+          b10b285a-7134-4183-abde-fe9c952c23d0:
+            uuid: b10b285a-7134-4183-abde-fe9c952c23d0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:customer:field_customer_email'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 5
+          9b619aac-58f3-411d-8a4f-4e92e29d653b:
+            uuid: 9b619aac-58f3-411d-8a4f-4e92e29d653b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:customer:field_customer_id'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 6
+        third_party_settings: {  }
 id: node.customer.default
 targetEntityType: node
 bundle: customer

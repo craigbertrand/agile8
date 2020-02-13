@@ -10,11 +10,147 @@ dependencies:
     - field.field.node.equipment_inspection.field_equip_inspection_ref_equip
     - field.field.node.equipment_inspection.field_equip_inspection_xdate
     - node.type.equipment_inspection
+    - views.view.equipment_inspection_related_details
   module:
     - datetime
+    - layout_builder
+    - layout_discovery
     - options
     - text
     - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          36825eba-f471-4889-bc4d-8bbb594fb46b:
+            uuid: 36825eba-f471-4889-bc4d-8bbb594fb46b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:equipment_inspection:links'
+            additional: {  }
+            weight: 0
+          20457960-5e45-4044-a374-918bd8c73189:
+            uuid: 20457960-5e45-4044-a374-918bd8c73189
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_inspection:field_equip_inspection_date'
+              formatter:
+                label: above
+                settings:
+                  format_type: medium
+                  timezone_override: ''
+                third_party_settings: {  }
+                type: datetime_default
+            additional: {  }
+            weight: 2
+          f26e506c-bbff-4ab6-b91c-fdb36ea78794:
+            uuid: f26e506c-bbff-4ab6-b91c-fdb36ea78794
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_inspection:field_equip_inspection_fit'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+                type: boolean
+            additional: {  }
+            weight: 3
+          0de7eb91-2665-466b-a01e-6e518b792137:
+            uuid: 0de7eb91-2665-466b-a01e-6e518b792137
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_inspection:field_equip_inspection_condition'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 4
+          99d27126-71d2-409f-a34b-757214a660b6:
+            uuid: 99d27126-71d2-409f-a34b-757214a660b6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_inspection:field_equip_inspection_notes'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 5
+          31a4bdb4-c071-469c-871d-220da12fc424:
+            uuid: 31a4bdb4-c071-469c-871d-220da12fc424
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_inspection:field_equip_inspection_xdate'
+              formatter:
+                label: above
+                settings:
+                  format_type: medium
+                  timezone_override: ''
+                third_party_settings: {  }
+                type: datetime_default
+            additional: {  }
+            weight: 6
+          93b00249-2dc6-4240-b845-bc4ee53f5158:
+            uuid: 93b00249-2dc6-4240-b845-bc4ee53f5158
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_inspection:field_equip_inspection_ref_equip'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 7
+          e70b5366-354a-485e-a216-fc2b42a7f198:
+            uuid: e70b5366-354a-485e-a216-fc2b42a7f198
+            region: content
+            configuration:
+              id: 'views_block:equipment_inspection_related_details-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
 id: node.equipment_inspection.default
 targetEntityType: node
 bundle: equipment_inspection

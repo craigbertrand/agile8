@@ -1,0 +1,21 @@
+uuid: 09730f08-5df8-4c84-897a-953e5f689f98
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.improvements
+id: improvements-block_display-0
+label: Improvements
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: dc0c03ff-49ea-4340-b63f-3410120c87b6
+  label: null
+  weight: 0
+  page_title: Improvements
+page: improvements
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

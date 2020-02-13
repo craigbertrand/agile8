@@ -1,0 +1,21 @@
+uuid: e9fcdacf-2803-4f38-b0bc-aa33ac8e6f34
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.equipment_management
+id: equipment_management-block_display-0
+label: 'Equipment Management'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: e044dd34-ce34-4147-b7c5-872bd530d04e
+  label: null
+  weight: 0
+  page_title: 'Equipment Management'
+page: equipment_management
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

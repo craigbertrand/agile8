@@ -12,7 +12,7 @@ id: node.customer.field_customer_phone_number
 field_name: field_customer_phone_number
 entity_type: node
 bundle: customer
-label: 'Customer Phone Number'
+label: 'Phone Number'
 description: ''
 required: false
 translatable: false
@@ -28,4 +28,7 @@ settings:
       phone_number:
         enabled: true
         weight: 2
+      email:
+        weight: 3
+        enabled: false
 field_type: entity_reference_revisions

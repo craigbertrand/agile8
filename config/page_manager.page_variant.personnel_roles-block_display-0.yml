@@ -1,0 +1,21 @@
+uuid: 6623e525-3053-4f25-ad4a-5b99d1d7df82
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.personnel_roles
+id: personnel_roles-block_display-0
+label: 'Personnel Roles'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 5f6d2275-b520-4fcd-8e13-599697943389
+  label: null
+  weight: 0
+  page_title: 'Personnel Roles'
+page: personnel_roles
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

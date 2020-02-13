@@ -1,0 +1,21 @@
+uuid: 5f1d90a9-f29d-4ab1-ad18-7c5f07e4e5de
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.nonconformities
+id: nonconformities-block_display-0
+label: Nonconformities
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: aac6714d-cd28-4b4e-b57a-e1daacc09d80
+  label: null
+  weight: 0
+  page_title: Nonconformities
+page: nonconformities
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

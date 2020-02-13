@@ -9,7 +9,7 @@ id: node.equipment_model.field_equipmod_number
 field_name: field_equipmod_number
 entity_type: node
 bundle: equipment_model
-label: 'Equipment Model Number'
+label: 'Model Number'
 description: ''
 required: true
 translatable: false

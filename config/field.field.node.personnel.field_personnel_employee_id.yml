@@ -9,7 +9,7 @@ id: node.personnel.field_personnel_employee_id
 field_name: field_personnel_employee_id
 entity_type: node
 bundle: personnel
-label: 'Personnel Employee ID'
+label: 'Employee ID'
 description: ''
 required: true
 translatable: false

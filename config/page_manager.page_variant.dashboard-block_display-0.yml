@@ -1,0 +1,21 @@
+uuid: 415aa3ea-1400-4a55-b61d-c4d3e4f9c149
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.dashboard
+id: dashboard-block_display-0
+label: 'Dashboard Page'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: d4aa11a0-4339-4b0c-8d56-38d4c0880901
+  label: null
+  weight: 0
+  page_title: Dashboard
+page: dashboard
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

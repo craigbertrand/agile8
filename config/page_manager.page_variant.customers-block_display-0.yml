@@ -1,0 +1,21 @@
+uuid: 15208dfd-8686-46bd-b067-5f3bcbcbe11a
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.customers
+id: customers-block_display-0
+label: 'Customers Page'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: f99c1894-5e6a-4d24-9f80-5c450a9ac7cc
+  label: null
+  weight: 0
+  page_title: Customers
+page: customers
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

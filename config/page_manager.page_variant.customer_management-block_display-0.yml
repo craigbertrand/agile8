@@ -1,0 +1,21 @@
+uuid: 02b6cbc1-ec01-4826-bc8d-8c8ba95c7235
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.customer_management
+id: customer_management-block_display-0
+label: 'Customer Management Page'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 4d632f61-4619-41a6-8753-014375f12930
+  label: null
+  weight: 0
+  page_title: 'Customer Management'
+page: customer_management
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

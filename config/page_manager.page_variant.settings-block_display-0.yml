@@ -1,0 +1,21 @@
+uuid: e64e3133-1162-4697-abaa-58fd21f3f1dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.settings
+id: settings-block_display-0
+label: Settings
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 5ca946ee-01e0-4422-a0ad-3f7c61d68b31
+  label: null
+  weight: 0
+  page_title: Settings
+page: settings
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

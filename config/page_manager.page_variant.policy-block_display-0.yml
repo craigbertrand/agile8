@@ -1,0 +1,21 @@
+uuid: ec6ef706-afab-470a-ad3d-256555fdde22
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.policy
+id: policy-block_display-0
+label: Policy
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: fae3d857-4262-49e9-8db9-f7aa9ee8bfe8
+  label: null
+  weight: 0
+  page_title: Policy
+page: policy
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

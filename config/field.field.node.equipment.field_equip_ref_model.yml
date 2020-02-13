@@ -10,7 +10,7 @@ id: node.equipment.field_equip_ref_model
 field_name: field_equip_ref_model
 entity_type: node
 bundle: equipment
-label: 'Equipment Model'
+label: Model
 description: ''
 required: false
 translatable: false

@@ -11,7 +11,7 @@ id: node.equipment_inspection.field_equip_inspection_notes
 field_name: field_equip_inspection_notes
 entity_type: node
 bundle: equipment_inspection
-label: 'Equipment Inspection Notes'
+label: 'Inspection Notes'
 description: 'Detail here any defects found on the product and accomplished tasks.'
 required: false
 translatable: false

@@ -1,0 +1,21 @@
+uuid: 6bd3b16e-464c-49dd-b305-c9b1c297583d
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.risk_appetite
+id: risk_appetite-block_display-0
+label: 'Risk Appetite'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: b706c9c8-9b71-4808-bc12-6c6478f80a29
+  label: null
+  weight: 0
+  page_title: 'Risk Appetite'
+page: risk_appetite
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

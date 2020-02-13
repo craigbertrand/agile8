@@ -11,7 +11,7 @@ id: node.customer.field_customer_link
 field_name: field_customer_link
 entity_type: node
 bundle: customer
-label: 'Customer Link'
+label: Links
 description: ''
 required: false
 translatable: false

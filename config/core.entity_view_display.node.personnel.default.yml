@@ -9,8 +9,94 @@ dependencies:
     - field.field.node.personnel.field_personnel_user
     - node.type.personnel
   module:
+    - layout_builder
+    - layout_discovery
     - options
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          dede061b-befc-4e1f-8cb7-082b22f53764:
+            uuid: dede061b-befc-4e1f-8cb7-082b22f53764
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:personnel:links'
+            additional: {  }
+            weight: 0
+          88726ad2-5b4b-4d95-8031-5a126151d6d2:
+            uuid: 88726ad2-5b4b-4d95-8031-5a126151d6d2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:personnel:field_personnel_job_title'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
+          61a44e12-6750-4ca9-a48a-162fb7571366:
+            uuid: 61a44e12-6750-4ca9-a48a-162fb7571366
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:personnel:field_personnel_status'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 2
+          03aca67a-9d39-4ac4-a940-9ed80e655bc5:
+            uuid: 03aca67a-9d39-4ac4-a940-9ed80e655bc5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:personnel:field_personnel_employee_id'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 3
+          9d726aa3-6fe6-44cc-8384-2a6759574909:
+            uuid: 9d726aa3-6fe6-44cc-8384-2a6759574909
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:personnel:field_personnel_user'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
 id: node.personnel.default
 targetEntityType: node
 bundle: personnel

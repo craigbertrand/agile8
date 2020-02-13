@@ -11,7 +11,7 @@ id: node.personnel.field_personnel_status
 field_name: field_personnel_status
 entity_type: node
 bundle: personnel
-label: 'Personnel Status'
+label: Status
 description: ''
 required: true
 translatable: false

@@ -11,7 +11,7 @@ id: node.equipment_inspection.field_equip_inspection_condition
 field_name: field_equip_inspection_condition
 entity_type: node
 bundle: equipment_inspection
-label: 'Equipment Inspection Condition'
+label: 'Inspection Condition'
 description: ''
 required: true
 translatable: false

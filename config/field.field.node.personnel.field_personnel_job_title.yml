@@ -9,7 +9,7 @@ id: node.personnel.field_personnel_job_title
 field_name: field_personnel_job_title
 entity_type: node
 bundle: personnel
-label: 'Personnel Job Title'
+label: 'Job Title'
 description: ''
 required: false
 translatable: false

@@ -6,6 +6,9 @@ dependencies:
     - field.field.paragraph.phone_number.field_phone_number_number
     - field.field.paragraph.phone_number.field_type
     - paragraphs.paragraphs_type.phone_number
+  module:
+    - field_formatter_class
+    - telephone
 id: paragraph.phone_number.default
 targetEntityType: paragraph
 bundle: phone_number
@@ -13,17 +16,20 @@ mode: default
 content:
   field_phone_number_number:
     weight: 1
-    label: above
-    settings: {  }
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_type:
-    weight: 2
-    label: above
+    weight: 0
+    label: inline
     settings:
-      link: true
-    third_party_settings: {  }
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: entity_reference_label
     region: content
 hidden: {  }

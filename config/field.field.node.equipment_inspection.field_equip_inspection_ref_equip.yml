@@ -10,7 +10,7 @@ id: node.equipment_inspection.field_equip_inspection_ref_equip
 field_name: field_equip_inspection_ref_equip
 entity_type: node
 bundle: equipment_inspection
-label: 'Equipment Inspection Reference Equipment'
+label: Equipment
 description: ''
 required: false
 translatable: false

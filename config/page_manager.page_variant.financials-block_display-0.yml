@@ -1,0 +1,21 @@
+uuid: 93f28e83-74d6-4a63-b8bf-215f2720aa09
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.financials
+id: financials-block_display-0
+label: Financials
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: f03fba51-430e-4823-b9f0-8523e9b1ee7a
+  label: null
+  weight: 0
+  page_title: Financials
+page: financials
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
