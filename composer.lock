@@ -4380,16 +4380,16 @@
         },
         {
             "name": "pantheon-systems/drupal-integrations",
-            "version": "8.0.0",
+            "version": "8.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/drupal-integrations.git",
-                "reference": "98a334921691bd23f29f56a722b8bf52665f5e57"
+                "reference": "7649ccfa0f26503ba250d94fd4c146f0feb1d2d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/drupal-integrations/zipball/98a334921691bd23f29f56a722b8bf52665f5e57",
-                "reference": "98a334921691bd23f29f56a722b8bf52665f5e57",
+                "url": "https://api.github.com/repos/pantheon-systems/drupal-integrations/zipball/7649ccfa0f26503ba250d94fd4c146f0feb1d2d3",
+                "reference": "7649ccfa0f26503ba250d94fd4c146f0feb1d2d3",
                 "shasum": ""
             },
             "conflict": {
@@ -4400,7 +4400,6 @@
                 "drupal-scaffold": {
                     "file-mapping": {
                         "[project-root]/.drush-lock-update": "assets/drush-lock-update",
-                        "[project-root]/pantheon.upstream.yml": "assets/pantheon.upstream.yml",
                         "[web-root]/sites/default/default.services.pantheon.preproduction.yml": "assets/default.services.pantheon.preproduction.yml",
                         "[web-root]/sites/default/settings.pantheon.php": "assets/settings.pantheon.php",
                         "[web-root]/sites/default/settings.php": {
@@ -4416,7 +4415,7 @@
                 "MIT"
             ],
             "description": "Add this project to any Drupal distribution based on drupal/core-composer-scaffold to enable it for use on Pantheon.",
-            "time": "2020-01-30T17:57:20+00:00"
+            "time": "2020-02-12T19:01:43+00:00"
         },
         {
             "name": "pantheon-systems/quicksilver-pushback",
