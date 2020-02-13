@@ -1,0 +1,21 @@
+uuid: 0f4b3e86-f128-49ed-8b4f-d588054ebfa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.business_units
+id: business_units-block_display-0
+label: 'Business Units Page'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: ef949b6a-b42e-432c-bc22-ac4a07245b5c
+  label: null
+  weight: 0
+  page_title: 'Business Units'
+page: business_units
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

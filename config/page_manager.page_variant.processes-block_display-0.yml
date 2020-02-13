@@ -1,0 +1,21 @@
+uuid: 397902a5-8b78-43a7-bdfa-f25c5ad66bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.processes
+id: processes-block_display-0
+label: Processes
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 4587c6ad-1cc2-4457-ad4a-64117611fff1
+  label: null
+  weight: 0
+  page_title: Processes
+page: processes
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

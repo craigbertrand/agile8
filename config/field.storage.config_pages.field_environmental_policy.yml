@@ -1,0 +1,19 @@
+uuid: da74c223-e9b8-4acd-962e-01f115f67341
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+    - text
+id: config_pages.field_environmental_policy
+field_name: field_environmental_policy
+entity_type: config_pages
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

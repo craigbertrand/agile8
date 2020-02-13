@@ -1,0 +1,21 @@
+uuid: 376830c0-2aac-44d7-9f63-b946c114472d
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.audits
+id: audits-block_display-0
+label: Audits
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 0b41211a-65e1-480e-bc09-41fdc6dc584c
+  label: null
+  weight: 0
+  page_title: Audits
+page: audits
+weight: -9
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

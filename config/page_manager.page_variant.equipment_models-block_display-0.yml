@@ -1,0 +1,35 @@
+uuid: a60d9f54-aa9f-49d1-a4a2-f5d267c1e6d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.equipment_models
+    - views.view.equipment_models
+  module:
+    - views
+id: equipment_models-block_display-0
+label: 'Equipment Models'
+variant: block_display
+variant_settings:
+  blocks:
+    36d123cc-139c-460d-bf5e-29381fce80fb:
+      id: 'views_block:equipment_models-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: 36d123cc-139c-460d-bf5e-29381fce80fb
+      context_mapping: {  }
+  id: block_display
+  uuid: 9458bf2a-fb39-4266-90ce-211c428ba998
+  label: null
+  weight: 0
+  page_title: 'Equipment Models'
+page: equipment_models
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

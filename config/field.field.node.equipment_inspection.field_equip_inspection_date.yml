@@ -11,7 +11,7 @@ id: node.equipment_inspection.field_equip_inspection_date
 field_name: field_equip_inspection_date
 entity_type: node
 bundle: equipment_inspection
-label: 'Equipment Inspection Date'
+label: 'Inspection Date'
 description: ''
 required: false
 translatable: false

@@ -1,0 +1,21 @@
+uuid: f69c1f49-0304-4227-ac7b-7f795f021c2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.site_configuration
+    - field.storage.config_pages.field_health_and_safety_policy
+  module:
+    - text
+id: config_pages.site_configuration.field_health_and_safety_policy
+field_name: field_health_and_safety_policy
+entity_type: config_pages
+bundle: site_configuration
+label: 'Health and Safety Policy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: a4e6e6fa-c811-41fe-825e-5e4781fe489f
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.risk
+id: risk-block_display-0
+label: Risk
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 477090ba-0d15-42c7-9593-98f78fe392d7
+  label: null
+  weight: 0
+  page_title: Risk
+page: risk
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

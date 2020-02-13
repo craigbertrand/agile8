@@ -1,0 +1,21 @@
+uuid: 132256bb-4382-4c16-827e-f65f0359a861
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.personnel
+id: personnel-block_display-0
+label: Personnel
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 0868efd9-c943-4d19-9edc-b20dfcca93da
+  label: null
+  weight: 0
+  page_title: Personnel
+page: personnel
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

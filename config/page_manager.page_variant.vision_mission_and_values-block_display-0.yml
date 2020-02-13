@@ -1,0 +1,21 @@
+uuid: c11e3819-1e41-404d-b5fd-80ab92d20c59
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.vision_mission_and_values
+id: vision_mission_and_values-block_display-0
+label: 'Vision, Mission, Values'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: e3849a98-d921-433f-b859-37685fe5d830
+  label: null
+  weight: 0
+  page_title: 'Vision, Mission, and Values'
+page: vision_mission_and_values
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

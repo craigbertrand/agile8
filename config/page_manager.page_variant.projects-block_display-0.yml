@@ -1,0 +1,21 @@
+uuid: 39c658f1-9eea-450e-86c8-c8da90758e73
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.projects
+id: projects-block_display-0
+label: Projects
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 3b62c0c4-f314-44fb-b74d-8a6d377b65eb
+  label: null
+  weight: 0
+  page_title: Projects
+page: projects
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

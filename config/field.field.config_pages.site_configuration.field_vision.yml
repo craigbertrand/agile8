@@ -1,0 +1,21 @@
+uuid: 0d7bf22b-1afc-4a10-a99f-6a0e163ed5f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.site_configuration
+    - field.storage.config_pages.field_vision
+  module:
+    - text
+id: config_pages.site_configuration.field_vision
+field_name: field_vision
+entity_type: config_pages
+bundle: site_configuration
+label: Vision
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

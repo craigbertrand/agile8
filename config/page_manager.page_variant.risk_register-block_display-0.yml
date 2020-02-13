@@ -1,0 +1,21 @@
+uuid: a326994b-6ec0-498f-8c89-290d299c5f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.risk_register
+id: risk_register-block_display-0
+label: 'Risk Register'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 54c45bb6-4b88-455d-aa6e-d5618fc86c14
+  label: null
+  weight: 0
+  page_title: 'Risk Register'
+page: risk_register
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

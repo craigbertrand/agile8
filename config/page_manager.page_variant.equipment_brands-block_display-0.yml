@@ -1,0 +1,35 @@
+uuid: b9f60d48-2e2b-4a62-bc29-a0a8f7697bfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.equipment_brands
+    - views.view.equipment_brands
+  module:
+    - views
+id: equipment_brands-block_display-0
+label: 'Equipment Brands Page'
+variant: block_display
+variant_settings:
+  blocks:
+    3ff07f22-3c33-4016-a9a2-6d64cff695ce:
+      id: 'views_block:equipment_brands-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: 3ff07f22-3c33-4016-a9a2-6d64cff695ce
+      context_mapping: {  }
+  id: block_display
+  uuid: 79e35aee-fe4d-4d8c-88f5-0e8501060f1e
+  label: null
+  weight: 0
+  page_title: 'Equipment Brands'
+page: equipment_brands
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

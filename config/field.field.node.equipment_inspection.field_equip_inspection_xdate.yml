@@ -11,7 +11,7 @@ id: node.equipment_inspection.field_equip_inspection_xdate
 field_name: field_equip_inspection_xdate
 entity_type: node
 bundle: equipment_inspection
-label: 'Equipment Inspection Expiration Date'
+label: 'Expiration Date'
 description: ''
 required: false
 translatable: false

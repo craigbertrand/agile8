@@ -9,7 +9,7 @@ id: node.equipment.field_equip_serial_number
 field_name: field_equip_serial_number
 entity_type: node
 bundle: equipment
-label: 'Equipment Serial Number'
+label: 'Serial Number'
 description: ''
 required: true
 translatable: false

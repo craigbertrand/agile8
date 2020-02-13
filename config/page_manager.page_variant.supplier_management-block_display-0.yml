@@ -1,0 +1,21 @@
+uuid: ca51c7bc-5983-4705-b059-6fe20ef6d15b
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.supplier_management
+id: supplier_management-block_display-0
+label: 'Supplier Management'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 80371845-8f74-45ad-8437-23c3399ae0f4
+  label: null
+  weight: 0
+  page_title: 'Supplier Management'
+page: supplier_management
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

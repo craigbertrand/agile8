@@ -1,0 +1,21 @@
+uuid: 185f1172-ce02-4aab-a7df-8a1dc21540b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.interested_parties
+id: interested_parties-block_display-0
+label: 'Interested Parties'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: a26b4dec-c228-4eaa-9457-a81044bae663
+  label: null
+  weight: 0
+  page_title: 'Interested Parties'
+page: interested_parties
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

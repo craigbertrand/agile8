@@ -1,0 +1,21 @@
+uuid: d3f89700-834f-4c10-8949-6543df60f075
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.suppliers
+id: suppliers-block_display-0
+label: Suppliers
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 8b6ccb92-29ca-4b28-80e4-6314bd837b9c
+  label: null
+  weight: 0
+  page_title: Suppliers
+page: suppliers
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

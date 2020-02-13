@@ -434,3 +434,15 @@ menus:
     weight: '1'
     langcode: en
     uuid: 392633d3-688e-435e-9139-e579c197a8b8
+  -
+    menu_name: main
+    title: 'Site Settings'
+    parent: 'menu_link_content:255e21ee-7c5b-4566-9713-04ffa9bd2fea'
+    uri: 'internal:/settings/site-settings'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 51d2a114-9d49-49b8-a198-0b18be90dfaf

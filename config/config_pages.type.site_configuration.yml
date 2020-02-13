@@ -1,0 +1,16 @@
+uuid: 6d0abac2-28f2-4bc4-8af1-c348b088a83a
+langcode: en
+status: true
+dependencies: {  }
+id: site_configuration
+label: 'Site Configuration'
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /settings/site-settings
+  weight: 0
+  description: ''

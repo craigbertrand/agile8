@@ -1,0 +1,21 @@
+uuid: cd307f68-ee75-4703-88e2-dd5d54c28b22
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.human_resources
+id: human_resources-block_display-0
+label: 'Human Resources'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 9742eb05-7aca-4cb0-ba8f-d8feecd4fcd1
+  label: null
+  weight: 0
+  page_title: 'Human Resources'
+page: human_resources
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,21 @@
+uuid: ee65b782-0275-4cf0-b242-375e104e6145
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.personnel_certifications
+id: personnel_certifications-block_display-0
+label: 'Personnel Certifications'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 390e4cd2-dee0-44f2-8b87-c090969c2ad2
+  label: null
+  weight: 0
+  page_title: 'Personnel Certifications'
+page: personnel_certifications
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

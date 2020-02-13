@@ -1,0 +1,21 @@
+uuid: a023d58c-afb9-4c0f-b3b4-b204aafddaf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.objectives
+id: objectives-block_display-0
+label: Objectives
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 7c13102f-708d-4be6-b675-750705c0541c
+  label: null
+  weight: 0
+  page_title: Objectives
+page: objectives
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,21 @@
+uuid: 76545af7-a1b0-4a55-9abe-7edb6e1baeb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.site_configuration
+    - field.storage.config_pages.field_environmental_policy
+  module:
+    - text
+id: config_pages.site_configuration.field_environmental_policy
+field_name: field_environmental_policy
+entity_type: config_pages
+bundle: site_configuration
+label: 'Environmental Policy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

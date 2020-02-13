@@ -13,13 +13,209 @@ dependencies:
     - field.field.node.equipment_model.field_equipmod_tags
     - image.style.medium
     - node.type.equipment_model
+    - views.view.equipment_brand_information_block
+    - views.view.equipment_on_model
   module:
     - field_formatter_class
     - image
     - interval
+    - layout_builder
+    - layout_discovery
     - link
     - text
     - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          124c1d7d-a872-44a0-8259-69f431b8c51e:
+            uuid: 124c1d7d-a872-44a0-8259-69f431b8c51e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:equipment_model:links'
+            additional: {  }
+            weight: 0
+          5c4f0a0c-3c16-4e49-b66e-c38a237844e6:
+            uuid: 5c4f0a0c-3c16-4e49-b66e-c38a237844e6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_model:field_equipmod_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+                type: image
+            additional: {  }
+            weight: 2
+          2df40362-4b85-47da-a5bd-9c44e1dbecfd:
+            uuid: 2df40362-4b85-47da-a5bd-9c44e1dbecfd
+            region: content
+            configuration:
+              id: 'field_block:node:equipment_model:field_equipmod_links'
+              label: Links
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          3f0323f1-e0b6-47d2-afe2-301414249772:
+            uuid: 3f0323f1-e0b6-47d2-afe2-301414249772
+            region: content
+            configuration:
+              id: 'field_block:node:equipment_model:field_equipmod_ref_brand'
+              label: Brand
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 4
+          2c066f78-ee9f-488b-a232-a5400ce89477:
+            uuid: 2c066f78-ee9f-488b-a232-a5400ce89477
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_model:field_equipmod_desc'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+                type: text_default
+            additional: {  }
+            weight: 5
+          de7a7baa-0668-4bd3-a528-bc0dca830dcc:
+            uuid: de7a7baa-0668-4bd3-a528-bc0dca830dcc
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_model:field_equipmod_checkpoints'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 6
+          da98ce97-5d31-4fb1-828e-76c5edbd5675:
+            uuid: da98ce97-5d31-4fb1-828e-76c5edbd5675
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_model:field_equipmod_number'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 7
+          8d9b8195-35c9-4f7f-bc41-59f141926ff2:
+            uuid: 8d9b8195-35c9-4f7f-bc41-59f141926ff2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_model:field_equipmod_tags'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 8
+          e0c30841-77e5-42ef-8e05-60a9e5b2bdba:
+            uuid: e0c30841-77e5-42ef-8e05-60a9e5b2bdba
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_model:field_equipmod_inspect_interval'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: interval_default
+            additional: {  }
+            weight: 9
+          45b802b5-1b1f-476c-9287-2d3895a60dee:
+            uuid: 45b802b5-1b1f-476c-9287-2d3895a60dee
+            region: content
+            configuration:
+              id: 'views_block:equipment_on_model-block_1'
+              label: Equipment
+              provider: views
+              label_display: visible
+              views_label: Equipment
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 10
+          0a253171-dc35-4385-bb05-c59e0a0336fb:
+            uuid: 0a253171-dc35-4385-bb05-c59e0a0336fb
+            region: content
+            configuration:
+              id: 'views_block:equipment_brand_information_block-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
 id: node.equipment_model.default
 targetEntityType: node
 bundle: equipment_model

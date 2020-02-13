@@ -1,0 +1,21 @@
+uuid: d7a5a11e-db97-48ca-8db9-20919d7e7183
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.compliance
+id: compliance-block_display-0
+label: 'Compliance Page'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 581f50ce-8ee3-4028-bb8a-8d0bfcf8a687
+  label: null
+  weight: 0
+  page_title: Compliance
+page: compliance
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

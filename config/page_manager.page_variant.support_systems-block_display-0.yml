@@ -1,0 +1,21 @@
+uuid: 0dee6c08-a91f-4779-9ff1-de51fbc37798
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.support_systems
+id: support_systems-block_display-0
+label: 'Support Systems'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: a78cefdf-d47d-4a85-9ac1-ac2d0a3bb751
+  label: null
+  weight: 0
+  page_title: 'Support Systems'
+page: support_systems
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

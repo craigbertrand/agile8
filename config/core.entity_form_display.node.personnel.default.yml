@@ -1,0 +1,101 @@
+uuid: bce13d0e-e03c-4095-b537-05877d763efe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.personnel.field_personnel_employee_id
+    - field.field.node.personnel.field_personnel_job_title
+    - field.field.node.personnel.field_personnel_status
+    - field.field.node.personnel.field_personnel_user
+    - node.type.personnel
+  module:
+    - path
+id: node.personnel.default
+targetEntityType: node
+bundle: personnel
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_personnel_employee_id:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_personnel_job_title:
+    weight: 121
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_personnel_status:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_personnel_user:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

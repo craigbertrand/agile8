@@ -1,0 +1,10 @@
+uuid: a95713f8-9389-4f65-9e3e-2c04dda556e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+id: config_pages.vision
+label: Vision
+targetEntityType: config_pages
+cache: true

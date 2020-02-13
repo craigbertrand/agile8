@@ -6,11 +6,81 @@ dependencies:
     - field.field.node.equipment_brand.field_equipbrand_links
     - field.field.node.equipment_brand.field_equipbrand_logo
     - node.type.equipment_brand
+    - views.view.equipment_models_on_brand
   module:
     - field_formatter_class
     - image
+    - layout_builder
+    - layout_discovery
     - link
     - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          dc26ce55-1c13-4380-9833-a7d6767f5340:
+            uuid: dc26ce55-1c13-4380-9833-a7d6767f5340
+            region: content
+            configuration:
+              id: 'field_block:node:equipment_brand:field_equipbrand_logo'
+              label: 'Equipment Brand Logo'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          167eb8ac-ad91-4f3a-b47a-501c2d76c4aa:
+            uuid: 167eb8ac-ad91-4f3a-b47a-501c2d76c4aa
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:equipment_brand:field_equipbrand_links'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 1
+          c0b95a1f-1264-4d34-b1e7-d6447033b3d2:
+            uuid: c0b95a1f-1264-4d34-b1e7-d6447033b3d2
+            region: content
+            configuration:
+              id: 'views_block:equipment_models_on_brand-block_1'
+              label: Models
+              provider: views
+              label_display: visible
+              views_label: Models
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
 id: node.equipment_brand.default
 targetEntityType: node
 bundle: equipment_brand

@@ -1,0 +1,8 @@
+uuid: 9a49388d-dcea-4b74-a391-91f0ef2186b4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Contact Channel Types'
+vid: contact_channel_types
+description: 'Phone, Email, Web, and Address Types'
+weight: 0

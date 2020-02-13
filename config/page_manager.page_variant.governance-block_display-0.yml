@@ -1,0 +1,21 @@
+uuid: 20049968-8997-4817-b8dd-edac2078683e
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.governance
+id: governance-block_display-0
+label: Governance
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: a6f1ce1d-f898-4269-9a66-18d4b72d9500
+  label: null
+  weight: 0
+  page_title: Governance
+page: governance
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

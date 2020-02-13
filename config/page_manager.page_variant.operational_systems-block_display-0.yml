@@ -1,0 +1,21 @@
+uuid: aaf65872-9659-4cbf-be0f-739252db0a91
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.operational_systems
+id: operational_systems-block_display-0
+label: 'Operational Systems'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: f380910f-7887-42de-87e7-df0134ce4479
+  label: null
+  weight: 0
+  page_title: 'Operational Systems'
+page: operational_systems
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

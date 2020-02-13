@@ -1,0 +1,21 @@
+uuid: 8f450a13-7407-496a-af20-a3af1fab6675
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.raci_matrix
+id: raci_matrix-block_display-0
+label: 'RACI Matrix'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 6fe48164-592f-4b9a-b207-5144f30919f7
+  label: null
+  weight: 0
+  page_title: 'RACI Matrix'
+page: raci_matrix
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

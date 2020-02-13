@@ -1,0 +1,35 @@
+uuid: fea3eccb-59ab-44e5-9394-549ad615d6f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.equipment
+    - views.view.equipment
+  module:
+    - views
+id: equipment-block_display-0
+label: 'Equipment Page'
+variant: block_display
+variant_settings:
+  blocks:
+    ba6d3774-61ae-4856-b371-e4fb4059259b:
+      id: 'views_block:equipment-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: ba6d3774-61ae-4856-b371-e4fb4059259b
+      context_mapping: {  }
+  id: block_display
+  uuid: 4c695517-e163-41c3-8aa8-0ef5cc9709b8
+  label: null
+  weight: 0
+  page_title: Equipment
+page: equipment
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

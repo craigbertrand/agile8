@@ -1,0 +1,21 @@
+uuid: 5602ddd2-6fc4-4972-b8c7-3aa03826c859
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.management_review
+id: management_review-block_display-0
+label: 'Management Review'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: cf57292c-f2df-4ba0-a182-210ab89e6461
+  label: null
+  weight: 0
+  page_title: 'Management Review'
+page: management_review
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

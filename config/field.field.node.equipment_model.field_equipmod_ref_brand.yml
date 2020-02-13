@@ -10,7 +10,7 @@ id: node.equipment_model.field_equipmod_ref_brand
 field_name: field_equipmod_ref_brand
 entity_type: node
 bundle: equipment_model
-label: 'Equipment Model Brand'
+label: Brand
 description: ''
 required: false
 translatable: false

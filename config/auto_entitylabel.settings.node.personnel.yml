@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_personnel_user:entity:display-name]'
+escape: false
+dependencies:
+  config:
+    - node.type.personnel

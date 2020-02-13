@@ -1,0 +1,11 @@
+uuid: 123be11c-a7cd-40a5-a081-3b407b162c0f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:c7a590ae-5797-4b01-b49e-40a9df3c5ec4'
+id: email
+label: Email
+icon_uuid: c7a590ae-5797-4b01-b49e-40a9df3c5ec4
+description: ''
+behavior_plugins: {  }

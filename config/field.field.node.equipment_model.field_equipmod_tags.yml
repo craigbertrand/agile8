@@ -10,7 +10,7 @@ id: node.equipment_model.field_equipmod_tags
 field_name: field_equipmod_tags
 entity_type: node
 bundle: equipment_model
-label: 'Equipment Model Tags'
+label: 'Model Tags'
 description: ''
 required: false
 translatable: false

@@ -1,0 +1,35 @@
+uuid: 1f54075b-dc92-4257-8330-dc5be32b3740
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.phone_number.field_phone_number_number
+    - field.field.paragraph.phone_number.field_type
+    - paragraphs.paragraphs_type.phone_number
+  module:
+    - field_formatter_class
+    - telephone
+id: paragraph.phone_number.default
+targetEntityType: paragraph
+bundle: phone_number
+mode: default
+content:
+  field_phone_number_number:
+    weight: 1
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_type:
+    weight: 0
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: entity_reference_label
+    region: content
+hidden: {  }

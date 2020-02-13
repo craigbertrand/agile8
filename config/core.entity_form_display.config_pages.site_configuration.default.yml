@@ -1,0 +1,69 @@
+uuid: 3f7ef1fc-8ac7-46ed-841d-ef76b7775494
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.site_configuration
+    - field.field.config_pages.site_configuration.field_environmental_policy
+    - field.field.config_pages.site_configuration.field_health_and_safety_policy
+    - field.field.config_pages.site_configuration.field_mission_statement
+    - field.field.config_pages.site_configuration.field_quality_policy
+    - field.field.config_pages.site_configuration.field_values
+    - field.field.config_pages.site_configuration.field_vision
+  module:
+    - text
+id: config_pages.site_configuration.default
+targetEntityType: config_pages
+bundle: site_configuration
+mode: default
+content:
+  field_environmental_policy:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_health_and_safety_policy:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mission_statement:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_quality_policy:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_values:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_vision:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  label: true
