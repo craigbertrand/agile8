@@ -3258,7 +3258,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "5b38fc4fb66d442c090c695789472dbb93e7bc7f"
+                "reference": "5444d0fd60874a1640e1dd0f68f2206175c74ae9"
             },
             "require": {
                 "drupal/core": "^8.7",
@@ -3274,7 +3274,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1579895885",
+                    "datestamp": "1581914784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3310,7 +3310,7 @@
                 "source": "https://git.drupalcode.org/project/rules",
                 "issues": "https://www.drupal.org/project/issues/rules"
             },
-            "time": "2020-02-05T05:35:31+00:00"
+            "time": "2020-02-17T05:55:38+00:00"
         },
         {
             "name": "drupal/serial",
@@ -3563,7 +3563,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tr_rulez.git",
-                "reference": "7672fc09e4f993101cbfea829410f6d84532996e"
+                "reference": "aa037a68177c37babad8ae8d45cf2dfb7cbb5f4e"
             },
             "require": {
                 "drupal/core": "^8.7",
@@ -3580,7 +3580,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1579855681",
+                    "datestamp": "1579932184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3604,7 +3604,7 @@
                 "source": "https://git.drupalcode.org/project/tr_rulez",
                 "issues": "https://www.drupal.org/project/issues/tr_rulez"
             },
-            "time": "2020-01-25T05:58:48+00:00"
+            "time": "2020-02-17T22:24:08+00:00"
         },
         {
             "name": "drupal/typed_data",
@@ -7049,16 +7049,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "573381c0a64f155a0d9a23f4b0c797194805b925"
+                "reference": "aed98a490f9a8f78468232db345ab9cf606cf598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/573381c0a64f155a0d9a23f4b0c797194805b925",
-                "reference": "573381c0a64f155a0d9a23f4b0c797194805b925",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/aed98a490f9a8f78468232db345ab9cf606cf598",
+                "reference": "aed98a490f9a8f78468232db345ab9cf606cf598",
                 "shasum": ""
             },
             "require": {
@@ -7093,7 +7093,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2019-11-24T13:36:37+00:00"
+            "time": "2020-02-14T12:15:55+00:00"
         },
         {
             "name": "webmozart/path-util",
