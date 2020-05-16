@@ -1,11 +1,13 @@
 /**
- * @file bef_sliders.js
+ * @file
+ * bef_sliders.js
  *
  * Adds jQuery UI Slider functionality to an exposed filter.
  */
+
 (function ($, Drupal, drupalSettings) {
   Drupal.behaviors.better_exposed_filters_slider = {
-    attach: function(context, settings) {
+    attach: function (context, settings) {
       if (drupalSettings.better_exposed_filters.slider) {
         $.each(drupalSettings.better_exposed_filters.slider_options, function (i, sliderOptions) {
           var data_selector = 'edit-' + sliderOptions.dataSelector;
@@ -79,7 +81,7 @@
               animate: sliderOptions.animate ? sliderOptions.animate : false,
               orientation: sliderOptions.orientation,
               values: [defaultMin, defaultMax],
-              // Update the textfields as the sliders are moved
+              // Update the textfields as the sliders are moved.
               slide: function (event, ui) {
                 $min.val(ui.values[0]);
                 $max.val(ui.values[1]);
@@ -95,7 +97,7 @@
                 $max.val(ui.values[1]);
               },
               // Attach stop listeners.
-              stop: function(event, ui) {
+              stop: function (event, ui) {
                 // Click the auto submit button.
                 $(this).parents('form').find('.ctools-auto-submit-click').click();
               }
@@ -104,10 +106,10 @@
             $min.after(slider);
 
             // Update the slider when the fields are updated.
-            $min.blur(function() {
+            $min.blur(function () {
               befUpdateSlider($(this), 0, sliderOptions);
             });
-            $max.blur(function() {
+            $max.blur(function () {
               befUpdateSlider($(this), 1, sliderOptions);
             });
           }
@@ -175,4 +177,4 @@
     }
   }
 
-}) (jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings);

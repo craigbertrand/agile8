@@ -959,7 +959,7 @@ display:
           admin_label: ''
           exposed: true
           expose:
-            label: ''
+            label: 'Created'
           granularity: second
       title: 'BEF Test'
       header: {  }

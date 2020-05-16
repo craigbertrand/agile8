@@ -41,7 +41,7 @@ expression:
         context_values:
           immediate: '1'
         context_mapping:
-          entity: entity
+          entity: taxonomy_term_created
         context_processors:
           immediate:
             rules_tokens: {  }

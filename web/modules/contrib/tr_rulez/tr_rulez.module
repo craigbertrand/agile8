@@ -35,8 +35,6 @@ function tr_rulez_entity_type_alter(array &$entity_types) {
     /** @var \Drupal\Core\Entity\EntityTypeInterface[] $entity_types */
     $entity_types['rules_reaction_rule']->setListBuilderClass('Drupal\tr_rulez\Controller\RulesReactionListBuilder');
     $entity_types['rules_reaction_rule']->setFormClass('edit', 'Drupal\tr_rulez\Form\ReactionRuleEditForm');
-    $entity_types['rules_reaction_rule']->setLinkTemplate('enable', '/admin/config/workflow/rules/reactions/enable/{rules_reaction_rule}');
-    $entity_types['rules_reaction_rule']->setLinkTemplate('disable', '/admin/config/workflow/rules/reactions/disable/{rules_reaction_rule}');
     $entity_types['rules_reaction_rule']->setLinkTemplate('clone', '/admin/config/workflow/rules/reactions/clone/{rules_reaction_rule}');
 
     $entity_types['rules_component']->setListBuilderClass('Drupal\tr_rulez\Controller\RulesComponentListBuilder');

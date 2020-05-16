@@ -31,3 +31,23 @@ function test4() {
     return $metatags;
   });
 }
+
+function test5() {
+  $foo = [1, 2];
+  [$a, $b] = $foo;
+
+  $bar = [3, 4];
+  list($x, $y) = $bar;
+
+  return [$a, $b, $x, $y];
+}
+
+function test6() {
+  $foo = ['a' => 1, 'b' => 2];
+  ['a' => $a, 'b' => $b] = $foo;
+
+  $bar = ['x' => 3, 'y' => 4];
+  list('x' => $x, 'y' => $y) = $bar;
+
+  return [$a, $b, $x, $y];
+}

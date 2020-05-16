@@ -111,6 +111,15 @@ class IntervalItem extends FieldItemBase implements IntervalItemInterface {
   /**
    * {@inheritdoc}
    */
+  public function setValue($values, $notify = TRUE) {
+    unset($this->intervalPlugin);
+    parent::setValue($values, $notify);
+  }
+
+
+  /**
+   * {@inheritdoc}
+   */
   public function applyInterval(\DateTime $date, $limit = FALSE) {
     try {
       $old_date = clone $date;

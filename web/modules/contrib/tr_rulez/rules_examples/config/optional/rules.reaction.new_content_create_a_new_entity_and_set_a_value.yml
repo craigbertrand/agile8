@@ -58,7 +58,7 @@ expression:
         context_values:
           immediate: '1'
         context_mapping:
-          entity: entity
+          entity: node_created
         context_processors:
           immediate:
             rules_tokens: {  }
@@ -70,7 +70,7 @@ expression:
         context_values:
           value: '{{ node.field_pressebegleittext.value }}'
         context_mapping:
-          data: entity.body
+          data: node_created.body
         context_processors:
           value:
             rules_tokens: {  }

@@ -3,12 +3,11 @@
 namespace Drupal\serial;
 
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Drupal\Core\Field\FieldDefinitionInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Database\Database;
-use Drupal\Core\Entity\EntityTypeManager;
-use Drupal\Core\Entity\Query\QueryFactory;
 
 /**
  * Serial storage service definition.
@@ -20,13 +19,6 @@ use Drupal\Core\Entity\Query\QueryFactory;
 class SerialSQLStorage implements ContainerInjectionInterface, SerialStorageInterface {
 
   /**
-   * Drupal\Core\Entity\Query\QueryInterface definition.
-   *
-   * @var \Drupal\Core\Entity\Query\QueryInterface
-   */
-  protected $entityQuery;
-
-  /**
    * Drupal\Core\Entity\EntityTypeManager definition.
    *
    * @var \Drupal\Core\Entity\EntityTypeManager
@@ -36,9 +28,7 @@ class SerialSQLStorage implements ContainerInjectionInterface, SerialStorageInte
   /**
    * {@inheritdoc}
    */
-  public function __construct(QueryFactory $entityQuery,
-                              EntityTypeManager $entityTypeManager) {
-    $this->entityQuery = $entityQuery;
+  public function __construct(EntityTypeManagerInterface $entityTypeManager) {
     $this->entityTypeManager = $entityTypeManager;
   }
 
@@ -47,7 +37,6 @@ class SerialSQLStorage implements ContainerInjectionInterface, SerialStorageInte
    */
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('entity.query'),
       $container->get('entity_type.manager')
     );
   }
@@ -198,10 +187,10 @@ class SerialSQLStorage implements ContainerInjectionInterface, SerialStorageInte
    * {@inheritdoc}
    */
   public function initOldEntries($entityTypeId, $entityBundle, $fieldName, $startValue) {
-    $query = $this->entityQuery->get($entityTypeId);
+    $storage = $this->entityTypeManager->getStorage($entityTypeId);
+    $query = $storage->getQuery();
     // @todo shall we assign serial id to unpublished as well?
     // $query->condition('status', 1);
-    $storage = $this->entityTypeManager->getStorage($entityTypeId);
     $bundleKey = $storage->getEntityType()->getKey('bundle');
     $query->condition($bundleKey, $entityBundle);
     $query->accessCheck(FALSE);

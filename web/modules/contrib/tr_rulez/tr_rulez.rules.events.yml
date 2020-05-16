@@ -1,3 +1,4 @@
+# User events.
 tr_rulez_user_was_blocked:
   label: 'After a user was blocked'
   category: 'User'
@@ -5,7 +6,6 @@ tr_rulez_user_was_blocked:
     account:
       type: 'entity:user'
       label: 'Updated user'
-
 tr_rulez_user_was_unblocked:
   label: 'After a user was unblocked'
   category: 'User'
@@ -14,6 +14,7 @@ tr_rulez_user_was_unblocked:
       type: 'entity:user'
       label: 'Updated user'
 
+# Bundle events.
 tr_rulez_entity_bundle_create:
   label: 'After creating a new entity bundle'
   category: 'Entity'

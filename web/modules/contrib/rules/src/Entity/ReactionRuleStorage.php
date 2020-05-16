@@ -2,6 +2,7 @@
 
 namespace Drupal\rules\Entity;
 
+use Drupal\Core\Cache\Cache;
 use Drupal\Core\Cache\MemoryCache\MemoryCacheInterface;
 use Drupal\Core\Config\Entity\ConfigEntityStorage;
 use Drupal\Core\DrupalKernelInterface;
@@ -115,20 +116,28 @@ class ReactionRuleStorage extends ConfigEntityStorage {
     // not.
     $events_before = $this->getRegisteredEvents();
     $return = parent::save($entity);
+    $events_after = $this->getRegisteredEvents();
 
     // Update the state of registered events.
-    $this->stateService->set('rules.registered_events', $this->getRegisteredEvents());
+    $this->stateService->set('rules.registered_events', $events_after);
 
-    // After the reaction rule is saved, we need to rebuild the container,
+    // After the reaction rule is saved, we may need to rebuild the container,
     // otherwise the reaction rule will not fire. However, we can do an
-    // optimization: if every event was already registered before, we do not
-    // have to rebuild the container.
+    // optimization: Only rebuild the container if there is a new event which
+    // was not already registered before. Similarly if the rule is being
+    // disabled and there are no other active rules with this event, then also
+    // rebuild the container.
     foreach ($entity->getEventNames() as $event_name) {
-      if (empty($events_before[$event_name])) {
+      if (empty($events_before[$event_name]) || empty($events_after[$event_name])) {
         $this->drupalKernel->rebuildContainer();
         break;
       }
     }
+
+    // When a reaction rule is saved (either added, updated or enabled/disabled)
+    // the cache for its event(s) needs to be invalidated. These tags are set in
+    // RulesComponentRepository::getMultiple()
+    Cache::invalidateTags($entity->getEventNames());
 
     return $return;
   }
@@ -137,6 +146,11 @@ class ReactionRuleStorage extends ConfigEntityStorage {
    * {@inheritdoc}
    */
   public function delete(array $entities) {
+    // When a rule is deleted the cache for its event(s) must be invalidated.
+    foreach ($entities as $entity) {
+      Cache::invalidateTags($entity->getEventNames());
+    }
+
     // After deleting a set of reaction rules, sometimes we may need to rebuild
     // the container, to clean it up, so that the generic subscriber is not
     // registered in the container for the rule events which we do not use
