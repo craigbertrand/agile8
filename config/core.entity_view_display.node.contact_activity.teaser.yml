@@ -1,0 +1,24 @@
+uuid: c0b4d1cb-4eee-4327-8d9f-0cc7627fe5c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_activity.field_contact_activity_desc
+    - field.field.node.contact_activity.field_contact_activity_type
+    - node.type.contact_activity
+  module:
+    - user
+id: node.contact_activity.teaser
+targetEntityType: node
+bundle: contact_activity
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contact_activity_desc: true
+  field_contact_activity_type: true

@@ -1,0 +1,8 @@
+uuid: ce22e531-5a44-484a-bc2d-f6aef3cc7c8b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Hierarchy of Controls'
+vid: hierarchy_of_controls
+description: ''
+weight: 0

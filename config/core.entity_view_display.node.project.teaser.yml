@@ -1,0 +1,44 @@
+uuid: e6de9fd3-af01-42c8-8322-f025845b5800
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_customer_location
+    - field.field.node.project.field_project_business_units
+    - field.field.node.project.field_project_dates
+    - field.field.node.project.field_project_files
+    - field.field.node.project.field_project_id
+    - field.field.node.project.field_project_links
+    - field.field.node.project.field_project_processes
+    - field.field.node.project.field_project_ref_customer
+    - field.field.node.project.field_project_ref_manager
+    - field.field.node.project.field_project_ref_sales_person
+    - field.field.node.project.field_project_requirements
+    - field.field.node.project.field_project_status
+    - node.type.project
+  module:
+    - user
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_customer_location: true
+  field_project_business_units: true
+  field_project_dates: true
+  field_project_files: true
+  field_project_id: true
+  field_project_links: true
+  field_project_processes: true
+  field_project_ref_customer: true
+  field_project_ref_manager: true
+  field_project_ref_sales_person: true
+  field_project_requirements: true
+  field_project_status: true

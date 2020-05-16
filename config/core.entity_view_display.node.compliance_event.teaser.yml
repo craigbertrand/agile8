@@ -1,0 +1,44 @@
+uuid: 8bbb5802-dd3a-4235-91fe-de90adc896d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.compliance_event.field_ce_cause
+    - field.field.node.compliance_event.field_ce_containment_action
+    - field.field.node.compliance_event.field_ce_date
+    - field.field.node.compliance_event.field_ce_description
+    - field.field.node.compliance_event.field_ce_files
+    - field.field.node.compliance_event.field_ce_links
+    - field.field.node.compliance_event.field_ce_ref_assigned_to_user
+    - field.field.node.compliance_event.field_ce_ref_ce
+    - field.field.node.compliance_event.field_ce_ref_references
+    - field.field.node.compliance_event.field_ce_ref_uncertainty
+    - field.field.node.compliance_event.field_ce_status
+    - field.field.node.compliance_event.field_ce_tags
+    - node.type.compliance_event
+  module:
+    - user
+id: node.compliance_event.teaser
+targetEntityType: node
+bundle: compliance_event
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ce_cause: true
+  field_ce_containment_action: true
+  field_ce_date: true
+  field_ce_description: true
+  field_ce_files: true
+  field_ce_links: true
+  field_ce_ref_assigned_to_user: true
+  field_ce_ref_ce: true
+  field_ce_ref_references: true
+  field_ce_ref_uncertainty: true
+  field_ce_status: true
+  field_ce_tags: true

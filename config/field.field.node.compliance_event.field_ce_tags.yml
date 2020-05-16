@@ -1,0 +1,29 @@
+uuid: 89c3a76c-eea2-434f-ab1f-26b92c74216f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_tags
+    - node.type.compliance_event
+    - taxonomy.vocabulary.compliance_event_tags
+id: node.compliance_event.field_ce_tags
+field_name: field_ce_tags
+entity_type: node
+bundle: compliance_event
+label: Tags
+description: 'Select all that apply.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      compliance_event_tags: compliance_event_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

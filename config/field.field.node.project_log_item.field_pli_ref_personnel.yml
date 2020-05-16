@@ -1,0 +1,28 @@
+uuid: 857aea06-326e-4283-b3eb-14820f8e9cbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pli_ref_personnel
+    - node.type.personnel
+    - node.type.project_log_item
+id: node.project_log_item.field_pli_ref_personnel
+field_name: field_pli_ref_personnel
+entity_type: node
+bundle: project_log_item
+label: Personnel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      personnel: personnel
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

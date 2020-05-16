@@ -1,0 +1,44 @@
+uuid: 1b96ed2d-3f02-47d0-ab3f-f10d58f70c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project_log_item.field_pli_access_method
+    - field.field.node.project_log_item.field_pli_hight
+    - field.field.node.project_log_item.field_pli_length
+    - field.field.node.project_log_item.field_pli_ref_findings
+    - field.field.node.project_log_item.field_pli_ref_personnel
+    - field.field.node.project_log_item.field_pli_ref_project
+    - field.field.node.project_log_item.field_pli_rigging_hours
+    - field.field.node.project_log_item.field_pli_task
+    - field.field.node.project_log_item.field_pli_task_description
+    - field.field.node.project_log_item.field_pli_task_hours
+    - field.field.node.project_log_item.field_pli_total_hours
+    - field.field.node.project_log_item.field_pli_width
+    - node.type.project_log_item
+  module:
+    - user
+id: node.project_log_item.teaser
+targetEntityType: node
+bundle: project_log_item
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pli_access_method: true
+  field_pli_hight: true
+  field_pli_length: true
+  field_pli_ref_findings: true
+  field_pli_ref_personnel: true
+  field_pli_ref_project: true
+  field_pli_rigging_hours: true
+  field_pli_task: true
+  field_pli_task_description: true
+  field_pli_task_hours: true
+  field_pli_total_hours: true
+  field_pli_width: true

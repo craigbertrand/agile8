@@ -1,0 +1,44 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - tr_rulez
+  enforced:
+    module:
+      - tr_rulez
+id: user_has_been_unblocked
+label: 'User has been unblocked'
+events:
+  -
+    event_name: tr_rulez_user_was_unblocked
+description: 'Example Rule which shows a system message when a User''s status is changed to unblocked'
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: fd06bd24-a648-4e86-8a59-feb8290d2def
+  conditions:
+    id: rules_and
+    uuid: e572aa57-c7f8-411e-a611-5acfb19c8be9
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 3be49a21-99db-4f00-bbf1-725956a743ce
+    actions:
+      -
+        id: rules_action
+        uuid: 5a51cd6f-5a2e-4184-b029-721b24761479
+        context_values:
+          message: 'User "{{ account.name }}" has been unblocked'
+          type: warning
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_system_message

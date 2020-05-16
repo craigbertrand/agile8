@@ -1,0 +1,24 @@
+uuid: d72d9954-49e8-4826-b9f3-221800005f42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interested_party_rev_date
+    - node.type.interested_party
+  module:
+    - datetime
+id: node.interested_party.field_interested_party_rev_date
+field_name: field_interested_party_rev_date
+entity_type: node
+bundle: interested_party
+label: 'Next Review Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+1 year'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

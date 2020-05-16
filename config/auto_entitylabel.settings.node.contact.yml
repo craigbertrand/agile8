@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_contact_name:family] [node:field_contact_name:given]'
+escape: false
+dependencies:
+  config:
+    - node.type.contact

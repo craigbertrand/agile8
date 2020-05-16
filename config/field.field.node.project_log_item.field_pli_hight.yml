@@ -1,0 +1,23 @@
+uuid: 9b0c786f-fd6f-499c-a258-9e4289b23e23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pli_hight
+    - node.type.project_log_item
+id: node.project_log_item.field_pli_hight
+field_name: field_pli_hight
+entity_type: node
+bundle: project_log_item
+label: Hight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

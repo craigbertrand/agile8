@@ -1,0 +1,29 @@
+uuid: 606e1030-0a8e-4063-8943-b1e053bbc492
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_processes
+    - node.type.uncertainty
+    - taxonomy.vocabulary.process
+id: node.uncertainty.field_uncertainty_processes
+field_name: field_uncertainty_processes
+entity_type: node
+bundle: uncertainty
+label: Processes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      process: process
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

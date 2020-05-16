@@ -1,0 +1,27 @@
+uuid: 5caaeaff-462e-4b3d-940e-8b4f81dbbfc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_doc_rev_status
+field_name: field_doc_rev_status
+entity_type: paragraph
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Active
+    -
+      value: 2
+      label: Archived
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

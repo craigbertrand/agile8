@@ -1,0 +1,21 @@
+uuid: 5afc662a-7eb4-4bf8-9dc0-85fed5d803c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_location_desc
+    - node.type.customer_location
+  module:
+    - text
+id: node.customer_location.field_customer_location_desc
+field_name: field_customer_location_desc
+entity_type: node
+bundle: customer_location
+label: Description
+description: 'Describe any unique information or entry requirements for this location.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: 4ba5380b-163b-4995-86e7-a1aef9fd4d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_business_units
+    - node.type.project
+    - taxonomy.vocabulary.business_units
+id: node.project.field_project_business_units
+field_name: field_project_business_units
+entity_type: node
+bundle: project
+label: 'Business Units'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      business_units: business_units
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: 6f0a9e8a-b61a-4b8c-90d7-f0e21505a0bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_location
+    - node.type.customer_location
+    - node.type.project
+id: node.project.field_customer_location
+field_name: field_customer_location
+entity_type: node
+bundle: project
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      customer_location: customer_location
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,40 @@
+uuid: 7415654e-e5ad-4f26-b860-eb76f8a077de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_ref_doc_rev
+    - node.type.document
+    - paragraphs.paragraphs_type.document_revision
+  module:
+    - entity_reference_revisions
+id: node.document.field_doc_ref_doc_rev
+field_name: field_doc_ref_doc_rev
+entity_type: node
+bundle: document
+label: Revisions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      document_revision: document_revision
+    target_bundles_drag_drop:
+      document_revision:
+        enabled: true
+        weight: 5
+      email:
+        weight: 6
+        enabled: false
+      phone_number:
+        weight: 7
+        enabled: false
+      project_log_items_findings:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

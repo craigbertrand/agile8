@@ -1,0 +1,29 @@
+entity.rules_reaction_rule.clone:
+  path: '/admin/config/workflow/rules/reactions/clone/{rules_reaction_rule}'
+  defaults:
+    _controller: '\Drupal\tr_rulez\Controller\RulesReactionController::saveClone'
+    _title: 'Clone reaction rule'
+  options:
+    _rules_ui: rules.reaction_rules
+  requirements:
+    _permission: 'administer rules+administer rules reactions'
+    _csrf_token: 'TRUE'
+
+entity.rules_component.clone:
+  path: '/admin/config/workflow/rules/components/clone/{rules_component}'
+  defaults:
+    _controller: '\Drupal\tr_rulez\Controller\RulesComponentController::saveClone'
+    _title: 'Clone rules component'
+  options:
+    _rules_ui: rules.reaction_rules
+  requirements:
+    _permission: 'administer rules+administer rules components'
+    _csrf_token: 'TRUE'
+
+tr_rulez.unimplemented:
+  path: '/unimplemented-feature/{feature}/{title}/{issue}'
+  defaults:
+    _form: '\Drupal\tr_rulez\Form\UnimplementedFeatureForm'
+    _title: 'Unimplemented feature'
+  requirements:
+    _permission: 'administer rules'

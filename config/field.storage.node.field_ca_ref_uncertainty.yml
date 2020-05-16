@@ -1,0 +1,19 @@
+uuid: 78055f77-0c3c-4cc2-a7a7-105d5b081f8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ca_ref_uncertainty
+field_name: field_ca_ref_uncertainty
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

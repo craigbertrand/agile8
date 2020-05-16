@@ -1,0 +1,19 @@
+uuid: 9557f569-b17b-40f1-80bc-0b85871651da
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_uncertainty_ref_iparty
+field_name: field_uncertainty_ref_iparty
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

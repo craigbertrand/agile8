@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed73e0ab99133fe9f5b56625b151ad04",
+    "content-hash": "c10428c87e2ffe11f83830f175f9f0e8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3774,6 +3774,48 @@
                 "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/views-bulk-operations-vbo"
             }
+        },
+        {
+            "name": "drupal/workflows_field",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/workflows_field.git",
+                "reference": "9385d299b6282dce0f67059397f35cade0b32a04"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1+1-dev",
+                    "datestamp": "1511312286",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                }
+            ],
+            "description": "Adds a field type which can be used for storing and transitioning states according to workflows.",
+            "homepage": "https://www.drupal.org/project/workflows_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/workflows_field"
+            },
+            "time": "2017-11-22T00:54:24+00:00"
         },
         {
             "name": "drush-ops/behat-drush-endpoint",
@@ -9919,6 +9961,7 @@
         "drupal/serial": 15,
         "drupal/tr_rulez": 20,
         "drupal/typed_data": 20,
+        "drupal/workflows_field": 20,
         "drupal/config_filter": 5
     },
     "prefer-stable": true,

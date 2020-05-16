@@ -1,0 +1,19 @@
+uuid: 7911873e-c770-4f0f-8e55-b96d02930f78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_plif_item_id
+    - paragraphs.paragraphs_type.project_log_items_findings
+id: paragraph.project_log_items_findings.field_plif_item_id
+field_name: field_plif_item_id
+entity_type: paragraph
+bundle: project_log_items_findings
+label: 'Item ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

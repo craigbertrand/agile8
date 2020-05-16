@@ -1,0 +1,34 @@
+uuid: 27bbc05b-eb30-4722-b71a-220ed929f2a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_phone_number
+    - node.type.contact
+    - paragraphs.paragraphs_type.phone_number
+  module:
+    - entity_reference_revisions
+id: node.contact.field_contact_phone_number
+field_name: field_contact_phone_number
+entity_type: node
+bundle: contact
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      phone_number: phone_number
+    target_bundles_drag_drop:
+      email:
+        weight: 3
+        enabled: false
+      phone_number:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

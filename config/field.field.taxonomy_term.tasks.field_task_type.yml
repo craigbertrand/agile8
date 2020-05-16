@@ -1,0 +1,21 @@
+uuid: 0d958037-db15-48d6-82aa-2b53742f1782
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_task_type
+    - taxonomy.vocabulary.tasks
+  module:
+    - options
+id: taxonomy_term.tasks.field_task_type
+field_name: field_task_type
+entity_type: taxonomy_term
+bundle: tasks
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

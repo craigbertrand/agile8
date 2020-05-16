@@ -1,0 +1,27 @@
+uuid: a75acda9-6fe2-45de-91dc-c5c8851884e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_files
+    - node.type.project
+  module:
+    - file
+id: node.project.field_project_files
+field_name: field_project_files
+entity_type: node
+bundle: project
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'projects/[current-page:title]'
+  file_extensions: 'pdf doc docx xls xlsx ppt pptx csv txt'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

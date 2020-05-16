@@ -1,0 +1,21 @@
+uuid: bfb00a22-33a7-4694-a6c1-b54442a0c599
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_doc_rev_change_log
+    - paragraphs.paragraphs_type.document_revision
+  module:
+    - text
+id: paragraph.document_revision.field_doc_rev_change_log
+field_name: field_doc_rev_change_log
+entity_type: paragraph
+bundle: document_revision
+label: 'Change Log'
+description: 'Describe any relevant changes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

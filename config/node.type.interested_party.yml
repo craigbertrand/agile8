@@ -1,0 +1,17 @@
+uuid: 0360757f-357b-4cba-a56c-be5e207a7493
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Interested Party'
+type: interested_party
+description: "interested party\r\nperson or organization that can affect, be affected by, or perceive itself to be affected by a decision or activity\r\nEXAMPLE Customers, communities, suppliers, regulators, non-governmental organizations, investors and employees.\r\n\r\nNote 1 to entry: To “perceive itself to be affected” means the perception has been made known to the organization."
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

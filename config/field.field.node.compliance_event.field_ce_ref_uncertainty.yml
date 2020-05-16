@@ -1,0 +1,28 @@
+uuid: 4460da22-722d-47d2-a732-9255ffaed0b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_ref_uncertainty
+    - node.type.compliance_event
+    - node.type.uncertainty
+id: node.compliance_event.field_ce_ref_uncertainty
+field_name: field_ce_ref_uncertainty
+entity_type: node
+bundle: compliance_event
+label: 'Related Risks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      uncertainty: uncertainty
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

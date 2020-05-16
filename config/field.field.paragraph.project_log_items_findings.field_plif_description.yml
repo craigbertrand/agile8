@@ -1,0 +1,21 @@
+uuid: 31524056-738c-4c93-9e1a-f19d5e2547a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_plif_description
+    - paragraphs.paragraphs_type.project_log_items_findings
+  module:
+    - text
+id: paragraph.project_log_items_findings.field_plif_description
+field_name: field_plif_description
+entity_type: paragraph
+bundle: project_log_items_findings
+label: Description
+description: 'Describe the finding. Include any needed materials and suggested access methods.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: fb83d0d8-b75f-4a6c-b0e2-6fd9710aa1d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.compliance_event
+id: node.compliance_event.promote
+field_name: promote
+entity_type: node
+bundle: compliance_event
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,42 @@
+id: rules_settings
+label: Rules configuration settings
+migration_tags:
+  - Drupal 6
+  - Drupal 7
+  - Configuration
+
+source:
+  plugin: variable
+  source_module: rules
+  variables:
+    - rules_debug
+    - rules_debug_log
+    - rules_debug_region_bartik
+    - rules_debug_region_seven
+    - rules_event_whitelist
+    - rules_log_errors
+
+process:
+  'system_log/log_level':
+    plugin: static_map
+    source: rules_log_errors
+    map:
+      1: 'debug'
+      2: 'warning'
+      3: 'error'
+  'debug_log/enabled':
+    plugin: callback
+    source: rules_debug
+    callable: boolval
+  'debug_log/system_debug': rules_debug_log
+  'debug_log/log_level':
+    plugin: static_map
+    source: rules_debug
+    map:
+      1: 'debug'
+      2: 'warning'
+      3: 'error'
+
+destination:
+  plugin: config
+  config_name: rules.settings

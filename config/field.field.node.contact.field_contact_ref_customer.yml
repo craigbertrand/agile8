@@ -1,0 +1,28 @@
+uuid: 69c8b92c-7382-43b7-be82-119ec6987b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_ref_customer
+    - node.type.contact
+    - node.type.customer
+id: node.contact.field_contact_ref_customer
+field_name: field_contact_ref_customer
+entity_type: node
+bundle: contact
+label: Customer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      customer: customer
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

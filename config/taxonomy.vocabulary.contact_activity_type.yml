@@ -1,0 +1,8 @@
+uuid: 002a1546-1b97-4b04-9374-9630c559e234
+langcode: en
+status: true
+dependencies: {  }
+name: 'Contact Activity Type'
+vid: contact_activity_type
+description: ''
+weight: 0

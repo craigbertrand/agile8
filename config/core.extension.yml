@@ -23,6 +23,7 @@ module:
   ctools_block: 0
   ctools_views: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
@@ -52,9 +53,9 @@ module:
   permissions_filter: 0
   prepopulate: 0
   quickedit: 0
-  radix_layouts: 0
   rdf: 0
   rules: 0
+  rules_examples: 0
   search: 0
   serial: 0
   shortcut: 0
@@ -67,10 +68,13 @@ module:
   toolbar: 0
   toolbar_menu: 0
   tour: 0
+  tr_rulez: 0
   typed_data: 0
   update: 0
   user: 0
   views_ui: 0
+  workflows: 0
+  workflows_field: 0
   menu_link_content: 1
   pathauto: 1
   views: 10

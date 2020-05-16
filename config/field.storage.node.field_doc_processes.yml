@@ -1,0 +1,20 @@
+uuid: a48b6042-cad2-4dc3-a778-4762162fa330
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_doc_processes
+field_name: field_doc_processes
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

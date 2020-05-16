@@ -1,0 +1,28 @@
+uuid: b53dc1ba-92af-4920-9d0a-3e8f8aaf3815
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pli_ref_project
+    - node.type.project
+    - node.type.project_log_item
+id: node.project_log_item.field_pli_ref_project
+field_name: field_pli_ref_project
+entity_type: node
+bundle: project_log_item
+label: Project
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

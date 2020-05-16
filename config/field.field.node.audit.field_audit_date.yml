@@ -1,0 +1,21 @@
+uuid: bfcf42b1-7be1-4005-8a4f-d609e239364c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audit_date
+    - node.type.audit
+  module:
+    - datetime_range
+id: node.audit.field_audit_date
+field_name: field_audit_date
+entity_type: node
+bundle: audit
+label: 'Audit Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

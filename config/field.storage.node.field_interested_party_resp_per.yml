@@ -1,0 +1,20 @@
+uuid: a9f0a951-1e5b-401f-934a-185b22d4cb55
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_interested_party_resp_per
+field_name: field_interested_party_resp_per
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

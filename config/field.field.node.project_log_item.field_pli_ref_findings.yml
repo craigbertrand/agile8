@@ -1,0 +1,37 @@
+uuid: 826f85af-f753-4a1e-bd1a-1cc184a61d10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pli_ref_findings
+    - node.type.project_log_item
+    - paragraphs.paragraphs_type.project_log_items_findings
+  module:
+    - entity_reference_revisions
+id: node.project_log_item.field_pli_ref_findings
+field_name: field_pli_ref_findings
+entity_type: node
+bundle: project_log_item
+label: Findings
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      project_log_items_findings: project_log_items_findings
+    target_bundles_drag_drop:
+      email:
+        weight: 4
+        enabled: false
+      phone_number:
+        weight: 5
+        enabled: false
+      project_log_items_findings:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

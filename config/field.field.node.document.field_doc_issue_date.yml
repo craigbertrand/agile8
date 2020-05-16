@@ -1,0 +1,24 @@
+uuid: a6ad2dfc-e512-40b7-a606-19d7097fd0b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_issue_date
+    - node.type.document
+  module:
+    - datetime
+id: node.document.field_doc_issue_date
+field_name: field_doc_issue_date
+entity_type: node
+bundle: document
+label: 'Issue Date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

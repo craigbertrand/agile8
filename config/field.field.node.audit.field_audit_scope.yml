@@ -1,0 +1,21 @@
+uuid: 287ac422-53a5-4a7d-961a-1ffd2f5115d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audit_scope
+    - node.type.audit
+  module:
+    - text
+id: node.audit.field_audit_scope
+field_name: field_audit_scope
+entity_type: node
+bundle: audit
+label: 'Audit Scope'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

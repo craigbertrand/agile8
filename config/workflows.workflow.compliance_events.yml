@@ -1,0 +1,35 @@
+uuid: 2f063e14-3fdf-4902-917b-29195b3be529
+langcode: en
+status: true
+dependencies:
+  module:
+    - workflows_field
+id: compliance_events
+label: 'Compliance Events'
+type: workflows_field
+type_settings:
+  states:
+    closed:
+      label: Closed
+      weight: 2
+    evaluated:
+      label: Evaluated
+      weight: 1
+    reported:
+      label: Reported
+      weight: 0
+  transitions:
+    close:
+      label: Close
+      from:
+        - evaluated
+        - reported
+      to: closed
+      weight: 1
+    evaluated:
+      label: Evaluated
+      from:
+        - reported
+      to: evaluated
+      weight: 0
+  initial_state: reported

@@ -1,0 +1,27 @@
+uuid: 16630282-d2a3-4440-96a9-f32d8ee82d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_doc_rev_file
+    - paragraphs.paragraphs_type.document_revision
+  module:
+    - file
+id: paragraph.document_revision.field_doc_rev_file
+field_name: field_doc_rev_file
+entity_type: paragraph
+bundle: document_revision
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'document-revisions/[current-page:title]'
+  file_extensions: 'pdf doc docx xls xlsx ppt pptx csv txt'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

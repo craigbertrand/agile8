@@ -1,0 +1,21 @@
+uuid: 8208fed7-0abe-4f8d-a6bf-d39c6f703fc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_source
+    - node.type.document
+  module:
+    - options
+id: node.document.field_doc_source
+field_name: field_doc_source
+entity_type: node
+bundle: document
+label: Source
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

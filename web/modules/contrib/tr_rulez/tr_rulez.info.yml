@@ -1,0 +1,9 @@
+name: D8 Rules Essentials
+type: module
+description: 'Provides missing functionality and documentation for the D8 Rules module.'
+package: Rules
+core_version_requirement: ^8.7.7
+dependencies:
+  - drupal:config
+  - rules:rules
+configure: rules.settings

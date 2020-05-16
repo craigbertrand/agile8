@@ -1,0 +1,17 @@
+uuid: 49555c8e-5c13-4a4d-bf5c-c4f7e10b7a5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Uncertainty
+type: uncertainty
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

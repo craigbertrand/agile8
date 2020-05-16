@@ -1,0 +1,41 @@
+uuid: f5b1d9f6-5107-4848-9b84-b892de743938
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project_log_items_findings.field_plif_description
+    - field.field.paragraph.project_log_items_findings.field_plif_item_id
+    - field.field.paragraph.project_log_items_findings.field_plif_rank
+    - paragraphs.paragraphs_type.project_log_items_findings
+  module:
+    - text
+id: paragraph.project_log_items_findings.default
+targetEntityType: paragraph
+bundle: project_log_items_findings
+mode: default
+content:
+  field_plif_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_plif_item_id:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_plif_rank:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

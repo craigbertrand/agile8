@@ -1,0 +1,21 @@
+uuid: ab6bc010-d65f-4b6e-9c94-31bf50bc78bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ca_date_closed
+    - node.type.corrective_action
+  module:
+    - datetime
+id: node.corrective_action.field_ca_date_closed
+field_name: field_ca_date_closed
+entity_type: node
+bundle: corrective_action
+label: 'Date Closed'
+description: 'Date closed if the evaluation of action proved effective.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

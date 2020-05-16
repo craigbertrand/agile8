@@ -1,0 +1,34 @@
+uuid: 7dd5051f-3b5e-4d12-be4a-3096d489ccaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact.field_contact_address
+    - field.field.node.contact.field_contact_birthday
+    - field.field.node.contact.field_contact_email
+    - field.field.node.contact.field_contact_links
+    - field.field.node.contact.field_contact_name
+    - field.field.node.contact.field_contact_phone_number
+    - field.field.node.contact.field_contact_ref_customer
+    - node.type.contact
+  module:
+    - user
+id: node.contact.teaser
+targetEntityType: node
+bundle: contact
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contact_address: true
+  field_contact_birthday: true
+  field_contact_email: true
+  field_contact_links: true
+  field_contact_name: true
+  field_contact_phone_number: true
+  field_contact_ref_customer: true

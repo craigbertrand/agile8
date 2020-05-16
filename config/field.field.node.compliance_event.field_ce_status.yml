@@ -1,0 +1,23 @@
+uuid: eac164e9-4182-4b72-a1a9-592bec269c99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_status
+    - node.type.compliance_event
+  module:
+    - workflows_field
+id: node.compliance_event.field_ce_status
+field_name: field_ce_status
+entity_type: node
+bundle: compliance_event
+label: Status
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: reported
+default_value_callback: ''
+settings: {  }
+field_type: workflows_field_item

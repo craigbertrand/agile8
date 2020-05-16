@@ -1,0 +1,19 @@
+uuid: 894bfd3a-83b6-47e2-8d5d-c22cb94e55df
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ca_ref_compliance_event
+field_name: field_ca_ref_compliance_event
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

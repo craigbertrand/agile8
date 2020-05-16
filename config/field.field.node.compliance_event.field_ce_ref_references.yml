@@ -1,0 +1,38 @@
+uuid: 59f390c5-e4b5-4d89-8fca-dfb7e53cc0ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_ref_references
+    - node.type.compliance_event
+    - node.type.customer
+    - node.type.customer_location
+    - node.type.equipment
+    - node.type.equipment_model
+    - node.type.personnel
+    - node.type.project
+id: node.compliance_event.field_ce_ref_references
+field_name: field_ce_ref_references
+entity_type: node
+bundle: compliance_event
+label: References
+description: 'Reference any other related items, For example, equipment, suppliers, or customers.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      customer: customer
+      customer_location: customer_location
+      equipment: equipment
+      equipment_model: equipment_model
+      personnel: personnel
+      project: project
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: personnel
+field_type: entity_reference

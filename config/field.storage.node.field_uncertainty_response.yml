@@ -1,0 +1,45 @@
+uuid: ca73e08c-1340-4faf-98e5-3dd591db784b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_uncertainty_response
+field_name: field_uncertainty_response
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Avoidance
+    -
+      value: 2
+      label: Mitigation
+    -
+      value: 3
+      label: Transference
+    -
+      value: 4
+      label: Acceptance
+    -
+      value: 5
+      label: Exploit
+    -
+      value: 6
+      label: Enhance
+    -
+      value: 7
+      label: Accept
+    -
+      value: 8
+      label: Share
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

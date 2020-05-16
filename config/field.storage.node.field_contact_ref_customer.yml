@@ -1,0 +1,19 @@
+uuid: 553d209b-6cd4-40e8-82d4-f3d6680f30bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_contact_ref_customer
+field_name: field_contact_ref_customer
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

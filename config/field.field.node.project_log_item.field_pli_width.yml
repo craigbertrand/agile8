@@ -1,0 +1,23 @@
+uuid: c203ab23-3890-4a39-8802-b65ee6df4504
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pli_width
+    - node.type.project_log_item
+id: node.project_log_item.field_pli_width
+field_name: field_pli_width
+entity_type: node
+bundle: project_log_item
+label: Width
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

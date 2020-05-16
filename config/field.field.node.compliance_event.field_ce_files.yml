@@ -1,0 +1,27 @@
+uuid: b8691ee1-c32b-4ee3-8941-b7749f81d0e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_files
+    - node.type.compliance_event
+  module:
+    - file
+id: node.compliance_event.field_ce_files
+field_name: field_ce_files
+entity_type: node
+bundle: compliance_event
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'compliance-events/[current-page:title]'
+  file_extensions: 'pdf doc docx xls xlsx ppt pptx csv txt zip'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

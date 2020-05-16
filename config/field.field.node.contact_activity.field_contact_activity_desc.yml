@@ -1,0 +1,21 @@
+uuid: 8c1602be-7448-4251-ae4f-d92f092a6443
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_activity_desc
+    - node.type.contact_activity
+  module:
+    - text
+id: node.contact_activity.field_contact_activity_desc
+field_name: field_contact_activity_desc
+entity_type: node
+bundle: contact_activity
+label: Description
+description: 'Describe the contact and any relevant discussions.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

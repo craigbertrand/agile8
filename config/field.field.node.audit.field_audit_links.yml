@@ -1,0 +1,23 @@
+uuid: 156f0cd7-ffa5-47fc-8ef1-2d8c120357b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audit_links
+    - node.type.audit
+  module:
+    - link
+id: node.audit.field_audit_links
+field_name: field_audit_links
+entity_type: node
+bundle: audit
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

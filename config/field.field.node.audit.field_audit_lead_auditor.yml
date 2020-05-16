@@ -1,0 +1,30 @@
+uuid: e50cd879-bc8f-40c7-8585-a07280aa28a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audit_lead_auditor
+    - node.type.audit
+    - node.type.contact
+    - node.type.personnel
+id: node.audit.field_audit_lead_auditor
+field_name: field_audit_lead_auditor
+entity_type: node
+bundle: audit
+label: 'Lead Auditor'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contact: contact
+      personnel: personnel
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: contact
+field_type: entity_reference

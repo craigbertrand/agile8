@@ -1,0 +1,29 @@
+uuid: 9324c996-13dd-4909-a637-1e8c9da2f397
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_tags
+    - node.type.uncertainty
+    - taxonomy.vocabulary.uncertainty_tags
+id: node.uncertainty.field_uncertainty_tags
+field_name: field_uncertainty_tags
+entity_type: node
+bundle: uncertainty
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      uncertainty_tags: uncertainty_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

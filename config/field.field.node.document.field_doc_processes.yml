@@ -1,0 +1,29 @@
+uuid: 40aec8a7-8a4c-4d7a-be0d-042f142e3f96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_processes
+    - node.type.document
+    - taxonomy.vocabulary.process
+id: node.document.field_doc_processes
+field_name: field_doc_processes
+entity_type: node
+bundle: document
+label: Processes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      process: process
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

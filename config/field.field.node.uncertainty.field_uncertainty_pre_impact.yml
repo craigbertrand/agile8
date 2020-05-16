@@ -1,0 +1,21 @@
+uuid: 98d69a14-f7a8-41c8-bda4-71a0b601288b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_pre_impact
+    - node.type.uncertainty
+  module:
+    - options
+id: node.uncertainty.field_uncertainty_pre_impact
+field_name: field_uncertainty_pre_impact
+entity_type: node
+bundle: uncertainty
+label: 'Pre-Response Impact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

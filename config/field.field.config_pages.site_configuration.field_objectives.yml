@@ -1,0 +1,21 @@
+uuid: 57907571-a138-4b6f-9e0a-e4d0598c451e
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.site_configuration
+    - field.storage.config_pages.field_objectives
+  module:
+    - text
+id: config_pages.site_configuration.field_objectives
+field_name: field_objectives
+entity_type: config_pages
+bundle: site_configuration
+label: Objectives
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

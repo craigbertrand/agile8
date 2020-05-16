@@ -1,0 +1,21 @@
+uuid: b23926d8-2cf3-4bee-9a29-b6af3f8fa506
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_response
+    - node.type.uncertainty
+  module:
+    - options
+id: node.uncertainty.field_uncertainty_response
+field_name: field_uncertainty_response
+entity_type: node
+bundle: uncertainty
+label: Response
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

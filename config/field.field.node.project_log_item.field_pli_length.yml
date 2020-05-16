@@ -1,0 +1,23 @@
+uuid: 4b404ec1-fa28-47f3-9dab-e8c21a90a4f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pli_length
+    - node.type.project_log_item
+id: node.project_log_item.field_pli_length
+field_name: field_pli_length
+entity_type: node
+bundle: project_log_item
+label: Length
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float
