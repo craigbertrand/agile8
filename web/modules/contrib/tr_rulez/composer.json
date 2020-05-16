@@ -2,7 +2,7 @@
     "name": "drupal/tr_rulez",
     "description": "Provides missing functionality and documentation for the D8 Rules module.",
     "type": "drupal-module",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/tr_rulez",
     "authors": [
         {

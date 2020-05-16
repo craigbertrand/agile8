@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\better_exposed_filters\Kernel\Plugin\filter;
+namespace Drupal\Tests\better_exposed_filters\Kernel;
 
 use Drupal\Tests\better_exposed_filters\Kernel\BetterExposedFiltersKernelTestBase;
 use Drupal\views\Views;

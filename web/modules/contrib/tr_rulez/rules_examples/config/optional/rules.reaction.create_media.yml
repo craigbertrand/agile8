@@ -74,7 +74,7 @@ expression:
         uuid: 40bd26d1-a09d-4921-8ae1-e890442ed8e7
         context_values: {  }
         context_mapping:
-          data: entity.field_media_image
+          data: media_created.field_media_image
           value: entity_fetched
         context_processors: {  }
         provides_mapping: {  }
@@ -84,7 +84,7 @@ expression:
         uuid: 986f519b-ea78-408a-8e3b-c50e60c8b559
         context_values: {  }
         context_mapping:
-          data: entity.field_media_image.alt
+          data: media_created.field_media_image.alt
           value: taxonomy_term.field_image.alt
         context_processors: {  }
         provides_mapping: {  }
