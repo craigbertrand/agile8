@@ -1,0 +1,23 @@
+uuid: 8dfb4186-f2cb-4aac-b762-97392e06c062
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_pre_score
+    - node.type.uncertainty
+id: node.uncertainty.field_uncertainty_pre_score
+field_name: field_uncertainty_pre_score
+entity_type: node
+bundle: uncertainty
+label: 'Pre-Response Score'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

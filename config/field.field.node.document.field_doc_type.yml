@@ -1,0 +1,21 @@
+uuid: 5d398b7a-1c2a-4604-b266-e6a42e235a57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_type
+    - node.type.document
+  module:
+    - options
+id: node.document.field_doc_type
+field_name: field_doc_type
+entity_type: node
+bundle: document
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

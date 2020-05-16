@@ -1,0 +1,37 @@
+uuid: 5b4dccde-b379-45ea-8ef3-a4d44a0bf964
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_activity.field_contact_activity_desc
+    - field.field.node.contact_activity.field_contact_activity_type
+    - node.type.contact_activity
+  module:
+    - text
+    - user
+id: node.contact_activity.default
+targetEntityType: node
+bundle: contact_activity
+mode: default
+content:
+  field_contact_activity_desc:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_contact_activity_type:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

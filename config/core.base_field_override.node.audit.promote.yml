@@ -1,0 +1,22 @@
+uuid: 6208edf2-5601-4870-a909-84b5f1b6aae9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.audit
+id: node.audit.promote
+field_name: promote
+entity_type: node
+bundle: audit
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

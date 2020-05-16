@@ -1,0 +1,30 @@
+uuid: e64d719e-4a0e-4ef1-a611-e86fa76b6b40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audit_participants
+    - node.type.audit
+    - node.type.contact
+    - node.type.personnel
+id: node.audit.field_audit_participants
+field_name: field_audit_participants
+entity_type: node
+bundle: audit
+label: audit_participants
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contact: contact
+      personnel: personnel
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: contact
+field_type: entity_reference

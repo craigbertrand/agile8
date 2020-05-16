@@ -1,0 +1,17 @@
+uuid: 890a8bf9-725a-458c-b50d-67a78a5ce40b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Audit
+type: audit
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

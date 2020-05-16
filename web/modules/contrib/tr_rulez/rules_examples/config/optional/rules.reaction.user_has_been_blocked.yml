@@ -1,0 +1,44 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - tr_rulez
+  enforced:
+    module:
+      - tr_rulez
+id: user_has_been_blocked
+label: 'User has been blocked'
+events:
+  -
+    event_name: tr_rulez_user_was_blocked
+description: 'Example Rule which shows a system message when a User''s status is changed to blocked'
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 298b3ece-9fa9-4c69-807f-e67f40ff3101
+  conditions:
+    id: rules_and
+    uuid: 481f5e3b-9983-4c63-b8c9-64318e0d0dd6
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 9c7d49fd-e54c-410c-be12-b32d7d9cfdb6
+    actions:
+      -
+        id: rules_action
+        uuid: 871e854c-0f6f-4a59-853e-1787fd19ece8
+        context_values:
+          message: 'User "{{ account.name }}" has been blocked'
+          type: warning
+          repeat: false
+        context_mapping: {  }
+        context_processors:
+          message:
+            rules_tokens: {  }
+          type:
+            rules_tokens: {  }
+          repeat:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_system_message

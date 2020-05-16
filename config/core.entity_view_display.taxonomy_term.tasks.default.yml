@@ -1,0 +1,30 @@
+uuid: a55239af-5e50-4031-8f50-d2c8315ec182
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tasks.field_task_type
+    - taxonomy.vocabulary.tasks
+  module:
+    - options
+    - text
+id: taxonomy_term.tasks.default
+targetEntityType: taxonomy_term
+bundle: tasks
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_task_type:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

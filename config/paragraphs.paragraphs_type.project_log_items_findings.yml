@@ -1,0 +1,11 @@
+uuid: e199699e-d42b-412f-af22-ce5f0bf25b23
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:129b6360-5ced-4188-9041-520177e4d754'
+id: project_log_items_findings
+label: 'Project Log Items Finding'
+icon_uuid: 129b6360-5ced-4188-9041-520177e4d754
+description: ''
+behavior_plugins: {  }

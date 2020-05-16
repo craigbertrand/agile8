@@ -1,0 +1,28 @@
+uuid: e79f3e3d-0e66-4c5b-8a11-306243aefc92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_ref_location
+    - node.type.customer
+    - node.type.customer_location
+id: node.customer_location.field_customer_ref_location
+field_name: field_customer_ref_location
+entity_type: node
+bundle: customer_location
+label: 'Customer (Owner)'
+description: 'The owner of the location'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      customer: customer
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

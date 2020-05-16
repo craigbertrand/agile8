@@ -1,0 +1,23 @@
+uuid: 58c31ce1-624d-418d-baed-9125c4b45e14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_link
+    - node.type.document
+  module:
+    - link
+id: node.document.field_doc_link
+field_name: field_doc_link
+entity_type: node
+bundle: document
+label: Link
+description: 'Link to either the file or webpage or link to an editable document.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

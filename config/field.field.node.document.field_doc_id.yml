@@ -1,0 +1,19 @@
+uuid: 21c2e315-abda-4523-a838-df328824616f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_id
+    - node.type.document
+id: node.document.field_doc_id
+field_name: field_doc_id
+entity_type: node
+bundle: document
+label: 'Document ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

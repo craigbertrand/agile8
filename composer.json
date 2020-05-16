@@ -46,6 +46,7 @@
         "drupal/typed_data": "1.x-dev",
         "drupal/views_bulk_edit": "2.4.0",
         "drupal/views_bulk_operations": "3.4.0",
+        "drupal/workflows_field": "1.x-dev",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
         "pantheon-systems/drupal-integrations": "^8",

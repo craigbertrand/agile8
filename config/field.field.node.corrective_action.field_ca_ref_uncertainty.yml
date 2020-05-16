@@ -1,0 +1,28 @@
+uuid: a8f04a1e-9078-42a1-8173-661779517762
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ca_ref_uncertainty
+    - node.type.corrective_action
+    - node.type.uncertainty
+id: node.corrective_action.field_ca_ref_uncertainty
+field_name: field_ca_ref_uncertainty
+entity_type: node
+bundle: corrective_action
+label: Uncertainty
+description: 'Select the relevant risks or opportunities this action is responding to.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      uncertainty: uncertainty
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

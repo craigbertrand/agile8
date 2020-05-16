@@ -1,0 +1,30 @@
+uuid: 44d6d330-5bdd-4f6e-bd46-73d3d99f200a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_task_type
+field_name: field_task_type
+entity_type: taxonomy_term
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'Tool Time'
+    -
+      value: 2
+      label: 'Safety and Permitting'
+    -
+      value: 3
+      label: Delays
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

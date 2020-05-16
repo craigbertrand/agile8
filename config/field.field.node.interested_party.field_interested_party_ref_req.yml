@@ -1,0 +1,28 @@
+uuid: 320b3eba-a3b6-47e9-9a30-9d4e980b6906
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interested_party_ref_req
+    - node.type.document
+    - node.type.interested_party
+id: node.interested_party.field_interested_party_ref_req
+field_name: field_interested_party_ref_req
+entity_type: node
+bundle: interested_party
+label: 'Requirements Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

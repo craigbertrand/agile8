@@ -1,0 +1,36 @@
+tr_rulez_user_was_blocked:
+  label: 'After a user was blocked'
+  category: 'User'
+  context_definitions:
+    account:
+      type: 'entity:user'
+      label: 'Updated user'
+
+tr_rulez_user_was_unblocked:
+  label: 'After a user was unblocked'
+  category: 'User'
+  context_definitions:
+    account:
+      type: 'entity:user'
+      label: 'Updated user'
+
+tr_rulez_entity_bundle_create:
+  label: 'After creating a new entity bundle'
+  category: 'Entity'
+  context_definitions:
+    entity_type:
+      type: 'string'
+      label: 'Entity type'
+    bundle_name:
+      type: 'string'
+      label: 'Bundle name'
+tr_rulez_entity_bundle_delete:
+  label: 'After deleting an entity bundle'
+  category: 'Entity'
+  context_definitions:
+    entity_type:
+      type: 'string'
+      label: 'Entity type'
+    bundle_name:
+      type: 'string'
+      label: 'Bundle name'

@@ -1,0 +1,29 @@
+uuid: adfe5d33-33b1-4c6d-9e25-4a5158d112ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audit_type
+    - node.type.audit
+    - taxonomy.vocabulary.audit_types
+id: node.audit.field_audit_type
+field_name: field_audit_type
+entity_type: node
+bundle: audit
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      audit_types: audit_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

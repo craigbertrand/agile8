@@ -1,0 +1,21 @@
+uuid: 3c5de3a7-19a0-463a-bef9-b40331feec22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_date
+    - node.type.compliance_event
+  module:
+    - datetime
+id: node.compliance_event.field_ce_date
+field_name: field_ce_date
+entity_type: node
+bundle: compliance_event
+label: 'Event Date'
+description: 'The date and time of the compliance event. If an incident the time of the actual incident if known.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,21 @@
+uuid: 207d525b-b5cd-4ecd-b70a-ca78cde4414e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ca_result
+    - node.type.corrective_action
+  module:
+    - text
+id: node.corrective_action.field_ca_result
+field_name: field_ca_result
+entity_type: node
+bundle: corrective_action
+label: Result
+description: 'Describe the results of the review of the effectiveness of the action and any changes made to the management system.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

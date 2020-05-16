@@ -1,0 +1,21 @@
+uuid: 097ebb36-6bf7-42da-b5f8-09fb03919f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_impact
+    - node.type.uncertainty
+  module:
+    - options
+id: node.uncertainty.field_uncertainty_impact
+field_name: field_uncertainty_impact
+entity_type: node
+bundle: uncertainty
+label: Impact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

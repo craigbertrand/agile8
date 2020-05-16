@@ -1,0 +1,23 @@
+uuid: 75045a74-0e2c-450a-bde7-0151ffc6cf1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pli_total_hours
+    - node.type.project_log_item
+id: node.project_log_item.field_pli_total_hours
+field_name: field_pli_total_hours
+entity_type: node
+bundle: project_log_item
+label: 'Total Hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

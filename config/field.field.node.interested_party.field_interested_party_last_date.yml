@@ -1,0 +1,24 @@
+uuid: 06ba8203-1e1d-4406-b811-854ea247e7d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interested_party_last_date
+    - node.type.interested_party
+  module:
+    - datetime
+id: node.interested_party.field_interested_party_last_date
+field_name: field_interested_party_last_date
+entity_type: node
+bundle: interested_party
+label: 'Last Review Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

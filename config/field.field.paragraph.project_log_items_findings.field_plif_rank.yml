@@ -1,0 +1,21 @@
+uuid: 03c54615-5ba9-4d83-8316-f8ba3e894a85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_plif_rank
+    - paragraphs.paragraphs_type.project_log_items_findings
+  module:
+    - options
+id: paragraph.project_log_items_findings.field_plif_rank
+field_name: field_plif_rank
+entity_type: paragraph
+bundle: project_log_items_findings
+label: Rank
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

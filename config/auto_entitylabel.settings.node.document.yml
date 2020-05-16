@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_doc_title] &#40;[node:field_doc_id]&#41;'
+escape: false
+dependencies:
+  config:
+    - node.type.document

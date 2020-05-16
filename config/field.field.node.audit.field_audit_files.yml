@@ -1,0 +1,27 @@
+uuid: 8c1f8530-e9e3-402e-a678-43382f00ff28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audit_files
+    - node.type.audit
+  module:
+    - file
+id: node.audit.field_audit_files
+field_name: field_audit_files
+entity_type: node
+bundle: audit
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'audits/[current-page:title]'
+  file_extensions: 'pdf doc docx xls xlsx ppt pptx csv txt zip'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,46 @@
+uuid: 4e40ec1d-6859-4415-be5e-1188c51128b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.document.field_doc_access_method
+    - field.field.node.document.field_doc_business_units
+    - field.field.node.document.field_doc_id
+    - field.field.node.document.field_doc_issue_date
+    - field.field.node.document.field_doc_link
+    - field.field.node.document.field_doc_owner
+    - field.field.node.document.field_doc_processes
+    - field.field.node.document.field_doc_ref_doc
+    - field.field.node.document.field_doc_ref_doc_rev
+    - field.field.node.document.field_doc_source
+    - field.field.node.document.field_doc_text
+    - field.field.node.document.field_doc_title
+    - field.field.node.document.field_doc_type
+    - node.type.document
+  module:
+    - user
+id: node.document.teaser
+targetEntityType: node
+bundle: document
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_doc_access_method: true
+  field_doc_business_units: true
+  field_doc_id: true
+  field_doc_issue_date: true
+  field_doc_link: true
+  field_doc_owner: true
+  field_doc_processes: true
+  field_doc_ref_doc: true
+  field_doc_ref_doc_rev: true
+  field_doc_source: true
+  field_doc_text: true
+  field_doc_title: true
+  field_doc_type: true

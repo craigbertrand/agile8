@@ -1,0 +1,27 @@
+uuid: 01764d74-c7d0-4e02-bf17-7e02d6838fcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_ref_ce
+    - node.type.compliance_event
+id: node.compliance_event.field_ce_ref_ce
+field_name: field_ce_ref_ce
+entity_type: node
+bundle: compliance_event
+label: 'Related Events'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      compliance_event: compliance_event
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

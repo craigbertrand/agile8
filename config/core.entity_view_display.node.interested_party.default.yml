@@ -1,0 +1,95 @@
+uuid: 01378373-3b55-4033-a904-f289bb8d5d57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.interested_party.field_interested_party_last_date
+    - field.field.node.interested_party.field_interested_party_legal
+    - field.field.node.interested_party.field_interested_party_obligate
+    - field.field.node.interested_party.field_interested_party_ref_doc
+    - field.field.node.interested_party.field_interested_party_ref_req
+    - field.field.node.interested_party.field_interested_party_req
+    - field.field.node.interested_party.field_interested_party_resp_per
+    - field.field.node.interested_party.field_interested_party_rev_date
+    - node.type.interested_party
+  module:
+    - datetime
+    - text
+    - user
+id: node.interested_party.default
+targetEntityType: node
+bundle: interested_party
+mode: default
+content:
+  field_interested_party_last_date:
+    weight: 108
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_interested_party_legal:
+    weight: 109
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_interested_party_obligate:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_interested_party_ref_doc:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_interested_party_ref_req:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_interested_party_req:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_interested_party_resp_per:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_interested_party_rev_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

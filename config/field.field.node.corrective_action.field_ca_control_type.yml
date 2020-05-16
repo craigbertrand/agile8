@@ -1,0 +1,29 @@
+uuid: 55f87c65-4223-4916-a0af-97d3977ca9ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ca_control_type
+    - node.type.corrective_action
+    - taxonomy.vocabulary.hierarchy_of_controls
+id: node.corrective_action.field_ca_control_type
+field_name: field_ca_control_type
+entity_type: node
+bundle: corrective_action
+label: 'Control Type'
+description: "Items higher in the list are potentially more effective and protective than those at the bottom.<br>\r\n<ol>\r\n<li><strong>Elimination</strong> Physically remove the risk or hazard</li>\r\n<li><strong>Substitution</strong> Replace the risk or hazard</li>\r\n<li><strong>Engineering</strong> Isolate people from the risk or hazard</li>\r\n<li><strong>Adminstrative</strong> Change the way people work</li>\r\n<li><strong>Personal protective equipment</strong> Protect the worker with PPE.</li>\r\n</ol>"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hierarchy_of_controls: hierarchy_of_controls
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

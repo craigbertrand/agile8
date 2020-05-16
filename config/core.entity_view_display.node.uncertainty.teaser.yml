@@ -1,0 +1,48 @@
+uuid: 0427de8b-f1db-4012-a135-3228bcfe1b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.uncertainty.field_uncertainty_description
+    - field.field.node.uncertainty.field_uncertainty_impact
+    - field.field.node.uncertainty.field_uncertainty_owner
+    - field.field.node.uncertainty.field_uncertainty_post_impact
+    - field.field.node.uncertainty.field_uncertainty_post_likeli
+    - field.field.node.uncertainty.field_uncertainty_post_score
+    - field.field.node.uncertainty.field_uncertainty_pre_impact
+    - field.field.node.uncertainty.field_uncertainty_pre_likeli
+    - field.field.node.uncertainty.field_uncertainty_pre_score
+    - field.field.node.uncertainty.field_uncertainty_processes
+    - field.field.node.uncertainty.field_uncertainty_ref_iparty
+    - field.field.node.uncertainty.field_uncertainty_response
+    - field.field.node.uncertainty.field_uncertainty_source
+    - field.field.node.uncertainty.field_uncertainty_tags
+    - node.type.uncertainty
+  module:
+    - user
+id: node.uncertainty.teaser
+targetEntityType: node
+bundle: uncertainty
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_uncertainty_description: true
+  field_uncertainty_impact: true
+  field_uncertainty_owner: true
+  field_uncertainty_post_impact: true
+  field_uncertainty_post_likeli: true
+  field_uncertainty_post_score: true
+  field_uncertainty_pre_impact: true
+  field_uncertainty_pre_likeli: true
+  field_uncertainty_pre_score: true
+  field_uncertainty_processes: true
+  field_uncertainty_ref_iparty: true
+  field_uncertainty_response: true
+  field_uncertainty_source: true
+  field_uncertainty_tags: true

@@ -1,0 +1,23 @@
+uuid: 28497067-6f4e-4068-bfd5-72d8de414687
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_links
+    - node.type.contact
+  module:
+    - link
+id: node.contact.field_contact_links
+field_name: field_contact_links
+entity_type: node
+bundle: contact
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

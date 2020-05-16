@@ -1,0 +1,19 @@
+uuid: 0c9df441-fde6-4e07-8dbb-782b13c7dcfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_uncertainty_description
+field_name: field_uncertainty_description
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

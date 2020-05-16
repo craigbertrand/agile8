@@ -1,0 +1,18 @@
+uuid: a6e4d50a-9c77-42d6-961e-b6fff7da6bda
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.interested_party
+id: node.interested_party.title
+field_name: title
+entity_type: node
+bundle: interested_party
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

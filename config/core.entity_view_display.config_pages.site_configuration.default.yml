@@ -7,6 +7,7 @@ dependencies:
     - field.field.config_pages.site_configuration.field_environmental_policy
     - field.field.config_pages.site_configuration.field_health_and_safety_policy
     - field.field.config_pages.site_configuration.field_mission_statement
+    - field.field.config_pages.site_configuration.field_objectives
     - field.field.config_pages.site_configuration.field_quality_policy
     - field.field.config_pages.site_configuration.field_values
     - field.field.config_pages.site_configuration.field_vision
@@ -33,6 +34,13 @@ content:
     region: content
   field_mission_statement:
     weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_objectives:
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }

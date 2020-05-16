@@ -1,0 +1,28 @@
+uuid: c1cfca88-1225-4ff2-86d4-ee3a643ef45b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_owner
+    - node.type.document
+id: node.document.field_doc_owner
+field_name: field_doc_owner
+entity_type: node
+bundle: document
+label: 'Document Owner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -8,6 +8,7 @@ dependencies:
     - field.field.config_pages.site_configuration.field_environmental_policy
     - field.field.config_pages.site_configuration.field_health_and_safety_policy
     - field.field.config_pages.site_configuration.field_mission_statement
+    - field.field.config_pages.site_configuration.field_objectives
     - field.field.config_pages.site_configuration.field_quality_policy
     - field.field.config_pages.site_configuration.field_values
     - field.field.config_pages.site_configuration.field_vision
@@ -29,5 +30,6 @@ hidden:
   field_environmental_policy: true
   field_health_and_safety_policy: true
   field_mission_statement: true
+  field_objectives: true
   field_quality_policy: true
   field_vision: true

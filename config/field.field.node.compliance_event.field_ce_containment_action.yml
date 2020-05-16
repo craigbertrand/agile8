@@ -1,0 +1,21 @@
+uuid: aca1dd4c-0099-4bdf-9cc7-e8c834ed0033
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_containment_action
+    - node.type.compliance_event
+  module:
+    - text
+id: node.compliance_event.field_ce_containment_action
+field_name: field_ce_containment_action
+entity_type: node
+bundle: compliance_event
+label: 'Containment Action'
+description: 'Describe the actions taken to control and correct the event and deal with any consequences.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,11 @@
+uuid: 693f41a8-47be-4f4c-825a-a23665e72e7d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:9fdb30b1-802e-4561-b629-9afeab4f5ddc'
+id: document_revision
+label: 'Document Revision'
+icon_uuid: 9fdb30b1-802e-4561-b629-9afeab4f5ddc
+description: ''
+behavior_plugins: {  }

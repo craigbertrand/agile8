@@ -1,0 +1,21 @@
+uuid: 05f146ff-4e41-4e13-a964-57535fe4fe72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_description
+    - node.type.uncertainty
+  module:
+    - text
+id: node.uncertainty.field_uncertainty_description
+field_name: field_uncertainty_description
+entity_type: node
+bundle: uncertainty
+label: Description
+description: 'Describe the potential impact'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

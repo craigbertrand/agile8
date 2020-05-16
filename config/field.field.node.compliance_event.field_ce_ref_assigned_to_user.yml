@@ -1,0 +1,28 @@
+uuid: 5d0a70d9-77dc-4928-ad14-c8c188dd4275
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_ref_assigned_to_user
+    - node.type.compliance_event
+id: node.compliance_event.field_ce_ref_assigned_to_user
+field_name: field_ce_ref_assigned_to_user
+entity_type: node
+bundle: compliance_event
+label: 'Assigned to'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

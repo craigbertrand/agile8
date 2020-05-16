@@ -1,0 +1,21 @@
+uuid: d7adaa4a-f943-49b7-9c74-7027eeaea93f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interested_party_req
+    - node.type.interested_party
+  module:
+    - text
+id: node.interested_party.field_interested_party_req
+field_name: field_interested_party_req
+entity_type: node
+bundle: interested_party
+label: 'Requirements Description '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

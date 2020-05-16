@@ -1,0 +1,36 @@
+uuid: 66101dc4-7488-484b-9137-f33532a27c7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_doc_type
+field_name: field_doc_type
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: Policy
+    -
+      value: 1
+      label: Manual
+    -
+      value: 2
+      label: Procedure
+    -
+      value: 3
+      label: 'Work Instruction'
+    -
+      value: 4
+      label: Form
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 68feee05-de9d-4bfb-bdc5-58335229c2fc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Compliance Event Tags'
+vid: compliance_event_tags
+description: ''
+weight: 0

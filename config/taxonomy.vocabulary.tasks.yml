@@ -1,0 +1,8 @@
+uuid: adc997f8-d1d4-4941-aabb-dbf122dfbbb1
+langcode: en
+status: true
+dependencies: {  }
+name: Tasks
+vid: tasks
+description: 'KPI''s Tasks'
+weight: 0

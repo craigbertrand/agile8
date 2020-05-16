@@ -1,0 +1,27 @@
+uuid: 00329403-a5bb-4627-86a0-1ef7ab2e63e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_uncertainty_source
+field_name: field_uncertainty_source
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Internal
+    -
+      value: 2
+      label: External
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

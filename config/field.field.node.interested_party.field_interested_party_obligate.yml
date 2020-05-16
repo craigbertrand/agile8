@@ -1,0 +1,21 @@
+uuid: 6f1de6ba-0e04-4d48-8ad6-da1bd7aa6427
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interested_party_obligate
+    - node.type.interested_party
+  module:
+    - text
+id: node.interested_party.field_interested_party_obligate
+field_name: field_interested_party_obligate
+entity_type: node
+bundle: interested_party
+label: 'Compliance Obligations'
+description: 'Describe any obligations that need to be addressed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

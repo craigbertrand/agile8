@@ -1,0 +1,28 @@
+uuid: b461c0aa-36d7-4420-8b4d-93f9a7612c7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ca_ref_compliance_event
+    - node.type.compliance_event
+    - node.type.corrective_action
+id: node.corrective_action.field_ca_ref_compliance_event
+field_name: field_ca_ref_compliance_event
+entity_type: node
+bundle: corrective_action
+label: 'Compliance Event'
+description: 'Select the relevant nonconformities, incidents, or impacts this action is meant to correct.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      compliance_event: compliance_event
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

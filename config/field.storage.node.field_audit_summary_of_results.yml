@@ -1,0 +1,19 @@
+uuid: 2c6761dd-ef74-498a-bdfe-58dc68c2c07f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_audit_summary_of_results
+field_name: field_audit_summary_of_results
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

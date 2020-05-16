@@ -1,0 +1,21 @@
+uuid: 1b5c8ce2-445e-432f-8da5-1d5cca3e5724
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ca_action
+    - node.type.corrective_action
+  module:
+    - text
+id: node.corrective_action.field_ca_action
+field_name: field_ca_action
+entity_type: node
+bundle: corrective_action
+label: Action
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

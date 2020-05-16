@@ -1,0 +1,41 @@
+uuid: a827214e-e5da-43b6-8c15-7bd031da9c22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.document_revision.field_doc_rev_change_log
+    - field.field.paragraph.document_revision.field_doc_rev_file
+    - field.field.paragraph.document_revision.field_doc_rev_status
+    - paragraphs.paragraphs_type.document_revision
+  module:
+    - file
+    - options
+    - text
+id: paragraph.document_revision.default
+targetEntityType: paragraph
+bundle: document_revision
+mode: default
+content:
+  field_doc_rev_change_log:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_doc_rev_file:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_doc_rev_status:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

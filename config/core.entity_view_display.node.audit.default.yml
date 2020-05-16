@@ -1,0 +1,99 @@
+uuid: f736da41-ec4b-4a54-8b62-53107ed343e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.audit.field_audit_date
+    - field.field.node.audit.field_audit_files
+    - field.field.node.audit.field_audit_lead_auditor
+    - field.field.node.audit.field_audit_links
+    - field.field.node.audit.field_audit_participants
+    - field.field.node.audit.field_audit_scope
+    - field.field.node.audit.field_audit_summary_of_results
+    - field.field.node.audit.field_audit_type
+    - node.type.audit
+  module:
+    - datetime_range
+    - file
+    - link
+    - text
+    - user
+id: node.audit.default
+targetEntityType: node
+bundle: audit
+mode: default
+content:
+  field_audit_date:
+    weight: 101
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_audit_files:
+    weight: 103
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_audit_lead_auditor:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_audit_links:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_audit_participants:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_audit_scope:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_audit_summary_of_results:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_audit_type:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: d7c3c678-7bea-4330-9c45-b192e76a2444
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_post_impact
+    - node.type.uncertainty
+  module:
+    - options
+id: node.uncertainty.field_uncertainty_post_impact
+field_name: field_uncertainty_post_impact
+entity_type: node
+bundle: uncertainty
+label: 'Post-Response Impact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

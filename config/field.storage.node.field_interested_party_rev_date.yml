@@ -1,0 +1,20 @@
+uuid: 80be012d-ed8a-4eba-ad8d-c8b4aa6bd259
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_interested_party_rev_date
+field_name: field_interested_party_rev_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

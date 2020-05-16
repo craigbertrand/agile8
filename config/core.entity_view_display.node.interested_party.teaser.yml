@@ -1,0 +1,36 @@
+uuid: 328f1d35-19de-4e37-bdae-c017172db92a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.interested_party.field_interested_party_last_date
+    - field.field.node.interested_party.field_interested_party_legal
+    - field.field.node.interested_party.field_interested_party_obligate
+    - field.field.node.interested_party.field_interested_party_ref_doc
+    - field.field.node.interested_party.field_interested_party_ref_req
+    - field.field.node.interested_party.field_interested_party_req
+    - field.field.node.interested_party.field_interested_party_resp_per
+    - field.field.node.interested_party.field_interested_party_rev_date
+    - node.type.interested_party
+  module:
+    - user
+id: node.interested_party.teaser
+targetEntityType: node
+bundle: interested_party
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_interested_party_last_date: true
+  field_interested_party_legal: true
+  field_interested_party_obligate: true
+  field_interested_party_ref_doc: true
+  field_interested_party_ref_req: true
+  field_interested_party_req: true
+  field_interested_party_resp_per: true
+  field_interested_party_rev_date: true

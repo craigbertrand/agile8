@@ -1,0 +1,36 @@
+uuid: 76d69da0-9151-4576-9879-97004c8e6075
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.audit.field_audit_date
+    - field.field.node.audit.field_audit_files
+    - field.field.node.audit.field_audit_lead_auditor
+    - field.field.node.audit.field_audit_links
+    - field.field.node.audit.field_audit_participants
+    - field.field.node.audit.field_audit_scope
+    - field.field.node.audit.field_audit_summary_of_results
+    - field.field.node.audit.field_audit_type
+    - node.type.audit
+  module:
+    - user
+id: node.audit.teaser
+targetEntityType: node
+bundle: audit
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_audit_date: true
+  field_audit_files: true
+  field_audit_lead_auditor: true
+  field_audit_links: true
+  field_audit_participants: true
+  field_audit_scope: true
+  field_audit_summary_of_results: true
+  field_audit_type: true

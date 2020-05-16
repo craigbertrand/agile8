@@ -1,0 +1,8 @@
+name: Rules Examples
+type: module
+description: 'Provides examples and documentation for the Rules module.'
+package: Rules
+core: 8.x
+dependencies:
+  - tr_rulez:tr_rulez
+configure: entity.rules_reaction_rule.collection

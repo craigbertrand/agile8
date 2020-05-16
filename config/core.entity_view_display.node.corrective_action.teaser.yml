@@ -1,0 +1,36 @@
+uuid: 7405d15e-d7c3-46cf-977e-858468b40bb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.corrective_action.field_ca_action
+    - field.field.node.corrective_action.field_ca_control_type
+    - field.field.node.corrective_action.field_ca_date_closed
+    - field.field.node.corrective_action.field_ca_due_date
+    - field.field.node.corrective_action.field_ca_effective
+    - field.field.node.corrective_action.field_ca_ref_compliance_event
+    - field.field.node.corrective_action.field_ca_ref_uncertainty
+    - field.field.node.corrective_action.field_ca_result
+    - node.type.corrective_action
+  module:
+    - user
+id: node.corrective_action.teaser
+targetEntityType: node
+bundle: corrective_action
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ca_action: true
+  field_ca_control_type: true
+  field_ca_date_closed: true
+  field_ca_due_date: true
+  field_ca_effective: true
+  field_ca_ref_compliance_event: true
+  field_ca_ref_uncertainty: true
+  field_ca_result: true

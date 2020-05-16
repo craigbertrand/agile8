@@ -1,0 +1,17 @@
+uuid: 8c697324-4009-4b7e-b8f2-d82079e01fc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Compliance Event'
+type: compliance_event
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

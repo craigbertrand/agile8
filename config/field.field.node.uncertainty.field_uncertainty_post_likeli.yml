@@ -1,0 +1,21 @@
+uuid: 702625e2-0225-41cc-aceb-6e5718ac9d96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_post_likeli
+    - node.type.uncertainty
+  module:
+    - options
+id: node.uncertainty.field_uncertainty_post_likeli
+field_name: field_uncertainty_post_likeli
+entity_type: node
+bundle: uncertainty
+label: 'Post-Response Likelihood'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

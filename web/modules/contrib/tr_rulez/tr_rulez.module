@@ -1,0 +1,150 @@
+<?php
+
+/**
+ * @file
+ * The tr_rulez module.
+ *
+ * Additions and improvements to Rules.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\user\UserInterface;
+use Drupal\tr_rulez\Event\UserWasBlockedEvent;
+use Drupal\tr_rulez\Event\UserWasUnblockedEvent;
+use Drupal\tr_rulez\Event\BundleCreatedEvent;
+use Drupal\tr_rulez\Event\BundleDeletedEvent;
+
+/**
+ * Implements hook_help().
+ */
+function tr_rulez_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'entity.rules_reaction_rule.collection':
+      return '';
+  }
+
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function tr_rulez_entity_type_alter(array &$entity_types) {
+  $config = \Drupal::config('tr_rulez.settings');
+  if ($config->get('ui_choice') == 1) {
+    /** @var \Drupal\Core\Entity\EntityTypeInterface[] $entity_types */
+    $entity_types['rules_reaction_rule']->setListBuilderClass('Drupal\tr_rulez\Controller\RulesReactionListBuilder');
+    $entity_types['rules_reaction_rule']->setFormClass('edit', 'Drupal\tr_rulez\Form\ReactionRuleEditForm');
+    $entity_types['rules_reaction_rule']->setLinkTemplate('enable', '/admin/config/workflow/rules/reactions/enable/{rules_reaction_rule}');
+    $entity_types['rules_reaction_rule']->setLinkTemplate('disable', '/admin/config/workflow/rules/reactions/disable/{rules_reaction_rule}');
+    $entity_types['rules_reaction_rule']->setLinkTemplate('clone', '/admin/config/workflow/rules/reactions/clone/{rules_reaction_rule}');
+
+    $entity_types['rules_component']->setListBuilderClass('Drupal\tr_rulez\Controller\RulesComponentListBuilder');
+    $entity_types['rules_component']->setLinkTemplate('clone', '/admin/config/workflow/rules/reactions/clone/{rules_component}');
+  }
+  else {
+    // Use the default Rules UI.
+  }
+
+}
+
+/**
+ * Implements hook_rules_expression_alter().
+ */
+function tr_rulez_rules_expression_alter(array &$definitions) {
+  $config = \Drupal::config('tr_rulez.settings');
+  if ($config->get('ui_choice') == 1) {
+    // Modify form_class definitions.
+    $definitions['rules_rule']['class'] = 'Drupal\tr_rulez\Plugin\RulesExpression\RuleExpression';
+    $definitions['rules_action_set']['form_class'] = 'Drupal\tr_rulez\Form\Expression\ActionContainerForm';
+    $definitions['rules_and']['form_class'] = 'Drupal\tr_rulez\Form\Expression\ConditionContainerForm';
+    $definitions['rules_or']['form_class'] = 'Drupal\tr_rulez\Form\Expression\ConditionContainerForm';
+    $definitions['rules_loop']['form_class'] = 'Drupal\tr_rulez\Form\Expression\ActionContainerForm';
+
+    // Add descriptions.
+    $definitions['rules_action']['description'] = t("An Action component defines an executable action expression. This component is used to wrap action plugins and is responsible to setup all the context necessary, instantiate the action plugin and to execute it.");
+    $definitions['rules_action_set']['description'] = t("The Action Set component hold a set of actions and executes all of them unconditionally.");
+    $definitions['rules_condition']['description'] = t("A Condition component defines an executable condition expression. This component is used to wrap condition plugins and is responsible to setup all the context necessary, instantiate the condition plugin and to execute it.");
+    $definitions['rules_and']['description'] = t("Condition set (AND) evaluates a group of conditions with a logical AND. This means the set evaluates to TRUE only when all of the conditions are TRUE.");
+    $definitions['rules_or']['description'] = t("Condition set (OR) evaluates a group of conditions with a logical OR. This means the set evaluates to TRUE when one or more of the conditions is TRUE.");
+    $definitions['rules_loop']['description'] = t("A Loop component iterates over a list and executes a set of actions for each element of that list.");
+  }
+  else {
+    // Use the default Rules UI.
+  }
+
+}
+
+/**
+ * Implements hook_entity_bundle_create().
+ */
+function tr_rulez_entity_bundle_create($entity_type_name, $bundle_name) {
+  $event = new BundleCreatedEvent($entity_type_name, $bundle_name);
+  $event_dispatcher = \Drupal::service('event_dispatcher');
+  $event_dispatcher->dispatch($event::EVENT_NAME, $event);
+}
+
+/**
+ * Implements hook_entity_bundle_delete().
+ */
+function tr_rulez_entity_bundle_delete($entity_type_name, $bundle_name) {
+  $event = new BundleDeletedEvent($entity_type_name, $bundle_name);
+  $event_dispatcher = \Drupal::service('event_dispatcher');
+  $event_dispatcher->dispatch($event::EVENT_NAME, $event);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for rules_settings_form.
+ */
+function tr_rulez_form_rules_settings_form_alter(&$form, FormStateInterface $form_state) {
+  $config = \Drupal::config('tr_rulez.settings');
+  $build['settings'] = [
+    '#type' => 'fieldset',
+    '#title' => t('UI options'),
+  ];
+  $build['settings']['ui_choice'] = [
+    '#type' => 'radios',
+    '#options' => [
+      0 => t('Rules default UI'),
+      1 => t('D8 Rules Essentials improved UI'),
+    ],
+    '#default_value' => $config->get('ui_choice'),
+    '#description' => t('Choose UI style for creating, editing, and listing Reaction Rules and Rules Components.'),
+  ];
+  $form['#submit'][] = 'tr_rulez_rules_settings_form_submit';
+
+  $form = $build + $form;
+}
+
+/**
+ * Additional submit handler for rules_settings_form.
+ */
+function tr_rulez_rules_settings_form_submit(array $form, FormStateInterface $form_state) {
+  $config = \Drupal::configFactory()->getEditable('tr_rulez.settings');
+
+  // Check to see if UI choice was changed. If so, we need to save the new
+  // selection then clear the cache to force the UI changes to take effect.
+  if ($config->get('ui_choice') != $form_state->getValue(['settings', 'ui_choice'])) {
+    $config->set('ui_choice', $form_state->getValue(['settings', 'ui_choice']))->save();
+    drupal_flush_all_caches();
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update() for the User entity.
+ */
+function tr_rulez_user_update(UserInterface $account) {
+  $original = $account->original;
+
+  if (!$original->isBlocked() && $account->isBlocked()) {
+    // The user has been blocked.
+    $event = new UserWasBlockedEvent($account);
+    \Drupal::service('event_dispatcher')->dispatch($event::EVENT_NAME, $event);
+  }
+  elseif ($original->isBlocked() && !$account->isBlocked()) {
+    // The user has been unblocked.
+    $event = new UserWasUnblockedEvent($account);
+    \Drupal::service('event_dispatcher')->dispatch($event::EVENT_NAME, $event);
+  }
+
+}

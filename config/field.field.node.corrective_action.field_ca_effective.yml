@@ -1,0 +1,23 @@
+uuid: 30eb06c4-2770-41ce-aae8-723007450299
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ca_effective
+    - node.type.corrective_action
+id: node.corrective_action.field_ca_effective
+field_name: field_ca_effective
+entity_type: node
+bundle: corrective_action
+label: 'Effective?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

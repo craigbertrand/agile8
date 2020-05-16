@@ -1,0 +1,19 @@
+uuid: e742ce64-bef2-4872-8188-bdd928c8e894
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_project_ref_customer
+field_name: field_project_ref_customer
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

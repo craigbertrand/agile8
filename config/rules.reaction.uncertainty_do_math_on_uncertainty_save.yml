@@ -1,0 +1,163 @@
+uuid: 39a3a1da-49b0-41f4-b75a-b59a00e94f75
+langcode: en
+status: false
+dependencies: {  }
+id: uncertainty_do_math_on_uncertainty_save
+label: 'Uncertainty - Do math on uncertainty save'
+events:
+  -
+    event_name: 'rules_entity_insert:node--uncertainty'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 0bd7f0a0-892a-4c84-916b-3482409310b7
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 5540939d-c730-495a-9f5e-fe7d4fe7b71d
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: d505fe1c-e6df-4f82-9c96-cc3b9a38b186
+        weight: 0
+        context_values:
+          type: node
+          bundle: uncertainty
+        context_mapping:
+          entity: node
+        context_processors:
+          type:
+            rules_tokens: {  }
+          bundle:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        condition_id: rules_entity_is_of_bundle
+        negate: false
+  actions:
+    id: rules_action_set
+    uuid: 2a233d9f-3cd2-415b-9ae3-9c6ce0e54567
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: aeffcf40-bd13-41da-bd7c-8eb2027c2622
+        weight: -50
+        context_values:
+          target_type: float
+          rounding_behavior: ''
+        context_mapping:
+          value: node.field_uncertainty_post_impact.value
+        context_processors:
+          target_type:
+            rules_tokens: {  }
+          rounding_behavior:
+            rules_tokens: {  }
+        provides_mapping:
+          conversion_result: conversion_result_post_impact
+        action_id: rules_data_convert
+      -
+        id: rules_action
+        uuid: 740a5fe1-5017-45f2-9ff6-5e74decfb632
+        weight: -49
+        context_values:
+          target_type: float
+          rounding_behavior: ''
+        context_mapping:
+          value: node.field_uncertainty_post_likeli.value
+        context_processors:
+          target_type:
+            rules_tokens: {  }
+          rounding_behavior:
+            rules_tokens: {  }
+        provides_mapping:
+          conversion_result: conversion_result_post_likeli
+        action_id: rules_data_convert
+      -
+        id: rules_action
+        uuid: 6bb79741-bce8-49d9-bb56-6dc03d1b98e6
+        weight: -48
+        context_values:
+          target_type: float
+          rounding_behavior: ''
+        context_mapping:
+          value: node.field_uncertainty_pre_impact.value
+        context_processors:
+          target_type:
+            rules_tokens: {  }
+          rounding_behavior:
+            rules_tokens: {  }
+        provides_mapping:
+          conversion_result: conversion_result_pre_impact
+        action_id: rules_data_convert
+      -
+        id: rules_action
+        uuid: 0eb16fd9-7905-4394-ac32-ebd601b67b8f
+        weight: -47
+        context_values:
+          target_type: float
+          rounding_behavior: ''
+        context_mapping:
+          value: node.field_uncertainty_pre_likeli.value
+        context_processors:
+          target_type:
+            rules_tokens: {  }
+          rounding_behavior:
+            rules_tokens: {  }
+        provides_mapping:
+          conversion_result: conversion_result_pre_likeli
+        action_id: rules_data_convert
+      -
+        id: rules_action
+        uuid: 3cf26e0a-e167-4386-8bc6-ad659f5ca410
+        weight: -46
+        context_values:
+          operator: '*'
+        context_mapping:
+          input_1: conversion_result_pre_impact
+          input_2: conversion_result_pre_likeli
+        context_processors:
+          operator:
+            rules_tokens: {  }
+        provides_mapping:
+          result: pre_score
+        action_id: rules_data_calculate_value
+      -
+        id: rules_action
+        uuid: 8c2365fb-9c7d-46c7-b74a-ab384dc1bcca
+        weight: -45
+        context_values: {  }
+        context_mapping:
+          data: node.field_uncertainty_pre_score.value
+          value: pre_score
+        context_processors: {  }
+        provides_mapping: {  }
+        action_id: rules_data_set
+      -
+        id: rules_action
+        uuid: 436db0f0-a322-4413-ac30-8e534567c7cc
+        weight: -44
+        context_values:
+          operator: '*'
+        context_mapping:
+          input_1: conversion_result_post_impact
+          input_2: conversion_result_post_likeli
+        context_processors:
+          operator:
+            rules_tokens: {  }
+        provides_mapping:
+          result: post_score
+        action_id: rules_data_calculate_value
+      -
+        id: rules_action
+        uuid: 71978a18-9f63-4f67-91e4-6c4e445bdc15
+        weight: -43
+        context_values: {  }
+        context_mapping:
+          data: node.field_uncertainty_post_score.value
+          value: post_score
+        context_processors: {  }
+        provides_mapping: {  }
+        action_id: rules_data_set

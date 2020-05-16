@@ -1,0 +1,17 @@
+uuid: 3d44ad29-f24e-49e1-8400-0a593d6850b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Corrective Action'
+type: corrective_action
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

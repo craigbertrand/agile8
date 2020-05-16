@@ -1,0 +1,20 @@
+uuid: e234501c-b0e1-4fd0-be06-501c26800327
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.management_review
+  module:
+    - user
+id: node.management_review.teaser
+targetEntityType: node
+bundle: management_review
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

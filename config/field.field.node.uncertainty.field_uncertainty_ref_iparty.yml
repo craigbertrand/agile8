@@ -1,0 +1,28 @@
+uuid: d94b62b0-e7b9-4dfa-9549-16ffbcde2ef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uncertainty_ref_iparty
+    - node.type.interested_party
+    - node.type.uncertainty
+id: node.uncertainty.field_uncertainty_ref_iparty
+field_name: field_uncertainty_ref_iparty
+entity_type: node
+bundle: uncertainty
+label: 'Interested Parties'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      interested_party: interested_party
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

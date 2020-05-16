@@ -1,0 +1,19 @@
+uuid: a1df3352-b68b-47f7-82e6-a6a9088d19cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.management_review
+  module:
+    - user
+id: node.management_review.default
+targetEntityType: node
+bundle: management_review
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

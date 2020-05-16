@@ -1,0 +1,21 @@
+uuid: 5c02125e-3180-4585-acf3-b3ff3a5df334
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_cause
+    - node.type.compliance_event
+  module:
+    - text
+id: node.compliance_event.field_ce_cause
+field_name: field_ce_cause
+entity_type: node
+bundle: compliance_event
+label: Cause
+description: 'Determine the cause(s) of the incident, impact or nonconformity. Reference any attached files.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

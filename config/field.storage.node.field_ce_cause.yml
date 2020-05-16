@@ -1,0 +1,19 @@
+uuid: 6b85777c-be1e-4e18-9dcc-1acd3d5830bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ce_cause
+field_name: field_ce_cause
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

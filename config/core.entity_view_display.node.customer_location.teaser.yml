@@ -1,0 +1,26 @@
+uuid: b6d08d59-1208-45ab-9361-c06cb4f6ee88
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.customer_location.field_customer_location_address
+    - field.field.node.customer_location.field_customer_location_desc
+    - field.field.node.customer_location.field_customer_ref_location
+    - node.type.customer_location
+  module:
+    - user
+id: node.customer_location.teaser
+targetEntityType: node
+bundle: customer_location
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_customer_location_address: true
+  field_customer_location_desc: true
+  field_customer_ref_location: true

@@ -1,0 +1,17 @@
+uuid: b6b28e17-200b-45ca-973f-a6147ea4d713
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Project Log Item'
+type: project_log_item
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

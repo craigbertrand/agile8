@@ -1,0 +1,17 @@
+uuid: 4e23e958-7b10-44f3-9063-66b8f3abeede
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Management Review'
+type: management_review
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false
